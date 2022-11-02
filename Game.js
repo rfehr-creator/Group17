@@ -1,12 +1,12 @@
-class Game{
-    constructor(){
-        this.name;
-        this.description;
-        this.price;
-        this.pictureLinks;
-        this.videoLinks;
-        this.liked;
-        this.inCart;
-        this.category;
+class Game {
+    constructor() {
+        this.name = " ";
+        this.description = " ";
+        this.price = 0.0;
+        this.pictureLinks = [];
+        this.videoLinks = [];
+        this.liked = false;
+        this.inCart = false;
+        this.tags = [];
     }
 }

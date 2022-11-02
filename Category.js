@@ -1,7 +1,7 @@
 class Category{
     constructor(){
         this.name;
-        this.countLiked;
-        this.countDisliked;
+        this.countLiked=0;
+        this.countDisliked=0;
     }
 }

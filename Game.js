@@ -3,10 +3,10 @@ class Game {
         this.name = " ";
         this.description = " ";
         this.price = 0.0;
-        this.pictureLinks = [];
-        this.videoLinks = [];
         this.liked = false;
         this.inCart = false;
+        this.pictureLinks = [];
+        this.videoLinks = [];
         this.tags = [];
     }
 }

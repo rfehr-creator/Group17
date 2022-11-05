@@ -1,0 +1,47 @@
+.homeButton{
+    width: 100px;
+    margin-left: 20px;
+    justify-self: left;
+}
+
+#searchBox{
+    margin: 1px;
+    grid-column: 3 / span 1;
+}
+#searchBox::placeholder{
+    text-align: left;
+    line-height: 30px;
+}
+
+.grid-container{
+    display: grid;
+    display:  flexbox;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 5px;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+    width: 99.5%;
+    background-color: gray;
+}
+
+
+.cartButton{
+    width: 100px;
+    height: 100%;
+    float: right;
+    margin-left: 5px;
+    background-color: transparent;
+    border: none;
+}
+
+#cartImage{
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+}
+
+.cartButtonDiv{
+    max-width: 100%;
+    margin-right: 20px;
+}

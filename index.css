@@ -15,6 +15,7 @@
 .grid-container{
     display:  grid;
     grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto;
     justify-content: space-evenly;
     padding: 2px;
     width: 99.5%;
@@ -49,4 +50,65 @@
 
 .cartButtonDiv{
     height: inherit;
+}
+
+.likeDislikeDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 2px;
+}
+
+#likeButton{
+    height: 30px;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    margin: 1% 10%;
+    color: white;
+}
+
+.gamePictureContainer{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-color: lightcoral;
+    padding: 5px;
+    margin: 5px 0px;
+}
+
+#gamePicture{
+    display: inline;
+    border-radius: 50%;
+    background-color: black;
+    grid-row: 2;
+    grid-column: 2;
+    justify-self: center;
+    width: 50%;
+    height: 100%;
+}
+
+#likedGamesDiv{
+    border-bottom: 2px solid black;
+    grid-column: 1 / span 3;
+    background-color: bisque;
+    margin: 2px 0px;
+}
+
+.gameList{
+    background-color: brown;
+    display: flex;
+    flex-wrap: wrap;
+    grid-row: 5;
+    grid-column: 1 / span 3;
+    justify-content: flex-start;
+}
+
+.gameImage{
+    display: inline;
+    background-color: black;
+    margin: 5px 5px 0px 0px;
+    width: 200px;
+    height: 250px;
 }

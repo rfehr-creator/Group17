@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Video Games</title>
+    
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="top.css" />
+    <link rel="stylesheet" href="searchResults.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Video Games</title>
     <div class="topBar">
-      <button id="homeButton" class="homeButton">Home</button>
-      <input id="searchBox" type="search" placeholder="Type here to search games"></textarea>
+      <button id="homeButton" class="homeButton" onclick="home()">Home</button>
+      <div class="searchDiv">
+        <input id="searchBox" type="search" placeholder="Type here to search games"></textarea>
+        <button id="searchButton" type="button" onclick="searchGames()"><i class="fa fa-search"></i></button>
+      </div>
       <div class="cartButtonDiv">
-        <button id="cartButton" class="cartButton"><img id="cartImage" src="/Icons/shopping-cart.png"></button>
+        <button id="cartButton" class="cartButton"><img id="cartImage" src="https://www.netclipart.com/pp/m/159-1597085_hotemall-shopping-cart-comments-shopping-cart-logo-transparent.png"></button>
         <button id="wishlistButton" class="cartButton"><div class="heart" >
           <svg viewbox="0 0 220 220">
       <path id="heartPath" d="M194.078,22.682c-10.747-8.193-22.606-12.348-35.248-12.348c-15.951,0-33.181,6.808-50.126,19.754
@@ -22,15 +30,15 @@
   </div>
 </div>
   </head>
-  <body>
-    
+  <body onload="onPageLoad()">
+    <script src="index.js"></script>
     <div id="layoutGrid" class="grid-container">
      
 
       <!-- Row 1 Game Picture-->
       <div></div>
       <div class="gamePictureContainer">
-        <img id="gamePicture" src="/Icons/shopping-cart.png" />
+        <img id="gamePicture" class="gamePicture"/>
       </div>
       <div></div>
 
@@ -56,41 +64,25 @@
       <h1 id="likedGamesDiv">Liked Games</h1>
 
       <!-- Row 4 -->
-      <div class="gameList">
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
-        <img class="gameImage" src="/Icons/shopping-cart.png" />
+      <div id="gameDiv" class="gameList">
       </div>
+    </div>
+
+    <!-- search results -->
+    <div id="searchResults">
+      <table id="searchResultTable" class="searchResults">
+        <thead>
+
+          <tr>
+            <th>Name</td>
+              <th>Description</td>
+                <th>Price</td>
+                </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+      </table>
     </div>
   </body>
 </html>

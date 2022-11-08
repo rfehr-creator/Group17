@@ -1,63 +1,12 @@
-.homeButton{
-    width: 100px;
-    height: inherit;
-    
-}
-
-#searchBox{
-    height: inherit;
-    
-}
-
-div.topBar{
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    background-color: lightcoral;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    padding: 2px;
-    width: 99.5%;
-    height: 30px;
-}
 
 
 .grid-container{
     display:  grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: auto auto auto;
     justify-content: space-evenly;
     padding: 2px;
-    width: 99.5%;
-}
-
-
-.cartButton{
-    float: right;
-    margin-left: 5px;
-    border: none;
-    background-color: transparent;
-}
-.heart{
-    height: 28px;
-    width: 28px;
-    margin:0px;
-    float: right;
-}
-
-#heartPath{
-    fill: red;
-}
-
-#cartImage{
-    width: 30px;
-    height: 30px;
-    margin: 0px;
-    float: right;
-}
-
-.cartButtonDiv{
-    height: inherit;
+    width: 99%;
+    
 }
 
 .likeDislikeDiv{
@@ -73,7 +22,7 @@ div.topBar{
     width: 50px;
     padding: 2px;
     text-align: center;
-    margin: 1% 10%;
+    margin: 1% 50px;
     color: white;
 }
 
@@ -86,15 +35,15 @@ div.topBar{
     margin: 5px 0px;
 }
 
-#gamePicture{
+.gamePicture{
     display: inline;
     border-radius: 50%;
     background-color: black;
     grid-row: 1;
     grid-column: 2;
     justify-self: center;
-    width: 50%;
-    height: 100%;
+    width: 250px;
+    height: 250px;
 }
 
 #likedGamesDiv{
@@ -116,7 +65,7 @@ div.topBar{
 .gameImage{
     display: inline;
     background-color: black;
-    margin: 5px 5px 0px 0px;
+    margin: 0px 5px 5px 0px;
     width: 200px;
     height: 250px;
 }

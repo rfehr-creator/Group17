@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="top.css" />
+    <link rel="stylesheet" href="topbar.css" />
     <link rel="stylesheet" href="searchResults.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -15,8 +14,8 @@
         <button id="searchButton" type="button" onclick="searchGames()"><i class="fa fa-search"></i></button>
       </div>
       <div class="cartButtonDiv">
-        <button id="cartButton" class="cartButton"><img id="cartImage" src="https://www.netclipart.com/pp/m/159-1597085_hotemall-shopping-cart-comments-shopping-cart-logo-transparent.png"></button>
-        <button id="wishlistButton" class="cartButton"><div class="heart" >
+        <button id="cartButton" class="cartButton" onclick="ClickedLikedList()" ><img id="cartImage" src="https://www.netclipart.com/pp/m/159-1597085_hotemall-shopping-cart-comments-shopping-cart-logo-transparent.png"></button>
+        <button id="likedListButton" class="cartButton" onclick="ClickedLikedList()"><div class="heart" >
           <svg viewbox="0 0 220 220">
       <path id="heartPath" d="M194.078,22.682c-10.747-8.193-22.606-12.348-35.248-12.348c-15.951,0-33.181,6.808-50.126,19.754
       C91.759,17.142,74.529,10.334,58.578,10.334c-12.642,0-24.501,4.155-35.248,12.348C7.606,34.671-0.24,49.8,0.006,67.648
@@ -32,21 +31,10 @@
   </head>
   <body onload="onPageLoad()">
     <script src="index.js"></script>
-    <div id="layoutGrid" class="grid-container">
-     
-
-      <!-- Row 1 Game Picture-->
-      <div></div>
-      <div class="gamePictureContainer">
-        <img id="gamePicture" class="gamePicture"/>
-      </div>
-      <div></div>
-
-      <!-- Row 2 Like & Dislike Button-->
-      <div></div>
-      <div class="likeDislikeDiv">
+    <div id="imageContainer" class="imageContainer"><img id="gamePicture" class="gamePicture"/></div>
+    <div id="imageButtons" class="likeDislikeDiv">
         <button id="likeButton" style="color: red; background-color: transparent; border: 0px; font-size: 25px; font-weight: bolder;">X</button>
-        <button id="likeButton" class="cartButton"><div class="heart" >
+        <button id="likeButton" class="cartButton" onclick="clickedLikeGame()"><div class="heart" >
           <svg viewbox="0 0 220 220">
             <path id="heartPath" d="M194.078,22.682c-10.747-8.193-22.606-12.348-35.248-12.348c-15.951,0-33.181,6.808-50.126,19.754
               C91.759,17.142,74.529,10.334,58.578,10.334c-12.642,0-24.501,4.155-35.248,12.348C7.606,34.671-0.24,49.8,0.006,67.648
@@ -56,31 +44,17 @@
               c8.073-6.156,16.872-9.277,26.152-9.277c17.563,0,34.338,10.936,45.317,20.11l4.809,4.018l4.809-4.018
               c10.979-9.174,27.754-20.11,45.317-20.11c9.28,0,18.079,3.121,26.152,9.277c11.9,9.073,17.599,19.809,17.421,32.822
               C202.107,89.145,185.311,117.356,153.833,149.017z"/></svg>
-        </div></button>
-      </div>
-      <div></div>
-
-      <!-- Row 3 Game Title-->
+        </div>
+      </button>
+    </div id="gameDiv">
       <h1 id="likedGamesDiv">Liked Games</h1>
-
-      <!-- Row 4 -->
       <div id="gameDiv" class="gameList">
-      </div>
     </div>
-
+  
     <!-- search results -->
     <div id="searchResults">
       <table id="searchResultTable" class="searchResults">
-        <thead>
-
-          <tr>
-            <th>Name</td>
-              <th>Description</td>
-                <th>Price</td>
-                </tr>
-          </thead>
-          <tbody>
-
+          <tbody id="tableBody">
           </tbody>
       </table>
     </div>

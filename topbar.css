@@ -9,13 +9,11 @@
     width: 70%;
     justify-self: center;
 }
+
 .searchDiv{
     display: flex;
     height: inherit;
     justify-content: center;
-}
-.searchButton{
-    
 }
 
 div.topBar{

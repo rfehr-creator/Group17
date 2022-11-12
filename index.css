@@ -1,35 +1,5 @@
-.imageContainer{
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-
-.likeDislikeDiv{
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    padding: 2px;
-}
-
-#likeButton{
-    height: 30px;
-    width: 50px;
-    padding: 2px;
-    text-align: center;
-    margin: .1% 50px;
-    color: white;
-}
-
-
-.gamePicture{
-    border-radius: 50%;
-    width: 250px;
-    height: 250px;
-}
-
-#likedGamesDiv{
+#likedGamesTitle{
     border-bottom: 2px solid black;
-    grid-column: 1 / span 3;
     margin: 2px 0px;
 }
 

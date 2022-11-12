@@ -1,0 +1,38 @@
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.likeDislikeDiv{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2px;
+}
+
+.likeDislikeButton{
+    background-color: transparent;
+    color: red;
+    font-size: 25px; 
+    font-weight: bolder;
+    border: 0;
+    height: 30px;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    margin: .1% 50px;
+    color: white;
+}
+
+
+.gamePicture{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+
+#dislikeButton{
+    color: red;
+    font-size: 25px;
+}

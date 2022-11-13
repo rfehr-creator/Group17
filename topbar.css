@@ -2,7 +2,7 @@ div.topBar{
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: lightcoral;
+    background-color: #282828;
     display: grid;
     grid-template-columns: 33% 33% 33%;
     padding: 2px;
@@ -28,16 +28,38 @@ div.topBar{
     width: fit-content;
     height: 100%;
 }
-
+#searchButton{
+    background-color: transparent;
+    border: 0px;
+}
+#searchButtonImage{
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
 #searchBox{
+    background: #282828;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
     height: inherit;
     width: 70%;
     justify-self: center;
+
+    
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
 }
 
 .searchDiv{
+    padding-left: 20px;
     display: flex;
     height: inherit;
+    width: inherit;
     justify-content: center;
 }
 
@@ -83,5 +105,5 @@ div.topBar{
     top: 7px;
     font-size: 12px;
     font-weight: bolder;
-    color: red;
+    color: white;
 }

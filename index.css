@@ -1,18 +1,13 @@
-#likedGamesTitle{
-    border-bottom: 2px solid black;
-    margin: 2px 0px;
-}
-
-.gameList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.gameImage{
-    display: inline;
+#htmlDoc{
     background-color: black;
-    margin: 0px 5px 5px 0px;
-    width: 200px;
-    height: 250px;
+    padding: 0px;
+}
+
+#header{
+    background-color: #282828;
+}
+
+select{
+    color: white;
+    background-color: black;
 }

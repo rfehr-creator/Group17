@@ -1,7 +1,20 @@
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid white;
+    color: white;
+}
+
+table{
+    width: 100%;
 }
 
 tr:nth-child(even){
-    background-color: #D6EEEE;
+    background-color: #282828;
+}
+
+#searchSort{
+    margin: 5px;
+}
+
+#searchSortLabel{
+    color: white;
 }

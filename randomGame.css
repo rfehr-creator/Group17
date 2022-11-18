@@ -36,3 +36,7 @@
     color: red;
     font-size: 25px;
 }
+
+#dislikeButton:hover{
+    background-color: aqua;
+}

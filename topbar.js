@@ -6,16 +6,7 @@ function home() {
     document.getElementById('gameArea').style.display = "block";
 }
 
-// hide all elements divs on main page
-function hideElements() {
-    document.getElementById('imageContainer').style.display = "none";
-    document.getElementById('imageButtons').style.display = "none";
-    document.getElementById('searchResults').style.display = "none";
-    document.getElementById('cartItems').style.display = "none";
-    document.getElementById('LikedListItems').style.display = "none";
-    document.getElementById('gameArea').style.display = "none";
-    document.getElementById('gameDetailsPage').style.display = "none";
-}
+
 
 // display liked games in gameDiv
 function updateHeart() {

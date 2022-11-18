@@ -120,6 +120,10 @@ function defaultGames() {
             "description": "Call of Duty®: Black Ops III Zombies Chronicles Edition includes the full base game plus the Zombies Chronicles content expansion.",
             "price": 59.99,
             "displayPicture": "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462",
+            "picutres":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/256785837/movie480_vp9.webm?t=1589836574",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/256672764/movie480.webm?t=1476830888"
+            ],
             "liked": false,
             "disliked": false,
             "inCart": false,
@@ -131,6 +135,9 @@ function defaultGames() {
             "description": "Existing Modern Warfare® II Digital Standard Edition owners can upgrade to the Vault Edition as part of a limited time offer. Welcome to the new era of Call of Duty®. Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141. From small-scale, high-stakes infiltration tactical ops to highly classified missions, players will deploy alongside friends in a truly immersive experience. Infinity Ward brings fans state-of-the-art gameplay, with all-new gun handling, advanced AI system, a new Gunsmith and a suite of other gameplay and graphical innovations that elevate the franchise to new heights. Modern Warfare® II launches with a globe-trotting single-player campaign, immersive Multiplayer combat and a narrative-driven, co-op Special Ops experience.",
             "price": 69.99,
             "displayPicture": "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/header.jpg?t=1668017465",
+            "picutres":[
+
+            ],
             "liked": false,
             "disliked": false,
             "inCart": false,

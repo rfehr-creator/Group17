@@ -23,7 +23,8 @@
     margin: 0px 5px 5px 0px;
     width: 200px;
     height: 250px;
-    overflow: hidden;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 #gameAreaSort{

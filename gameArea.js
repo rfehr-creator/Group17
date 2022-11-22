@@ -21,7 +21,9 @@ function addLikedGamesToGameDiv() {
 
     for (var i = 0; i < games.length; i++) {
         var dollar = "$";
+        // Check if game is free
         if (games[i].price === "Free To Play") {
+            // Remove $ from price
             dollar = "";
         }
         div.innerHTML = div.innerHTML + "<div id='" + games[i].id + "'><img style='display: block' class=gameImage src='" + games[i].displayPicture + "'" + "onclick='displayGameDetails(" + games[i].id + ")'>" +

@@ -1,3 +1,13 @@
+// elements that should be displayed and hidden for home screen
+function home() {
+    hideElements();
+    document.getElementById('imageContainer').style.display = "grid";
+    document.getElementById('imageButtons').style.display = "flex";
+    document.getElementById('gameArea').style.display = "block";
+
+    // Show main table when details page is closed
+    document.getElementById('mainDisplayTable').style.visibility = "visible";
+}
 
 
 

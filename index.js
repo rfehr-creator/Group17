@@ -72,9 +72,9 @@ function displayTrashedGames() {
 
 
     // clear search results table
-    clearTable("searchResultTable");
+    clearTable("trashResultTable");
 
-    var table = document.getElementById('searchResultTable');
+    var table = document.getElementById('trashResultTable');
 
     // add heading
     var headRow = table.insertRow(0);

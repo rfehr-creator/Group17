@@ -118,6 +118,10 @@ select {
     color: white;
 }
 
+#TrashSortLabel {
+    color: white;
+}
+
 .imageContainer {
     display: flex;
     justify-content: center;

@@ -65,7 +65,6 @@
     </button>
   </div>
 
-
   <!--game area-->
   <div id="gameArea">
     <h1 id="likedGamesTitle">Liked Games</h1>
@@ -108,6 +107,21 @@
     </table>
   </div>
 
+  <!-- disliked list results -->
+  <div id="DislikedListItems">
+    <label id="DislikedSortLabel" for="DislikedSort">Sort by:</label>
+    <select id="DislikedSort" onchange="DisplayDislikedList()">
+      <option value="sortLowestPrice">Lowest Price</option>
+      <option value="sortHighestPrice">Highest Price</option>
+      <option value="sortName">Name</option>
+    </select>
+
+    <table id="DislikedResultTable" class="DislikedResults">
+      <tbody id="DislikedTableBody">
+      </tbody>
+    </table>
+  </div>
+
   <!-- cart items -->
   <div id="cartItems">
     <label id="cartSortLabel" for="cartSort">Sort by:</label>
@@ -122,6 +136,7 @@
       </tbody>
     </table>
   </div>
+
   <!--Game Details-->
   <div id="gameDetailsPage">
     <h1 id="gameDetailsTitle" class="gameDetailsHeader"></h1>

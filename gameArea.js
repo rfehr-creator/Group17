@@ -20,8 +20,12 @@ function addLikedGamesToGameDiv() {
 
 
     for (var i = 0; i < games.length; i++) {
+        var dollar = "$";
+        if (games[i].price === "Free To Play") {
+            dollar = "";
+        }
         div.innerHTML = div.innerHTML + "<div id='" + games[i].id + "'><img style='display: block' class=gameImage src='" + games[i].displayPicture + "'" + "onclick='displayGameDetails(" + games[i].id + ")'>" +
-            "<span style=' padding: 0px display: block; margin: 10% 30%;  color: white; font-size: 20px; opacity: 1'>" + "$" + games[i].price + "</span>" + "</div>";
+            "<span style=' padding: 0px display: block; margin: 10% 30%;  color: white; font-size: 20px; opacity: 1'>" + dollar + games[i].price + "</span>" + "</div>";
 
     }
 }

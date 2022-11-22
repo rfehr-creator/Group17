@@ -47,7 +47,7 @@
 
   <!-- random game -->
   <div id="imageContainer" class="imageContainer"  onclick="clickedRandomGame()">
-    <img id="trashButton" src="https://cdn-icons-png.flaticon.com/512/5028/5028066.png">
+    <img id="trashButton" src="https://cdn-icons-png.flaticon.com/512/5028/5028066.png" onclick="clickedTrashButton()">
     <img id="gamePicture" class="gamePicture"/></div>
   <div id="imageButtons" class="likeDislikeDiv" >
     <button id="dislikeButton" class="likeDislikeButton" onclick="DislikedRandomGame()">X</button>
@@ -98,6 +98,21 @@
   <div id="LikedListItems">
     <label id="LikedSortLabel" for="LikedSort">Sort by:</label>
     <select id="LikedSort" onchange="DisplayLikedList()">
+      <option value="sortLowestPrice">Lowest Price</option>
+      <option value="sortHighestPrice">Highest Price</option>
+      <option value="sortName">Name</option>
+    </select>
+
+    <table id="LikedResultTable" class="LikedResults">
+      <tbody id="LikedTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- trashed list  -->
+  <div id="TrashedListDiv">
+    <label id="TrashSortLabel" for="trashSort">Sort by:</label>
+    <select id="trashSort" onchange="DisplayLikedList()">
       <option value="sortLowestPrice">Lowest Price</option>
       <option value="sortHighestPrice">Highest Price</option>
       <option value="sortName">Name</option>

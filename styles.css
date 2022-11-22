@@ -205,6 +205,11 @@ div.topBar {
     float: left;
 }
 
+#backIcon{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
 .backButton {
     background-color: transparent;
     width: fit-content;
@@ -215,6 +220,7 @@ div.topBar {
 
 .backImage {
     width: fit-content;
+    background-color: transparent;
     height: 100%;
 }
 

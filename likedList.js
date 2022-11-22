@@ -1,4 +1,5 @@
-function DisplayLikedList() {
+function DisplayLikedList(back) {
+    if(back == null || back == false) addHistory("likedListPage","");
     hideElements();
     document.getElementById('LikedListItems').style.display = "block";
 
@@ -34,7 +35,8 @@ function DisplayLikedList() {
     }
 }
 
-function DisplayDislikedList() {
+function DisplayDislikedList(back) {
+    if(back == null || back == false) addHistory("dislikedListPage","");
     hideElements();
     document.getElementById('DislikedListItems').style.display = "block";
 

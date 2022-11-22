@@ -1,0 +1,301 @@
+#cartSort{
+    margin: 5px;
+}
+
+#cartSortLabel{
+    color: white;
+}
+
+#gameArea {
+    position: relative;
+    background-color: #282828;
+    height: 1000px;
+    margin: 0px;
+}
+
+#likedGamesTitle {
+    border-bottom: 2px solid white;
+    color: white;
+    margin: 2px 0px;
+}
+
+.gameList {
+    background-color: #282828;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.gameImage {
+    display: inline;
+    background-color: black;
+    margin: 0px 5px 5px 0px;
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#gameAreaSort {
+    float: right;
+    position: relative;
+    bottom: 30px;
+    color: white;
+    background-color: #282828;
+}
+
+#sortLabel {
+    color: white;
+    float: right;
+    position: relative;
+    bottom: 30px;
+    margin-right: 5px;
+}
+
+#gameDetailsTitle {
+    border-bottom: 2px solid white;
+}
+
+.gameDetailsButton {
+    width: 100px;
+    height: fit-content;
+    padding: 5px;
+    float: left;
+}
+
+.gameDetailsHeader {
+    color: white;
+}
+
+#gameDetailsCartDiv {
+    display: block;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#gameDetailsGrid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.gameDetailsheart {
+    height: 28px;
+    width: 28px;
+    margin: 0px;
+    float: left;
+}
+
+#gameDetailsLikedButton {
+    float: left;
+    background-color: transparent;
+    border: 0;
+}
+
+.gameDetailsHeart {
+    width: 30px;
+    height: 30px;
+}
+
+#htmlDoc {
+    background-color: black;
+    padding: 0px;
+}
+
+#header {
+    background-color: #282828;
+}
+
+select {
+    color: white;
+    background-color: black;
+}
+
+#LikedSort {
+    margin: 5px;
+}
+
+#LikedSortLabel {
+    color: white;
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.likeDislikeDiv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 2px;
+}
+
+.likeDislikeButton {
+    background-color: transparent;
+    color: red;
+    font-size: 25px;
+    font-weight: bolder;
+    border: 0;
+    height: 30px;
+    width: 50px;
+    padding: 2px;
+    text-align: center;
+    margin: .1% 50px;
+    color: white;
+}
+
+.gamePicture {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+#dislikeButton {
+    color: red;
+    font-size: 25px;
+}
+
+#dislikeButton:hover {
+    background-color: aqua;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    color: white;
+}
+
+table {
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #282828;
+}
+
+#searchSort {
+    margin: 5px;
+}
+
+#searchSortLabel {
+    color: white;
+}
+
+div.topBar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #282828;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 2px;
+    width: 100%;
+    height: 30px;
+}
+
+.backfowardDiv {
+    background-color: transparent;
+    display: inline;
+    height: 30px;
+    width: fit-content;
+    float: left;
+}
+
+.backButton {
+    background-color: transparent;
+    width: fit-content;
+    height: 30px;
+    border: 0;
+    float: left;
+}
+
+.backImage {
+    width: fit-content;
+    height: 100%;
+}
+
+#searchButton {
+    background-color: transparent;
+    border: 0px;
+}
+
+#searchButtonImage {
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+}
+
+#searchBox {
+    background: #282828;
+    border: 2px solid #FFFFFF;
+    border-radius: 50px;
+    height: inherit;
+    width: 70%;
+    justify-self: center;
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+}
+
+.searchDiv {
+    padding-left: 20px;
+    display: flex;
+    height: inherit;
+    width: inherit;
+    justify-content: center;
+}
+
+.cartButton {
+    float: right;
+    margin-left: 5px;
+    border: none;
+    background-color: transparent;
+    height: inherit;
+    width: inherit;
+}
+
+.heart {
+    height: 28px;
+    width: 28px;
+    margin: 0px;
+    float: right;
+}
+
+.likedListImg {
+    height: inherit;
+    width: inherit;
+}
+
+#heartPath {
+    fill: red;
+}
+
+.cartButtonDiv {
+    height: inherit;
+}
+
+#cartImage {
+    width: 30px;
+    height: 30px;
+    margin: 0px;
+    float: right;
+    background-color: transparent;
+}
+
+.badge {
+    position: relative;
+    float: right;
+    right: 22px;
+    top: 7px;
+    font-size: 12px;
+    font-weight: bolder;
+    color: white;
+}

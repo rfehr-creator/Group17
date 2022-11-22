@@ -303,3 +303,23 @@ div.topBar {
     font-weight: bolder;
     color: white;
 }
+
+#trashButton {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+#mainDisplayTable {
+    border:0px;
+}
+
+#mainDisplayCol {
+    border:0px;
+    width:33%;
+}
+
+.trashPosition {
+    vertical-align: top;
+}

@@ -12,7 +12,7 @@ function onPageLoad() {
 }
 
 function clickedTrashButton(){
-
+    displayTrashedGames();
 }
 
 // game details page

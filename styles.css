@@ -118,10 +118,6 @@ select {
     color: white;
 }
 
-#TrashSortLabel {
-    color: white;
-}
-
 .imageContainer {
     display: flex;
     justify-content: center;
@@ -163,7 +159,7 @@ select {
 }
 
 #dislikeButton:hover {
-    background-color: aqua;
+    color: yellow;
 }
 
 table,

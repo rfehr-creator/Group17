@@ -300,11 +300,21 @@ div.topBar {
     color: white;
 }
 
+#heartButton{
+    justify-self: left;
+    width: 35px;
+    height: 35px;
+}
+
 #trashButton {
     padding-top: 20px;
     padding-left: 20px;
     width: 30px;
     height: 30px;
+}
+
+#DislikedSortLabel{
+    color: white;
 }
 
 #mainDisplayTable {

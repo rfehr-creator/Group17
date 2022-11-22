@@ -22,6 +22,11 @@ function displayGameDetails(gameId) {
     document.getElementById('gameDetailsMainImage').src = game.displayPicture;
 }
 
+function clickedRandomGame(){
+    var id = loadRandomGame()
+    displayGameDetails(id.id);
+}
+
 function clearTable(name) {
     var table = document.getElementById(name);
     while (table.rows.length > 0) {

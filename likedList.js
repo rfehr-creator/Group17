@@ -36,13 +36,13 @@ function DisplayLikedList() {
 
 function DisplayDislikedList() {
     hideElements();
-    document.getElementById('LikedListItems').style.display = "block";
+    document.getElementById('DislikedListItems').style.display = "block";
 
     var cartItems = getDislikedGames();
 
     // clear search results table
-    clearTable("LikedResultTable");
-    var table = document.getElementById('LikedResultTable');
+    clearTable("DislikedResultTable");
+    var table = document.getElementById('DislikedResultTable');
 
     // create header row
     var headRow = table.insertRow(0);
@@ -52,7 +52,7 @@ function DisplayDislikedList() {
 
 
     if (cartItems.length > 0) {
-        sortResults(cartItems, "LikedSort");
+        sortResults(cartItems, "DislikedSort");
     }
 
     for (let index = 0; index < cartItems.length; index++) {

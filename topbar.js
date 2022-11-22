@@ -17,7 +17,7 @@ function updateHeart() {
         heartImg.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png";
     }
     else {
-        heartImg.src = "https://cdn-icons-png.flaticon.com/128/1077/1077035.png";
+        heartImg.src = "https://img.icons8.com/neon/512/experimental-hearts-neon.png";
     }
 }
 

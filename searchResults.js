@@ -25,9 +25,9 @@ function searchGames() {
 
     // add heading
     var headRow = table.insertRow(0);
-    headRow.insertCell(0).outerHTML = "<th>Name</th>"
-    headRow.insertCell(1).outerHTML = "<th>Description</th>"
-    headRow.insertCell(2).outerHTML = "<th>Price</th>"
+    headRow.insertCell(0).outerHTML = "<th>Name</th>";
+    headRow.insertCell(1).outerHTML = "<th>Description</th>";
+    headRow.insertCell(2).outerHTML = "<th>Price</th>";
 
     // add search results to table
     for (let index = 0; index < searchResults.length; index++) {

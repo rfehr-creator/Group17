@@ -2,7 +2,7 @@
 function LikedRandomGame() {
     var randGame = loadRandomGame();
     var games = loadGames();
-    
+
     // mark random game as liked
     for (let index = 0; index < games.length; index++) {
         const element = games[index];
@@ -10,7 +10,7 @@ function LikedRandomGame() {
             element.liked = true;
         }
     }
-    
+
     storeGames(games);
     updateHeart();
 
@@ -49,13 +49,13 @@ function displayRandomGame() {
     if (games.length > 0) {
 
         var gamePicture = document.getElementById('gamePicture');
-        var rand = Math.floor(Math.random() * games.length)
+        var rand = Math.floor(Math.random() * games.length);
         gamePicture.src = games[rand].displayPicture;
-    
+
         // store current random game for later access
         storeRandomGame(games[rand]);
     }
-    else{
+    else {
         storeRandomGame("");
         var gamePicture = document.getElementById('gamePicture');
         gamePicture.src = "";

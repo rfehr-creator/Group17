@@ -1,23 +1,24 @@
-#gameArea{
+#gameArea {
     position: relative;
     background-color: #282828;
     height: 1000px;
     margin: 0px;
 }
-#likedGamesTitle{
+
+#likedGamesTitle {
     border-bottom: 2px solid white;
     color: white;
     margin: 2px 0px;
 }
 
-.gameList{
+.gameList {
     background-color: #282828;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
 }
 
-.gameImage{
+.gameImage {
     display: inline;
     background-color: black;
     margin: 0px 5px 5px 0px;
@@ -27,7 +28,7 @@
     object-position: 50% 50%;
 }
 
-#gameAreaSort{
+#gameAreaSort {
     float: right;
     position: relative;
     bottom: 30px;
@@ -35,7 +36,7 @@
     background-color: #282828;
 }
 
-#sortLabel{
+#sortLabel {
     color: white;
     float: right;
     position: relative;

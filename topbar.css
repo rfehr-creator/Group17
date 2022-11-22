@@ -1,4 +1,4 @@
-div.topBar{
+div.topBar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -10,42 +10,45 @@ div.topBar{
     height: 30px;
 }
 
-.backfowardDiv{
+.backfowardDiv {
     background-color: transparent;
     display: inline;
     height: 30px;
     width: fit-content;
     float: left;
 }
-.backButton{
+
+.backButton {
     background-color: transparent;
     width: fit-content;
     height: 30px;
     border: 0;
     float: left;
 }
-.backImage{
+
+.backImage {
     width: fit-content;
     height: 100%;
 }
-#searchButton{
+
+#searchButton {
     background-color: transparent;
     border: 0px;
 }
-#searchButtonImage{
+
+#searchButtonImage {
     background-color: transparent;
     width: 25px;
     height: 25px;
 }
-#searchBox{
+
+#searchBox {
     background: #282828;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
     height: inherit;
     width: 70%;
     justify-self: center;
-
-    
     color: #FFFFFF;
     font-family: 'Inter';
     font-style: normal;
@@ -55,7 +58,7 @@ div.topBar{
 
 }
 
-.searchDiv{
+.searchDiv {
     padding-left: 20px;
     display: flex;
     height: inherit;
@@ -63,9 +66,7 @@ div.topBar{
     justify-content: center;
 }
 
-
-
-.cartButton{
+.cartButton {
     float: right;
     margin-left: 5px;
     border: none;
@@ -73,24 +74,28 @@ div.topBar{
     height: inherit;
     width: inherit;
 }
-.heart{
+
+.heart {
     height: 28px;
     width: 28px;
-    margin:0px;
+    margin: 0px;
     float: right;
 }
 
-.likedListImg{
+.likedListImg {
     height: inherit;
     width: inherit;
 }
-#heartPath{
+
+#heartPath {
     fill: red;
 }
-.cartButtonDiv{
+
+.cartButtonDiv {
     height: inherit;
 }
-#cartImage{
+
+#cartImage {
     width: 30px;
     height: 30px;
     margin: 0px;
@@ -98,7 +103,7 @@ div.topBar{
     background-color: transparent;
 }
 
-.badge{
+.badge {
     position: relative;
     float: right;
     right: 22px;

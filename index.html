@@ -1,136 +1,145 @@
 <!DOCTYPE html>
 <html id="htmlDoc">
-  <head id="header">
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="topbar.css" />
-    <link rel="stylesheet" href="searchResults.css" />
-    <link rel="stylesheet" href="gameDetails.css" />
-    <link rel="stylesheet" href="randomGame.css" />
-    <link rel="stylesheet" href="gameArea.css" />
-    <link rel="stylesheet" href="likedList.css" />
-    <link rel="stylesheet" href="cartItems.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Video Games</title>
-    <div class="topBar">
-      <div class="backfowardDiv">
-        <button id="backButton" class="backButton" onclick="home()"><img class="backImage" src="https://cdn-icons-png.flaticon.com/512/271/271220.png"></button>
-        <button id="forwardButton" class="backButton" onclick=""><img class="backImage" src="https://cdn-icons-png.flaticon.com/512/271/271228.png"></button>
-      </div>
-      <div class="searchDiv">
-        <input id="searchBox" type="search" placeholder="Type here to search games"></textarea>
-        <button id="searchButton" type="button" onclick="searchGames()"><img id="searchButtonImage" src="https://cdn-icons-png.flaticon.com/512/6338/6338475.png"  onclick="searchGames()"></i></button>
-      </div>
-      <div class="cartButtonDiv">
-        <span id="cartBadge" class="badge" onclick="DisplayCartItems()" >0</span>
-        <button id="cartButton" class="cartButton" onclick="DisplayCartItems()" ><img id="cartImage" src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png"></button>
-        <button onclick="DisplayLikedList()" class="cartButton"><img id="likedListImg" class="cartButton" src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"></button>
+<head id="header">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="topbar.css" />
+  <link rel="stylesheet" href="searchResults.css" />
+  <link rel="stylesheet" href="gameDetails.css" />
+  <link rel="stylesheet" href="randomGame.css" />
+  <link rel="stylesheet" href="gameArea.css" />
+  <link rel="stylesheet" href="likedList.css" />
+  <link rel="stylesheet" href="cartItems.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Video Games</title>
+  <div class="topBar">
+    <div class="backfowardDiv">
+      <button id="backButton" class="backButton" onclick="home()"><img class="backImage"
+          src="https://cdn-icons-png.flaticon.com/512/271/271220.png"></button>
+      <button id="forwardButton" class="backButton" onclick=""><img class="backImage"
+          src="https://cdn-icons-png.flaticon.com/512/271/271228.png"></button>
+    </div>
+    <div class="searchDiv">
+      <input id="searchBox" type="search" placeholder="Type here to search games"></textarea>
+      <button id="searchButton" type="button" onclick="searchGames()"><img id="searchButtonImage"
+          src="https://cdn-icons-png.flaticon.com/512/6338/6338475.png" onclick="searchGames()"></i></button>
+    </div>
+    <div class="cartButtonDiv">
+      <span id="cartBadge" class="badge" onclick="DisplayCartItems()">0</span>
+      <button id="cartButton" class="cartButton" onclick="DisplayCartItems()"><img id="cartImage"
+          src="https://cdn-icons-png.flaticon.com/128/3514/3514491.png"></button>
+      <button onclick="DisplayLikedList()" class="cartButton"><img id="likedListImg" class="cartButton"
+          src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"></button>
+    </div>
   </div>
-</div>
-  </head>
-  <body onload="onPageLoad()">
-    <script src="game.js"></script>
-    <script src="index.js"></script>
-    <script src="gameArea.js"></script>
-    <script src="topbar.js"></script>
-    <script src="cartItems.js"></script>
-    <script src="likedList.js"></script>
-    <script src="searchResults.js"></script>
-    <script src="randomGame.js"></script>
+</head>
 
-    <!-- random game -->
-    <div id="imageContainer" class="imageContainer"><img id="gamePicture" class="gamePicture" /></div>
-    <div id="imageButtons" class="likeDislikeDiv">
-        <button id="dislikeButton" class="likeDislikeButton" onclick="DislikedRandomGame()">X</button>
-        <button id="likeButton" class="likeDislikeButton" onclick="LikedRandomGame()">
-          <div class="heart" >
-          <svg viewbox="0 0 220 220">
-            <path id="heartPath" d="M194.078,22.682c-10.747-8.193-22.606-12.348-35.248-12.348c-15.951,0-33.181,6.808-50.126,19.754
+<body onload="onPageLoad()">
+  <script src="game.js"></script>
+  <script src="index.js"></script>
+  <script src="gameArea.js"></script>
+  <script src="topbar.js"></script>
+  <script src="cartItems.js"></script>
+  <script src="likedList.js"></script>
+  <script src="searchResults.js"></script>
+  <script src="randomGame.js"></script>
+
+  <!-- random game -->
+  <div id="imageContainer" class="imageContainer"><img id="gamePicture" class="gamePicture" /></div>
+  <div id="imageButtons" class="likeDislikeDiv">
+    <button id="dislikeButton" class="likeDislikeButton" onclick="DislikedRandomGame()">X</button>
+    <button id="likeButton" class="likeDislikeButton" onclick="LikedRandomGame()">
+      <div class="heart">
+        <svg viewbox="0 0 220 220">
+          <path id="heartPath" d="M194.078,22.682c-10.747-8.193-22.606-12.348-35.248-12.348c-15.951,0-33.181,6.808-50.126,19.754
               C91.759,17.142,74.529,10.334,58.578,10.334c-12.642,0-24.501,4.155-35.248,12.348C7.606,34.671-0.24,49.8,0.006,67.648
               c0.846,61.117,100.093,133.233,104.317,136.273l4.381,3.153l4.381-3.153c4.225-3.04,103.472-75.156,104.317-136.273
               C217.648,49.8,209.802,34.671,194.078,22.682z M153.833,149.017c-18.374,18.48-36.915,33.188-45.129,39.453
               c-8.214-6.265-26.755-20.972-45.129-39.453c-31.479-31.661-48.274-59.873-48.57-81.585c-0.178-13.013,5.521-23.749,17.421-32.822
               c8.073-6.156,16.872-9.277,26.152-9.277c17.563,0,34.338,10.936,45.317,20.11l4.809,4.018l4.809-4.018
               c10.979-9.174,27.754-20.11,45.317-20.11c9.28,0,18.079,3.121,26.152,9.277c11.9,9.073,17.599,19.809,17.421,32.822
-              C202.107,89.145,185.311,117.356,153.833,149.017z"/></svg>
-        </div>
-      </button>
-    </div>
-
-
-    <!--game area-->
-    <div id="gameArea">
-      <h1 id="likedGamesTitle">Liked Games</h1>
-      <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
-        <option value="sortLowestPrice">Lowest Price</option>
-        <option value="sortHighestPrice">Highest Price</option>
-        <option value="sortName">Name</option>
-      </select>
-      <label id="sortLabel" for="gameAreaSort">Sort by:</label>
-      <div id="gameDiv" class="gameList"></div>
-    </div>
-  
-    <!-- search results -->
-    <div id="searchResults">
-      <label id="searchSortLabel" for="searchSort">Sort by:</label>
-      <select id="searchSort" onchange="searchGames()">
-        <option value="sortLowestPrice">Lowest Price</option>
-        <option value="sortHighestPrice">Highest Price</option>
-        <option value="sortName">Name</option>
-      </select>
-
-      <table id="searchResultTable" class="searchResults">
-          <tbody id="tableBody">
-          </tbody>
-      </table>
-    </div>
-
-      <!-- liked list results -->
-      <div id="LikedListItems">
-        <label id="LikedSortLabel" for="LikedSort">Sort by:</label>
-        <select id="LikedSort" onchange="DisplayLikedList()">
-          <option value="sortLowestPrice">Lowest Price</option>
-          <option value="sortHighestPrice">Highest Price</option>
-          <option value="sortName">Name</option>
-        </select>
-        
-        <table id="LikedResultTable" class="LikedResults">
-            <tbody id="LikedTableBody">
-            </tbody>
-        </table>
+              C202.107,89.145,185.311,117.356,153.833,149.017z" />
+        </svg>
       </div>
+    </button>
+  </div>
 
- <!-- cart items -->
- <div id="cartItems">
-  <label id="cartSortLabel" for="cartSort">Sort by:</label>
-  <select id="cartSort" onchange="DisplayCartItems()">
-    <option value="sortLowestPrice">Lowest Price</option>
-    <option value="sortHighestPrice">Highest Price</option>
-    <option value="sortName">Name</option>
-  </select>
-  
-  <table id="cartItemsTable" class="cartResults">
+
+  <!--game area-->
+  <div id="gameArea">
+    <h1 id="likedGamesTitle">Liked Games</h1>
+    <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
+      <option value="sortLowestPrice">Lowest Price</option>
+      <option value="sortHighestPrice">Highest Price</option>
+      <option value="sortName">Name</option>
+    </select>
+    <label id="sortLabel" for="gameAreaSort">Sort by:</label>
+    <div id="gameDiv" class="gameList"></div>
+  </div>
+
+  <!-- search results -->
+  <div id="searchResults">
+    <label id="searchSortLabel" for="searchSort">Sort by:</label>
+    <select id="searchSort" onchange="searchGames()">
+      <option value="sortLowestPrice">Lowest Price</option>
+      <option value="sortHighestPrice">Highest Price</option>
+      <option value="sortName">Name</option>
+    </select>
+
+    <table id="searchResultTable" class="searchResults">
+      <tbody id="tableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- liked list results -->
+  <div id="LikedListItems">
+    <label id="LikedSortLabel" for="LikedSort">Sort by:</label>
+    <select id="LikedSort" onchange="DisplayLikedList()">
+      <option value="sortLowestPrice">Lowest Price</option>
+      <option value="sortHighestPrice">Highest Price</option>
+      <option value="sortName">Name</option>
+    </select>
+
+    <table id="LikedResultTable" class="LikedResults">
+      <tbody id="LikedTableBody">
+      </tbody>
+    </table>
+  </div>
+
+  <!-- cart items -->
+  <div id="cartItems">
+    <label id="cartSortLabel" for="cartSort">Sort by:</label>
+    <select id="cartSort" onchange="DisplayCartItems()">
+      <option value="sortLowestPrice">Lowest Price</option>
+      <option value="sortHighestPrice">Highest Price</option>
+      <option value="sortName">Name</option>
+    </select>
+
+    <table id="cartItemsTable" class="cartResults">
       <tbody id="cartTableBody">
       </tbody>
-  </table>
-</div>
-    <!--Game Details-->
-    <div id="gameDetailsPage">
-      <h1 id="gameDetailsTitle" class="gameDetailsHeader"></h1>
-      <div id="gameDetailsGrid">
+    </table>
+  </div>
+  <!--Game Details-->
+  <div id="gameDetailsPage">
+    <h1 id="gameDetailsTitle" class="gameDetailsHeader"></h1>
+    <div id="gameDetailsGrid">
 
-        <div id="gameDetailsImagesDiv">
-          <img id="gameDetailsMainImage"> 
-        </div>
-        <div id="gameDetailsCartDiv">
-          <h1 id="gameDetailsTitle2" class="gameDetailsHeader"></h1>
-          <button id="gameDetailsLikedButton"  onclick="addGameToLikedList()"> 
-            <img class="gameDetailsHeart" src="https://cdn-icons-png.flaticon.com/128/833/833472.png">
-            </button>
-          <button id="gameDetailsAddCartButton" class="gameDetailsButton" onclick="addGameToCart()">Add to Cart</button>
-          <button  class="gameDetailsButton">Buy Now</button>
-        </div>
+      <div id="gameDetailsImagesDiv">
+        <img id="gameDetailsMainImage">
+      </div>
+      <div id="gameDetailsCartDiv">
+        <h1 id="gameDetailsTitle2" class="gameDetailsHeader"></h1>
+        <button id="gameDetailsLikedButton" onclick="addGameToLikedList()">
+          <img class="gameDetailsHeart" src="https://cdn-icons-png.flaticon.com/128/833/833472.png">
+        </button>
+        <button id="gameDetailsAddCartButton" class="gameDetailsButton" onclick="addGameToCart()">Add to Cart</button>
+        <button class="gameDetailsButton">Buy Now</button>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

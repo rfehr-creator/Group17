@@ -12,15 +12,15 @@ function home() {
 function updateHeart() {
     var heartImg = document.getElementById('likedListImg');
     if (getLikedGames().length > 0) {
-        heartImg.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png"
+        heartImg.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png";
     }
     else {
-        heartImg.src = "https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
+        heartImg.src = "https://cdn-icons-png.flaticon.com/128/1077/1077035.png";
     }
 }
 
 
-function sortResults(games,element) {
+function sortResults(games, element) {
     var sort = document.getElementById(element);
 
     if (sort.options[sort.selectedIndex].value === "sortLowestPrice") {

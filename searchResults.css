@@ -1,20 +1,22 @@
-table, th, td {
+table,
+th,
+td {
     border: 1px solid white;
     color: white;
 }
 
-table{
+table {
     width: 100%;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #282828;
 }
 
-#searchSort{
+#searchSort {
     margin: 5px;
 }
 
-#searchSortLabel{
+#searchSortLabel {
     color: white;
 }

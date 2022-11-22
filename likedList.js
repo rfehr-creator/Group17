@@ -10,13 +10,13 @@ function DisplayLikedList() {
 
     // create header row
     var headRow = table.insertRow(0);
-    headRow.insertCell(0).outerHTML = "<th>Name</th>"
-    headRow.insertCell(1).outerHTML = "<th>Description</th>"
-    headRow.insertCell(2).outerHTML = "<th>Price</th>"
+    headRow.insertCell(0).outerHTML = "<th>Name</th>";
+    headRow.insertCell(1).outerHTML = "<th>Description</th>";
+    headRow.insertCell(2).outerHTML = "<th>Price</th>";
 
 
-    if(cartItems.length > 0){
-        sortResults(cartItems,"LikedSort");
+    if (cartItems.length > 0) {
+        sortResults(cartItems, "LikedSort");
     }
 
     for (let index = 0; index < cartItems.length; index++) {

@@ -43,4 +43,5 @@ function hideElements() {
     document.getElementById('LikedListItems').style.display = "none";
     document.getElementById('gameArea').style.display = "none";
     document.getElementById('gameDetailsPage').style.display = "none";
+    document.getElementById('DislikedListItems').style.display = "none";
 }

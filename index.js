@@ -1,8 +1,7 @@
 // initial page load
 function onPageLoad() {
     hideElements();
-    document.getElementById('imageContainer').style.display = "grid";
-    document.getElementById('imageButtons').style.display = "flex";
+    document.getElementById('mainDisplayTable').style.display = "table";
     document.getElementById('gameArea').style.display = "block";
     var data = defaultGames();
     storeGames(data);
@@ -20,9 +19,6 @@ function displayGameDetails(gameId) {
     document.getElementById('gameDetailsTitle').innerHTML = game.name;
     document.getElementById('gameDetailsTitle2').innerHTML = game.name;
     document.getElementById('gameDetailsMainImage').src = game.displayPicture;
-
-    // Hide main table when details page is open
-    document.getElementById('mainDisplayTable').style.visibility = "hidden";
 }
 
 function clickedRandomGame(){
@@ -39,8 +35,7 @@ function clearTable(name) {
 
 // hide all elements divs on main page
 function hideElements() {
-    document.getElementById('imageContainer').style.display = "none";
-    document.getElementById('imageButtons').style.display = "none";
+    document.getElementById('mainDisplayTable').style.display = "none";
     document.getElementById('searchResults').style.display = "none";
     document.getElementById('cartItems').style.display = "none";
     document.getElementById('LikedListItems').style.display = "none";

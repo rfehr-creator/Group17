@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #cartSort{
     margin: 5px;
 }
@@ -180,6 +184,7 @@ select {
     text-align: center;
     margin: .1% 50px;
     color: white;
+    transition: 0.3s;
 }
 
 #dislikeButton {
@@ -265,6 +270,7 @@ div.topBar {
 }
 
 #searchBox {
+    font-family: Arial, Helvetica, sans-serif;
     background: #282828;
     border: 2px solid #FFFFFF;
     border-radius: 50px;
@@ -272,12 +278,6 @@ div.topBar {
     width: 70%;
     justify-self: center;
     color: #FFFFFF;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-
 }
 
 .searchDiv {

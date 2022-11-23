@@ -31,13 +31,15 @@ body {
 }
 
 .gameImage {
-    display: inline;
-    background-color: black;
     margin: 0px 5px 5px 0px;
     width: 200px;
     height: 250px;
     object-fit: cover;
     object-position: 50% 50%;
+    display: block;
+    opacity: 1;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
 }
 
 #gameAreaSort {
@@ -165,6 +167,27 @@ select {
     font-size: 20px;
 }
 
+.likedGamesText {
+    padding: 0px;
+    display: block;
+    margin: 10% 30%;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+}
+
+.likedGameContainer {
+    position: relative;
+}
+
+.likedGameContainer:hover .gameImage {
+    opacity: 0.3;
+}
+  
+.likedGameContainer:hover .gameDetailsMiddle {
+    opacity: 1;
+}
+
 .likeDislikeDiv {
     display: flex;
     flex-wrap: nowrap;
@@ -184,7 +207,7 @@ select {
     text-align: center;
     margin: .1% 50px;
     color: white;
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 
 #dislikeButton {
@@ -313,12 +336,12 @@ div.topBar {
     fill:black;
     stroke: red;
     stroke-width: 15px;
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 
 #heartPath:hover {
     fill: red;
-    transition: 0.3s;
+    transition: 0.5s ease;
 }
 
 .cartButtonDiv {

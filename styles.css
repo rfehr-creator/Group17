@@ -170,10 +170,10 @@ select {
 .likedGamesText {
     padding: 0px;
     display: block;
-    margin: 10% 30%;
     color: white;
     font-size: 20px;
     opacity: 1;
+    text-align: center;
 }
 
 .likedGameContainer {

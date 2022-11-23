@@ -281,7 +281,15 @@ div.topBar {
 }
 
 #heartPath {
+    fill:black;
+    stroke: red;
+    stroke-width: 15px;
+    transition: 0.3s;
+}
+
+#heartPath:hover {
     fill: red;
+    transition: 0.3s;
 }
 
 .cartButtonDiv {

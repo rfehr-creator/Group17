@@ -9,6 +9,15 @@ function onPageLoad() {
     addLikedGamesToGameDiv();
     updateHeart();
 
+    // add event listener for search box
+    var search = document.getElementById("searchBox");
+    search.addEventListener("keypress",function(event){
+        if(event.key === "Enter"){
+            event.preventDefault();
+            document.getElementById("searchButton").click();
+        }
+    });
+    updateBackButton()
     localStorage.setItem('history', null);
     addHistory("home", "");
 }
@@ -49,6 +58,7 @@ function hideElements() {
 }
 
 function backButtonClick() {
+    
     var history = getHistory();
     if (history.length > 1) {
         popHistory();
@@ -96,6 +106,7 @@ function addHistory(page, id) {
     }
 
     localStorage.setItem('history', JSON.stringify(history));
+    updateBackButton();
 }
 
 function getHistory() {
@@ -106,4 +117,5 @@ function popHistory() {
     var history = getHistory();
     history.pop();
     localStorage.setItem('history', JSON.stringify(history));
+    updateBackButton();
 }

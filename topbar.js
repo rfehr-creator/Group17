@@ -8,7 +8,19 @@ function home() {
     document.getElementById('mainDisplayTable').style.visibility = "visible";
 }
 
-
+// update back button
+function updateBackButton(){
+    var len = getHistory().length;
+    var backButton = document.getElementsByClassName("backImage");
+    for (let i = 0; i < backButton.length; i++) {
+        if(len <= 1){
+            backButton[i].style.opacity = 0.4;
+        }
+        else{
+            backButton[i].style.opacity = 1;
+        }
+    }
+}
 
 // display liked games in gameDiv
 function updateHeart() {

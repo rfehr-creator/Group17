@@ -34,7 +34,7 @@ function addLikedGamesToGameDiv() {
                         "<div class='gameDetailsText'>Click for details</div>" +
                     "</div>" +
                 "</div>" +
-                "<text class='likedGamesText'>" + dollar + games[i].price + "</text>" +
+                "<text class='likedGamesText'>" + dollar + (games[i].price == 0.00 ? "Free" : games[i].price ) + "</text>" +
             "</div>";
 
     }

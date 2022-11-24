@@ -79,14 +79,22 @@
 
   <!--game area-->
   <div id="gameArea">
-    <h2 id="likedGamesTitle">Liked Games</h2>
-    <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
-      <option value="sortLowestPrice">Lowest Price</option>
-      <option value="sortHighestPrice">Highest Price</option>
-      <option value="sortName">Name</option>
-    </select>
-    <label id="sortLabel" for="gameAreaSort">Sort by:</label>
-    <div id="gameDiv" class="gameList"></div>
+    <table>
+      <tr>
+        <td><h2 id="likedGamesTitle">Liked Games</h2></td>
+        <td> <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
+          <option value="sortLowestPrice">Lowest Price</option>
+          <option value="sortHighestPrice">Highest Price</option>
+          <option value="sortName">Name</option>
+        </select>
+        <label id="sortLabel" for="gameAreaSort">Sort by:</label>
+      </td>
+      </tr>
+    </table>
+    
+    <div id="gameDivWrapper">
+      <div id="gameDiv" class="gameList"></div>
+  </div>
   </div>
 
   <!-- search results -->

@@ -34,10 +34,10 @@ function addLikedGamesToGameDiv() {
                 "<div class='likedGameContainer'>" +
                     "<img class='gameImage' src='" + games[i].displayPicture + "'" + "onclick='displayGameDetails(" + games[i].id + ")'>" +
                     "<div class='gameDetailsMiddle'>" + 
-                        "<div class='gameDetailsText'>Click for details</div>" +
+                        "<div class='gameDetailsText' onclick='displayGameDetails(" + games[i].id + ")'>Click for details</div>" +
                     "</div>" +
                 "</div>" +
-                "<text class='likedGamesText'>" + dollar + "</text>" +
+                "<text class='likedGamesText'>" + dollar + "</text><br>" +
             "</div>";
     }
 }

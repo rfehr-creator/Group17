@@ -78,6 +78,10 @@ function backButtonClick() {
             DisplayCartItems(true);
             break;
 
+        case "searchPage":
+            searchGames(true);
+            break;
+
         default:
             break;
     }

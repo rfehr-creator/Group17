@@ -22,10 +22,13 @@ function addLikedGamesToGameDiv() {
     for (var i = 0; i < games.length; i++) {
         var dollar = "$";
         // Check if game is free
-        if (games[i].price === "Free To Play") {
+        if (games[i].price === 0.00) {
             // Remove $ from price
-            dollar = "";
+            dollar = "Free";
+        }else{
+            dollar = "$"+games[i].price;
         }
+
         div.innerHTML = div.innerHTML +
             "<div id='" + games[i].id + "'>" + 
                 "<div class='likedGameContainer'>" +
@@ -34,7 +37,7 @@ function addLikedGamesToGameDiv() {
                         "<div class='gameDetailsText'>Click for details</div>" +
                     "</div>" +
                 "</div>" +
-                "<text class='likedGamesText'>" + dollar + (games[i].price == 0.00 ? "Free" : games[i].price ) + "</text>" +
+                "<text class='likedGamesText'>" + dollar + "</text>" +
             "</div>";
 
     }

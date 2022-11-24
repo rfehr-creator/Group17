@@ -416,22 +416,22 @@ tr:nth-child(even) {
 /* SCROLL BAR */
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 10px;
   }
   
   /* Track */
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+    box-shadow: inset 0 0 5px 6a6a6a; 
     border-radius: 10px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: black; 
+    background: #6a6a6a; 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: #888888; 
   }

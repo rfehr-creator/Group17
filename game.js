@@ -146,7 +146,7 @@ function defaultGames() {
             "id": 3,
             "name": "Counter-Strike: Global Offensive",
             "description": "Counter-Strike: Global Offensive (CS: GO) expands upon the team-based action gameplay that it pioneered when it was launched 19 years ago. CS: GO features new maps, characters, weapons, and game modes, and delivers updated versions of the classic CS content (de_dust2, etc.).",
-            "price": "Free To Play",
+            "price": "0.00",
             "displayPicture": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg?t=1668125812",
             "pictures": [
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/81958/movie480.webm?t=1554409259" //trailer
@@ -245,7 +245,7 @@ function defaultGames() {
             "id": 10,
             "name": "Lost Ark",
             "description": "Embark on an odyssey for the Lost Ark in a vast, vibrant world: explore new lands, seek out lost treasures, and test yourself in thrilling action combat in this action-packed free-to-play RPG.",
-            "price": "Free To Play",
+            "price": "0.00",
             "displayPicture": "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/header.jpg?t=1668553287",
             "pictures": [
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256916251/movie480_vp9.webm?t=1668553272" // trailer

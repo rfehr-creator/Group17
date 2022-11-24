@@ -9,8 +9,9 @@
   <div class="topBar">
     <div class="backfowardDiv">
       <button id="backButton" class="backButton" onclick="backButtonClick()">
-        <img id="backButtonImage" class="backImage" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fwhite%2Farrow-121-xxl.png&f=1&nofb=1&ipt=cc789aef827e641b52707f6d91740ae6f8d734a086adfded0a743d4f3a77e429&ipo=images">
-        </button>
+        <img id="backButtonImage" class="backImage"
+          src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconsdb.com%2Ficons%2Fpreview%2Fwhite%2Farrow-121-xxl.png&f=1&nofb=1&ipt=cc789aef827e641b52707f6d91740ae6f8d734a086adfded0a743d4f3a77e429&ipo=images">
+      </button>
     </div>
     <div class="searchDiv">
       <input id="searchBox" type="search" placeholder="   Type here to search games"></textarea>
@@ -42,17 +43,18 @@
     <tr>
       <!-- Prevents details page from opening when clicked-->
       <td id="mainDisplayCol" class="trashPosition">
-        <img id="trashButton" src="https://cdn-icons-png.flaticon.com/512/5028/5028066.png" onclick="DisplayDislikedList()">
+        <img id="trashButton" src="https://cdn-icons-png.flaticon.com/512/5028/5028066.png"
+          onclick="DisplayDislikedList()">
       </td>
       <td id="mainDisplayCol">
         <!-- random game -->
-        <div id="imageContainer" class="imageContainer"  onclick="clickedRandomGame()">
-          <img id="gamePicture" class="gamePicture"/>
+        <div id="imageContainer" class="imageContainer" onclick="clickedRandomGame()">
+          <img id="gamePicture" class="gamePicture" />
           <div class="gameDetailsMiddle">
             <div class="gameDetailsText">Click for details</div>
           </div>
         </div>
-        <div id="imageButtons" class="likeDislikeDiv" >
+        <div id="imageButtons" class="likeDislikeDiv">
           <button id="dislikeButton" class="likeDislikeButton" onclick="DislikedRandomGame()">X</button>
           <button id="likeButton" class="likeDislikeButton" onclick="LikedRandomGame()">
             <div class="heart">
@@ -65,7 +67,7 @@
                                         Q120 10 110 50
                                         Q100 10 60 10
                                         Q30 10 20 30
-                                        Q0 70 30 100Z"/>
+                                        Q0 70 30 100Z" />
               </svg>
             </div>
           </button>
@@ -79,22 +81,25 @@
 
   <!--game area-->
   <div id="gameArea">
-    <table>
+    <table class="gameAreaTable">
       <tr>
-        <td><h2 id="likedGamesTitle">Liked Games</h2></td>
-        <td> <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
-          <option value="sortLowestPrice">Lowest Price</option>
-          <option value="sortHighestPrice">Highest Price</option>
-          <option value="sortName">Name</option>
-        </select>
-        <label id="sortLabel" for="gameAreaSort">Sort by:</label>
-      </td>
+        <td class="gameAreaTableCell">
+          <h2 id="likedGamesTitle">Liked Games</h2>
+        </td>
+        <td class="gameAreaTableCell">
+          <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
+            <option value="sortLowestPrice">Lowest Price</option>
+            <option value="sortHighestPrice">Highest Price</option>
+            <option value="sortName">Name</option>
+          </select>
+          <label id="sortLabel" for="gameAreaSort">Sort by:</label>
+        </td>
       </tr>
     </table>
-    
+    <br>
     <div id="gameDivWrapper">
       <div id="gameDiv" class="gameList"></div>
-  </div>
+    </div>
   </div>
 
   <!-- search results -->
@@ -209,7 +214,8 @@
             <td id="cartPriceAfterTax">CA$ 118.78</td>
           </tr>
           <tr>
-            <td><button>Check Out</button></td></tr>
+            <td><button>Check Out</button></td>
+          </tr>
         </table>
       </div>
     </div>

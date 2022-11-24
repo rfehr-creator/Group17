@@ -18,7 +18,8 @@ function searchGames(back) {
             // add game if tags match
             for (let tagIndex = 0; tagIndex < game.tags.length; tagIndex++) {
                 const tag = game.tags[tagIndex];
-                if(tag.name.toLowerCase().includes(keyword)){
+                
+                if(tag.toLowerCase().includes(keyword)){
                     searchResults.push(game);
                 }
             }

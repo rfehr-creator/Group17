@@ -7,11 +7,16 @@ body {
 }
 
 #cartSort {
-    margin: 5px;
+    float: right;
+    position: relative;
+    color: white;
+    background-color: #282828;
+    border-radius: 5px;
 }
 
 #cartSortLabel {
     color: white;
+    float: right;
 }
 
 #gameArea {
@@ -70,7 +75,7 @@ body {
     position: relative;
     color: white;
     background-color: #282828;
-
+    border-radius: 5px;
 }
 
 #sortLabel {

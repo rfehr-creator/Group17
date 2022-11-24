@@ -161,13 +161,21 @@
 
   <!-- cart items -->
   <div id="cartItems">
-    <div style="color: white;">Cart List (2 items)</div>
-    <label id="cartSortLabel" for="cartSort">Sort by:</label>
-    <select id="cartSort" onchange="DisplayCartItems()">
-      <option value="sortLowestPrice">Lowest Price</option>
-      <option value="sortHighestPrice">Highest Price</option>
-      <option value="sortName">Name</option>
-    </select>
+    <table class="gameAreaTable">
+      <tr>
+        <td class="gameAreaTableCell">
+          <div style="color: white;">Cart List (2 items)</div>
+        </td>
+        <td class="gameAreaTableCell">
+          <select id="cartSort" onchange="DisplayCartItems()">
+            <option value="sortLowestPrice">Lowest Price</option>
+            <option value="sortHighestPrice">Highest Price</option>
+            <option value="sortName">Name</option>
+          </select>
+          <label id="cartSortLabel" for="cartSort">Sort by:</label>
+        </td>
+      </tr>
+    </table>
 
     <div id="cartBody">
       <!--Cart Items List-->

@@ -1,4 +1,5 @@
 function DisplayCartItems(back) {
+    document.getElementById('searchBox').value = "";
     if(back == null || back == false) addHistory("cartPage","");
     hideElements();
     document.getElementById('cartItems').style.display = "block";

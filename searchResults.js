@@ -1,7 +1,7 @@
 function searchGames(back) {
     var keyword = document.getElementById('searchBox').value.toLowerCase();
     if(keyword != null && keyword != ""){
-        //if(back == null || back == false) addHistory("searchPage","");
+        if(back == null || back == false) addHistory("searchPage",keyword);
         hideElements();
         document.getElementById('searchResults').style.display = "block";
         

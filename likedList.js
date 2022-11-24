@@ -1,4 +1,5 @@
 function DisplayLikedList(back) {
+    document.getElementById('searchBox').value = "";
     if(back == null || back == false) addHistory("likedListPage","");
     hideElements();
     document.getElementById('LikedListItems').style.display = "block";

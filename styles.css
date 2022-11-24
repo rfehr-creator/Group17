@@ -401,3 +401,8 @@ tr:nth-child(even) {
 .trashPosition {
     vertical-align: top;
 }
+
+#cartBody{
+    display: grid;
+    grid-template-columns: 70% auto;
+}

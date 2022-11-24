@@ -112,7 +112,19 @@
       <option value="sortHighestPrice">Highest Price</option>
       <option value="sortName">Name</option>
     </select>
-
+    <div style="color: white;">Liked List (3 items)</div>
+    <div>
+      <div style="color: white;">1.</div>
+      <div><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302"></div>
+      <div>
+        <div style="color: white;">FINAL FANTASY XIV Online</div>
+        <div style="color: white;">$24.99</div>
+      </div>
+      <div>
+        <button>Remove From List</button>
+        <button>Add to Cart</button>
+      </div>
+    </div>
     <table id="LikedResultTable" class="LikedResults">
       <tbody id="LikedTableBody">
       </tbody>
@@ -136,6 +148,7 @@
 
   <!-- cart items -->
   <div id="cartItems">
+    <div style="color: white;">Cart List (2 items)</div>
     <label id="cartSortLabel" for="cartSort">Sort by:</label>
     <select id="cartSort" onchange="DisplayCartItems()">
       <option value="sortLowestPrice">Lowest Price</option>
@@ -143,10 +156,55 @@
       <option value="sortName">Name</option>
     </select>
 
-    <table id="cartItemsTable" class="cartResults">
-      <tbody id="cartTableBody">
-      </tbody>
-    </table>
+    <div id="cartBody">
+      <!--Cart Items List-->
+      <div id="cartItemsList">
+        <div>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+          <div>
+            <div style="color: white;">FINAL FANTASY XIV Online</div>
+            <div style="color: white;">$24.99</div>
+          </div>
+          <div>
+            <button>Remove From Cart</button>
+            <button>Add to Liked List</button>
+          </div>
+        </div>
+        <div>
+          <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+          <div>
+            <span style="color: white;">FINAL FANTASY XIV Online</span>
+            <span style="color: white;">$24.99</span>
+          </div>
+          <div>
+            <button>Remove From Cart</button>
+            <button>Add to Liked List</button>
+          </div>
+        </div>
+      </div>
+      <!--Order Summary-->
+      <div id="cartOderSummary">
+        <table>
+          <tr>
+            <td>Order Summary</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td id="cartPriceBeforeTax">CA$ 115.89</td>
+          </tr>
+          <tr>
+            <td>Tax</td>
+            <td id="cartTax">CA$ 2.89</td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td id="cartPriceAfterTax">CA$ 118.78</td>
+          </tr>
+          <tr>
+            <td><button>Check Out</button></td></tr>
+        </table>
+      </div>
+    </div>
   </div>
 
   <!--Game Details-->

@@ -39,6 +39,5 @@ function addLikedGamesToGameDiv() {
                 "</div>" +
                 "<text class='likedGamesText'>" + dollar + "</text>" +
             "</div>";
-
     }
 }

@@ -64,19 +64,14 @@ body {
     float: left;
 }
 
-.gameDetailsHeader {
-    color: white;
-}
-
 #gameDetailsCartDiv {
     display: block;
-    border: 1px solid white;
-    padding: 5px;
+    padding: 20px;
 }
 
 #gameDetailsGrid {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% auto;
 }
 
 .gameDetailsheart {
@@ -147,11 +142,6 @@ select {
 
 .imageContainer:hover .gameDetailsMiddle {
     opacity: 1;
-}
-
-.gameDetailsText {
-    color: white;
-    font-size: 20px;
 }
 
 .likedGamesText {
@@ -409,6 +399,7 @@ table {
 /* width */
 ::-webkit-scrollbar {
     width: 8px;
+    height: 8px;
 }
 
 /* Track */
@@ -617,4 +608,53 @@ input#search:focus {
 
 .cartLevel1 {
     z-index: 1;
+}
+
+.gameDetailsArea {
+    padding: 20px;
+}
+
+.gameDetailsVideo {
+    border-radius: 5px;
+}
+
+.gameDetailsGallery {
+    color: white; /*temp*/
+    background-color: #333;
+    overflow: auto;
+    white-space: nowrap;
+    width: 640px;
+    height: 90px;
+}
+  
+.gameDetailsGalleryButton {
+    display: inline-block;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+
+.gameDetailsGalleryButton:hover {
+    background-color: #777;
+}
+
+.gameDetailsText {
+    color: white;
+    font-size: 20px;
+}
+
+.gameDetailsTags {
+    color: white; /*temp*/
+}
+
+#gameDetailsMainImage {
+    border-radius: 5px;
+    width: 640px;
+}
+
+.gameDetailsBuyCell{
+    text-align: center;
 }

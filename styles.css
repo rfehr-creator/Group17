@@ -6,20 +6,6 @@ body {
     padding: 0;
 }
 
-#cartSort {
-    float: right;
-    position: relative;
-    color: white;
-    background-color: #535353;
-    border-radius: 5px;
-    outline: none;
-}
-
-#cartSortLabel {
-    color: white;
-    float: right;
-}
-
 #gameArea {
     position: relative;
     background-color: #282828;
@@ -143,14 +129,6 @@ select {
     background-color: black;
 }
 
-#LikedSort {
-    margin: 5px;
-}
-
-#LikedSortLabel {
-    color: white;
-}
-
 .imageContainer {
     display: flex;
     justify-content: center;
@@ -255,14 +233,6 @@ td {
 
 table {
     width: 100%;
-}
-
-#searchSort {
-    margin: 5px;
-}
-
-#searchSortLabel {
-    color: white;
 }
 
 .topBar {
@@ -465,18 +435,97 @@ input#search:focus {
     grid-template-columns: 70% auto;
 }
 
-.cartListText {
+.pageTitleTable {
+    margin-top: 20px;
+    height: 50px;
+    border: none;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.pageTitleCell {
+    padding: 20px;
+    color: white;
+    border: none;
+}
+
+.pageTitleText {
     font-size: 20px;
 }
 
-.cartTitleTable {
-    margin-top: 20px;
-    height: 50px;
+.pageTitleSort {
+    float: right;
+    position: relative;
+    color: white;
+    background-color: #535353;
+    border-radius: 5px;
+    outline: none;
 }
 
-.cartTitleCell {
-    padding: 20px;
+.pageTitleSortLable {
     color: white;
+    float: right;
+}
+
+.displayItem {
+    padding: 20px;
+}
+
+.displayItemTable {
+    background-color: #282828;
+    border-spacing: 0;
+    border: 1px solid #282828;
+    border-radius: 5px;
+}
+
+.displayItemImgCol {
+    width: 240px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+}
+
+.displayItemImg {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px;
+}
+
+.displayItemDescCol {
+    border: none;
+}
+
+.displayItemDescTitle {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.displayItemDescText{
+    font-weight: normal;
+}
+
+.displayItemButtonCol {
+    width: 240px;
+    text-align: center;
+    border: none;
+}
+
+.displayItemButton {
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: #282828;
+    transition: 0.5s ease;
+    padding: 20px;
+    width: 200px;
+}
+
+.displayItemButton:hover {
+    background-color: #535353;
+    transition: 0.5s ease;
 }
 
 .orderTable {
@@ -533,63 +582,6 @@ input#search:focus {
     border: none;
     background-color: #282828;
     height: 2px;
-}
-
-.cartTable {
-    background-color: #282828;
-    border-spacing: 0;
-    border: 1px solid #282828;
-    border-radius: 5px;
-}
-
-.cartImage {
-    width: 200px;
-    height: 250px;
-    object-fit: cover;
-    object-position: 50% 50%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px;
-}
-
-.cartImageCol {
-    width: 240px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border: none;
-}
-
-.cartPriceCol {
-    border: none;
-}
-
-.cartPriceText {
-    padding: 20px;
-    font-weight: bold;
-}
-
-.cartButtonsCol{
-    width: 240px;
-    text-align: center;
-    border: none;
-}
-
-.cartItem {
-    padding: 20px;
-}
-
-.cartListButton {
-    border: 2px solid white;
-    border-radius: 5px;
-    background-color: #282828;
-    transition: 0.5s ease;
-    padding: 20px;
-    width: 200px;
-}
-
-.cartListButton:hover {
-    background-color: #535353;
-    transition: 0.5s ease;
 }
 
 .cartLevel0 {

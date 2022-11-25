@@ -104,12 +104,43 @@
 
   <!-- search results -->
   <div id="searchResults">
-    <label id="searchSortLabel" for="searchSort">Sort by:</label>
-    <select id="searchSort" onchange="searchGames()">
-      <option value="sortLowestPrice">Lowest Price</option>
-      <option value="sortHighestPrice">Highest Price</option>
-      <option value="sortName">Name</option>
-    </select>
+    <!--The "title" of the current page-->
+    <table class="pageTitleTable">
+      <tr>
+        <td class="pageTitleCell">
+          <div class="pageTitleText">Search Results</div>
+        </td>
+        <td class="pageTitleCell">
+          <select id="searchSort" class="pageTitleSort" onchange="DisplayLikedList()">
+            <option value="sortLowestPrice">Lowest Price</option>
+            <option value="sortHighestPrice">Highest Price</option>
+            <option value="sortName">Name</option>
+          </select>
+          <label id="searchSortLabel" class="pageTitleSortLable" for="LikedSort">Sort by:</label>
+        </td>
+      </tr>
+    </table>
+
+    <!--This is for a single item-->
+    <div class="displayItem">
+      <table class="displayItemTable">
+        <tr>
+          <td class="displayItemImgCol">
+            <img class="displayItemImg"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+          </td>
+          <td class="displayItemDescCol">
+            <p class="displayItemDescTitle">FINAL FANTASY XIV Online
+              <br>
+              <text class="displayItemDescText">Description</text>
+            </p>
+            <p class="displayItemDescTitle">$24.99</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <br>
+    <!--End of single item-->
 
     <table id="searchResultTable" class="searchResults">
       <tbody id="tableBody">
@@ -119,25 +150,49 @@
 
   <!-- liked list results -->
   <div id="LikedListItems">
-    <label id="LikedSortLabel" for="LikedSort">Sort by:</label>
-    <select id="LikedSort" onchange="DisplayLikedList()">
-      <option value="sortLowestPrice">Lowest Price</option>
-      <option value="sortHighestPrice">Highest Price</option>
-      <option value="sortName">Name</option>
-    </select>
-    <div style="color: white;">Liked List (3 items)</div>
-    <div>
-      <div style="color: white;">1.</div>
-      <div><img src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302"></div>
-      <div>
-        <div style="color: white;">FINAL FANTASY XIV Online</div>
-        <div style="color: white;">$24.99</div>
-      </div>
-      <div>
-        <button>Remove From List</button>
-        <button>Add to Cart</button>
-      </div>
+    <!--The "title" of the current page-->
+    <table class="pageTitleTable">
+      <tr>
+        <td class="pageTitleCell">
+          <div class="pageTitleText">Liked List (3 items)</div>
+        </td>
+        <td class="pageTitleCell">
+          <select id="LikedSort" class="pageTitleSort" onchange="DisplayLikedList()">
+            <option value="sortLowestPrice">Lowest Price</option>
+            <option value="sortHighestPrice">Highest Price</option>
+            <option value="sortName">Name</option>
+          </select>
+          <label id="LikedSortLabel" class="pageTitleSortLable" for="LikedSort">Sort by:</label>
+        </td>
+      </tr>
+    </table>
+
+    <!--This is for a single item-->
+    <div class="displayItem">
+      <table class="displayItemTable">
+        <tr>
+          <td class="displayItemImgCol">
+            <img class="displayItemImg"
+              src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+          </td>
+          <td class="displayItemDescCol">
+            <p class="displayItemDescTitle">FINAL FANTASY XIV Online
+              <br>
+              <text class="displayItemDescText">Description</text>
+            </p>
+            <p class="displayItemDescTitle">$24.99</p>
+          </td>
+          <td class="displayItemButtonCol">
+            <button class="displayItemButton">Remove From List</button>
+            <br>
+            <br>
+            <button class="displayItemButton">Add to Cart</button>
+          </td>
+        </tr>
+      </table>
     </div>
+    <br>
+    <!--End of single item-->
     <table id="LikedResultTable" class="LikedResults">
       <tbody id="LikedTableBody">
       </tbody>
@@ -161,51 +216,53 @@
 
   <!-- cart items -->
   <div id="cartItems">
-    <table class="gameAreaTable cartTitleTable">
+    <table class="pageTitleTable">
       <tr>
-        <td class="gameAreaTableCell cartTitleCell">
-          <div class="cartListText">Cart List (2 items)</div>
+        <td class="pageTitleCell">
+          <div class="pageTitleText">Cart List (2 items)</div>
         </td>
-        <td class="gameAreaTableCell cartTitleCell">
-          <select id="cartSort" onchange="DisplayCartItems()">
+        <td class="pageTitleCell">
+          <select id="cartSort" class="pageTitleSort" onchange="DisplayCartItems()">
             <option value="sortLowestPrice">Lowest Price</option>
             <option value="sortHighestPrice">Highest Price</option>
             <option value="sortName">Name</option>
           </select>
-          <label id="cartSortLabel" for="cartSort">Sort by:</label>
+          <label id="cartSortLabel" class="pageTitleSortLable" for="cartSort">Sort by:</label>
         </td>
       </tr>
     </table>
 
     <div id="cartBody">
       <!--Here for the page format-->
-      <div id="cartItemsContainer" class="cartItem cartLevel1">
+      <div class="displayItem cartLevel1">
         <!--Use this as template for single item-->
-        <!-- <table class="cartTable">
+        <table class="displayItemTable">
           <tr>
-            <td class="cartImageCol">
-              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            <td class="displayItemImgCol">
+              <img class="displayItemImg"
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
             </td>
-            <td class="cartPriceCol">
-              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
-              <p class="cartPriceText">$24.99</p>
+            <td class="displayItemDescCol">
+              <p class="displayItemDescTitle">FINAL FANTASY XIV Online
+                <br>
+                <text class="displayItemDescText">Description</text>
+              </p>
+              <p class="displayItemDescTitle">$24.99</p>
             </td>
-            <td class="cartButtonsCol">
-              <button class="cartListButton">Remove from cart</button>
+            <td class="displayItemButtonCol">
+              <button class="displayItemButton">Remove from cart</button>
               <br>
               <br>
-              <button class="cartListButton">Add to Liked List</button>
+              <button class="displayItemButton">Add to Liked List</button>
             </td>
           </tr>
         </table>
         <br> -->
         <!--End here-->
-
-        
       </div>
 
       <!--Order Summary-->
-      <div id="cartOderSummary" class="cartItem cartLevel0">
+      <div id="cartOderSummary" class="displayItem cartLevel0">
         <table class="orderTable">
           <tr>
             <td colspan="2" class="orderTableCell orderTitleCell">Order Summary</td>
@@ -239,6 +296,17 @@
 
   <!--Game Details-->
   <div id="gameDetailsPage">
+    <table class="pageTitleTable">
+      <tr>
+        <td class="pageTitleCell">
+          <div class="pageTitleText">Game Name here</div>
+        </td>
+      </tr>
+      <tr>
+        
+      </tr>
+    </table>
+
     <h1 id="gameDetailsTitle" class="gameDetailsHeader"></h1>
     <div id="gameDetailsGrid">
 

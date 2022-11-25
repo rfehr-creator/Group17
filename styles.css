@@ -57,13 +57,6 @@ body {
     border: none;
 }
 
-.gameDetailsButton {
-    width: 100px;
-    height: fit-content;
-    padding: 5px;
-    float: left;
-}
-
 #gameDetailsCartDiv {
     display: block;
     padding: 20px;
@@ -196,17 +189,6 @@ select {
     color: rgb(174, 89, 65);
 }
 
-table,
-th,
-td {
-    border: 1px solid white;
-    color: white;
-}
-
-table {
-    width: 100%;
-}
-
 .topBar {
     position: sticky;
     top: 0;
@@ -269,7 +251,7 @@ table {
 #searchBox {
     font-family: Arial, Helvetica, sans-serif;
     background: #171717;
-    
+
     text-indent: 20px;
     border: 2px solid #151515;
     border-radius: 50px;
@@ -384,6 +366,7 @@ table {
 
 #mainDisplayTable {
     border: 0px;
+    width: 100%;
 }
 
 #mainDisplayCol {
@@ -446,6 +429,7 @@ input#search:focus {
     border: none;
     border-collapse: collapse;
     box-shadow: 0px 0px 5px 0px black;
+    width: 100%;
 }
 
 .pageTitleCell {
@@ -470,7 +454,7 @@ input#search:focus {
 }
 
 .pageTitleSort:hover {
-    background-color:#535353;
+    background-color: #535353;
     transition: 0.5 ease;
 }
 
@@ -518,10 +502,12 @@ input#search:focus {
 .displayItemDescTitle {
     padding: 20px;
     font-weight: bold;
+    color: white;
 }
 
-.displayItemDescText{
+.displayItemDescText {
     font-weight: normal;
+    color: white;
 }
 
 .displayItemButtonCol {
@@ -531,7 +517,7 @@ input#search:focus {
 }
 
 .displayItemButton {
-    border: 2px solid white;
+    border: 1px solid #535353;
     border-radius: 5px;
     background-color: #282828;
     transition: 0.5s ease;
@@ -551,6 +537,7 @@ input#search:focus {
     border-spacing: 0;
     border: 2px solid #282828;
     border-radius: 5px;
+    color: white;
 }
 
 .orderButton {
@@ -571,7 +558,8 @@ input#search:focus {
 }
 
 .orderTableCell {
-    padding: 10px 5px 5px 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 50%;
     border: none;
 }
@@ -624,7 +612,7 @@ input#search:focus {
     width: 640px;
     height: 95px;
 }
-  
+
 .gameDetailsGalleryButton {
     display: inline-block;
     width: 80px;
@@ -654,12 +642,17 @@ input#search:focus {
 }
 
 .gameDetailsTags {
-    color: white; /*temp*/
+    width: 640px;
+}
+
+.gameDetailsTagsArea {
+    line-height: 2;
 }
 
 .gameDetailsTagText {
+    color: white;
     background: #282828;
-    padding: 10px;
+    padding: 5px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 50px;
@@ -670,6 +663,7 @@ input#search:focus {
     width: 640px;
 }
 
-.gameDetailsBuyCell{
+.gameDetailsBuyCell {
     text-align: center;
+    padding-bottom: 20px;
 }

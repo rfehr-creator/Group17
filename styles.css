@@ -240,12 +240,12 @@ select {
     width: 25px;
     height: 25px;
     opacity: 1;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 #searchButtonImage:hover {
     opacity: 0.5;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 #searchBox {
@@ -259,12 +259,12 @@ select {
     width: 70%;
     justify-self: center;
     color: #FFFFFF;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 #searchBox:hover {
     background: #282828;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .searchDiv {
@@ -283,12 +283,12 @@ select {
     height: inherit;
     width: inherit;
     opacity: 1;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .cartButton:hover {
     opacity: 0.5;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .heart {
@@ -300,12 +300,12 @@ select {
 
 #trashButton {
     opacity: 1;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 #trashButton:hover {
     opacity: 0.5;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .likedListImg {
@@ -450,12 +450,12 @@ input#search:focus {
     border-radius: 5px;
     outline: none;
     border: none;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .pageTitleSort:hover {
     background-color: #535353;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .homePageTitleSort {
@@ -620,12 +620,12 @@ input#search:focus {
     border: none;
     opacity: 1;
     background: none;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .gameDetailsGalleryButton:hover {
     opacity: 0.7;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .gameDetailsGalleryImg {

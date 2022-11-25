@@ -92,6 +92,21 @@ function getGamesInCart() {
     return gamesInCart;
 }
 
+function checkout(){
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        var game = games[index];
+        if (game.inCart === true) {
+            game.inCart = false;
+        }
+    }
+    
+    storeGames(games);
+    updateCartBadge();
+    alert("Checkout was successful")
+    home(); // to refresh empty cart
+}
+
 // loads games stored in local storage, local storage is used to keep track of modified games
 function loadGames() {
     return JSON.parse(localStorage.getItem('games'));

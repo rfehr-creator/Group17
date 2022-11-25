@@ -52,3 +52,4 @@ function addGame(game,element){
       "<button class='displayItemButton'>Add to Liked List</button>"+
       "</td></tr></table><br>"
 }
+

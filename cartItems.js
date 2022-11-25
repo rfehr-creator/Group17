@@ -18,15 +18,15 @@ function DisplayCartItems(back) {
 }
 
 function addGame(game,element){
-    element.innerHTML = element.innerHTML + "<table class='cartTable'><tr><td class='cartImageCol'>"+
-    "<img class='cartImage' src='"+game.displayPicture+"'>"+
+    element.innerHTML = element.innerHTML + "<table class='displayItemTable'><tr><td class='displayItemImgCol'>"+
+    "<img class='displayItemImg' src='"+game.displayPicture+"'>"+
       "</td>"+
-      "<td class='cartPriceCol'>"+
-      "<p class='cartPriceText'>"+game.name+"</p>"+
-      "<p class='cartPriceText'>$"+game.price+"</p></td> "+
-      "<td class='cartButtonsCol'>"+
-      "<button class='cartListButton'>Remove from cart</button>"+
+      "<td class='displayItemDescCol'>"+
+      "<p class='displayItemDescTitle'>"+game.name+"</p>"+
+      "<p class='displayItemDescText'>$"+game.price+"</p></td> "+
+      "<td class='displayItemButtonCol'>"+
+      "<button class='displayItemButton'>Remove from cart</button>"+
       "<br><br>"+
-      "<button class='cartListButton'>Add to Liked List</button>"+
+      "<button class='displayItemButton'>Add to Liked List</button>"+
       "</td></tr></table><br>"
 }

@@ -81,18 +81,18 @@
 
   <!--game area-->
   <div id="gameArea">
-    <table class="gameAreaTable">
+    <table class="pageTitleTable">
       <tr>
-        <td class="gameAreaTableCell">
-          <h2 id="likedGamesTitle">Liked Games</h2>
+        <td class="pageTitleCell">
+          <div class="pageTitleText">Liked Games</div>
         </td>
-        <td class="gameAreaTableCell">
-          <select id="gameAreaSort" onchange="addLikedGamesToGameDiv()">
+        <td class="pageTitleCell">
+          <select id="gameAreaSort" class="pageTitleSort homePageTitleSort" onchange="addLikedGamesToGameDiv()">
             <option value="sortLowestPrice">Lowest Price</option>
             <option value="sortHighestPrice">Highest Price</option>
             <option value="sortName">Name</option>
           </select>
-          <label id="sortLabel" for="gameAreaSort">Sort by:</label>
+          <label id="sortLabel" class="pageTitleSortLable" for="gameAreaSort">Sort by:</label>
         </td>
       </tr>
     </table>
@@ -122,27 +122,27 @@
     </table>
 
     <div id="SearchResultContainerItems">
-    <!--This is for a single item-->
-    <div class="displayItem">
-      <table class="displayItemTable">
-        <tr>
-          <td class="displayItemImgCol">
-            <img class="displayItemImg"
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
-          </td>
-          <td class="displayItemDescCol">
-            <p class="displayItemDescTitle">FINAL FANTASY XIV Online
-              <br>
-              <text class="displayItemDescText">Description</text>
-            </p>
-            <p class="displayItemDescTitle">$24.99</p>
-          </td>
-        </tr>
-      </table>
+      <!--This is for a single item-->
+      <div class="displayItem">
+        <table class="displayItemTable">
+          <tr>
+            <td class="displayItemImgCol">
+              <img class="displayItemImg"
+                src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="displayItemDescCol">
+              <p class="displayItemDescTitle">FINAL FANTASY XIV Online
+                <br>
+                <text class="displayItemDescText">Description</text>
+              </p>
+              <p class="displayItemDescTitle">$24.99</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <br>
+      <!--End of single item-->
     </div>
-    <br>
-    <!--End of single item-->
-  </div>
     <table id="searchResultTable" class="searchResults">
       <tbody id="tableBody">
       </tbody>
@@ -170,7 +170,7 @@
 
     <!--This is for a single item-->
     <div id="likedlistItemContainer">
-    <!-- <div class="displayItem">
+      <!-- <div class="displayItem">
       <table class="displayItemTable">
         <tr>
           <td class="displayItemImgCol">
@@ -194,8 +194,8 @@
       </table>
     </div>
     <br> -->
-    <!--End of single item-->
-  </div>
+      <!--End of single item-->
+    </div>
   </div>
 
   <!-- disliked list results -->
@@ -207,20 +207,20 @@
           <div id="dislikedListTitleText" class="pageTitleText">Liked List (3 items)</div>
         </td>
         <td class="pageTitleCell">
-          <select id="DislikedSort" class="pageTitleSort"  onchange="DisplayDislikedList()">
+          <select id="DislikedSort" class="pageTitleSort" onchange="DisplayDislikedList()">
             <option value="sortLowestPrice">Lowest Price</option>
             <option value="sortHighestPrice">Highest Price</option>
             <option value="sortName">Name</option>
           </select>
-          <label id="DislikedSortLabel" class="pageTitleSortLable"  for="DislikedSort">Sort by:</label>
+          <label id="DislikedSortLabel" class="pageTitleSortLable" for="DislikedSort">Sort by:</label>
         </td>
       </tr>
     </table>
-    
-    
+
+
 
     <div id="dislikedlistItemContainer">
-      
+
     </div>
   </div>
 
@@ -245,7 +245,7 @@
     <div id="cartBody">
       <!--Here for the page format-->
       <div id="cartItemsContainer" class="displayItem cartLevel1">
-      
+
       </div>
 
       <!--Order Summary-->
@@ -290,7 +290,7 @@
         </td>
       </tr>
       <tr>
-        
+
       </tr>
     </table>
 

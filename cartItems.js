@@ -12,10 +12,21 @@ function DisplayCartItems(back) {
     }
 
     for (let index = 0; index < cartItems.length; index++) {
-        addGame(cartItems[index],document.getElementById('cartItemsList'));
+        var container = document.getElementById('cartItemsContainer')
+        addGame(cartItems[index],container);
     }
 }
 
 function addGame(game,element){
-    
+    element.innerHTML = element.innerHTML + "<table class='cartTable'><tr><td class='cartImageCol'>"+
+    "<img class='cartImage' src='"+game.displayPicture+"'>"+
+      "</td>"+
+      "<td class='cartPriceCol'>"+
+      "<p class='cartPriceText'>"+game.name+"</p>"+
+      "<p class='cartPriceText'>$"+game.price+"</p></td> "+
+      "<td class='cartButtonsCol'>"+
+      "<button class='cartListButton'>Remove from cart</button>"+
+      "<br><br>"+
+      "<button class='cartListButton'>Add to Liked List</button>"+
+      "</td></tr></table><br>"
 }

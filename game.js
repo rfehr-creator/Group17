@@ -92,6 +92,20 @@ function getGamesInCart() {
     return gamesInCart;
 }
 
+function removeLikedGame(id){
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        var game = games[index];
+        if (game.id === id) {
+            game.liked = false;
+        }
+    }
+
+    storeGames(games);
+    DisplayLikedList();
+    addLikedGamesToGameDiv();
+}
+
 function checkout(){
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {

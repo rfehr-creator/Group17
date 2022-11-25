@@ -186,7 +186,7 @@ select {
 }
 
 #dislikeButton:hover {
-    color: rgb(174, 89, 65);
+    color: #535353;
 }
 
 .topBar {

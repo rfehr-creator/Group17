@@ -44,7 +44,8 @@ function addGame(game,element){
     if (game.price <= 0) {
         price = "Free";
     }
-    element.innerHTML = element.innerHTML + 
+    element.innerHTML = element.innerHTML +
+    "<div class='cartTableSpacing'>"+
     "<table class='displayItemTable'>" +
         "<tr>" +
             "<td class='displayItemImgCol'>"+
@@ -52,7 +53,7 @@ function addGame(game,element){
             "</td>"+
             "<td class='displayItemDescCol'>"+
                 "<p class='displayItemDescTitle'>"+game.name+"</p>"+
-                "<p class='displayItemDescText'>"+price+"</p>"+
+                "<p class='displayItemDescTitle displayItemDescPrice'>"+price+"</p>"+
             "</td>"+
             "<td class='displayItemButtonCol'>"+
                 "<button class='displayItemButton'>Remove from cart</button>"+
@@ -62,6 +63,7 @@ function addGame(game,element){
             "</td>"+
         "</tr>"
     "</table>"+
+    "</div>"+
     "<br>";
 }
 

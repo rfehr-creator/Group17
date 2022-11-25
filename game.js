@@ -1,7 +1,7 @@
 function addGameToCart() {
     var gameId = document.getElementById('gameDetailsPage').data;
 
-    addGameToCart(gameId);
+    addToCart(gameId);
 }
 
 function addToCart(id){

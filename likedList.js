@@ -98,7 +98,7 @@ function addGameDislikedList(game, element) {
         '   <button class="displayItemButton">Remove From List</button>' +
         '  <br>' +
         '  <br>' +
-        '  <button class="displayItemButton">Add to Cart</button>' +
+        '  <button class="displayItemButton" onclick="'+addToCart(id)+'">Add to Cart</button>' +
         '</td>' +
         '</tr>' +
         '</table>' +

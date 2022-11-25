@@ -274,6 +274,7 @@ select {
     background: #282828;
     transition: 0.5s ease;
     background-image: none;
+    text-indent: 20px;
 }
 
 .searchDiv {

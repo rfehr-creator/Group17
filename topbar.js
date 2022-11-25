@@ -18,6 +18,7 @@ function updateBackButton(){
         }
         else{
             backButton[i].style.opacity = 1;
+            //backButton.classList.add('hover');
         }
     }
 }

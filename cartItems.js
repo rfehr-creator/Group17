@@ -11,10 +11,32 @@ function DisplayCartItems(back) {
         sortResults(cartItems, "cartSort");
     }
 
-    for (let index = 0; index < cartItems.length; index++) {
-        var container = document.getElementById('cartItemsContainer')
-        addGame(cartItems[index],container);
+    var cartTitle = document.getElementById('cartTitle')
+    if(cartItems.length == 1){
+        cartTitle.innerHTML = "Cart List ("+cartItems.length+" item)"
+    } else{
+        cartTitle.innerHTML = "Cart List ("+cartItems.length+" items)"
     }
+
+    var price = 0;
+    var tax = 0;
+    var total = 0;
+    var container = document.getElementById('cartItemsContainer')
+    container.innerHTML = "";
+
+    for (let index = 0; index < cartItems.length; index++) {
+        const game = cartItems[index];
+        addGame(game,container);
+
+        price += game.price;
+    }
+
+    tax = price * .13;
+    total = tax + price;
+
+    var container = document.getElementById('cartPriceBeforeTax').innerHTML = "CA $" + price;
+    var container = document.getElementById('cartTax').innerHTML = "CA $" + tax.toFixed(2);
+    var container = document.getElementById('cartPriceAfterTax').innerHTML = "CA $" + total.toFixed(2);
 }
 
 function addGame(game,element){

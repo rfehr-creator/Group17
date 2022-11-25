@@ -619,26 +619,33 @@ input#search:focus {
 }
 
 .gameDetailsGallery {
-    color: white; /*temp*/
-    background-color: #333;
     overflow: auto;
     white-space: nowrap;
     width: 640px;
-    height: 90px;
+    height: 95px;
 }
   
 .gameDetailsGalleryButton {
     display: inline-block;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
     width: 80px;
     height: 80px;
-    border-radius: 5px;
+    border: none;
+    opacity: 1;
+    background: none;
+    transition: 0.5 ease;
 }
 
 .gameDetailsGalleryButton:hover {
-    background-color: #777;
+    opacity: 0.7;
+    transition: 0.5 ease;
+}
+
+.gameDetailsGalleryImg {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    object-position: 50% 50%;
+    border-radius: 5px;
 }
 
 .gameDetailsText {
@@ -648,6 +655,14 @@ input#search:focus {
 
 .gameDetailsTags {
     color: white; /*temp*/
+}
+
+.gameDetailsTagText {
+    background: #282828;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
 }
 
 #gameDetailsMainImage {

@@ -40,7 +40,7 @@ function DisplayCartItems(back) {
 }
 
 function addGame(game,element){
-    var price = "$" + game.price;
+    var price = game.price;
     if (game.price <= 0) {
         price = "Free";
     }

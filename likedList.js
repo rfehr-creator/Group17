@@ -27,30 +27,29 @@ function DisplayLikedList(back) {
 }
 
 function addGameLikedList(game, element) {
-    element.innerHTML = element.innerHTML + '<div class="displayItem">' +
-        '<table class="displayItemTable">' +
-        '<tr>' +
-        ' <td class="displayItemImgCol">' +
-        '  <img class="displayItemImg"' +
-        '   src="' + game.displayPicture + '">' +
-        ' </td>' +
-        ' <td class="displayItemDescCol">' +
-        '  <p class="displayItemDescTitle">' + game.name +
-        '    <br>' +
-        '    <text class="displayItemDescText">' + game.description + '</text>' +
-        '  </p>' +
-        '  <p class="displayItemDescTitle">$' + game.price + '</p>' +
-        ' </td>' +
-        ' <td class="displayItemButtonCol">' +
-        '   <button class="displayItemButton" onclick="removeLikedGame('+ game.id +')">Remove From List</button>' +
-        '  <br>' +
-        '  <br>' +
-        '  <button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
-        '</td>' +
-        '</tr>' +
-        '</table>' +
-        '</div>' +
-        '<br>'
+    element.innerHTML = element.innerHTML +
+        '<div class="displayItem">' +
+            '<table class="displayItemTable">' +
+                '<tr>' +
+                    '<td class="displayItemImgCol">' +
+                    '<img class="displayItemImg" src="' + game.displayPicture + '">' +
+                    '</td>' +
+                    '<td class="displayItemDescCol">' +
+                        '<p class="displayItemDescTitle">' + game.name +
+                            '<br>' +
+                            '<text class="displayItemDescText">' + game.description + '</text>' +
+                        '</p>' +
+                        '<p class="displayItemDescTitle">$' + game.price + '</p>' +
+                    '</td>' +
+                    '<td class="displayItemButtonCol">' +
+                        '<button class="displayItemButton" onclick="removeLikedGame('+ game.id +')">Remove From List</button>' +
+                        '<br>' +
+                        '<br>' +
+                        '<button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
+                    '</td>' +
+                '</tr>' +
+            '</table>' +
+        '</div>'
 }
 
 function DisplayDislikedList(back) {
@@ -80,28 +79,27 @@ function DisplayDislikedList(back) {
 }
 
 function addGameDislikedList(game, element) {
-    element.innerHTML = element.innerHTML + '<div class="displayItem">' +
-        '<table class="displayItemTable">' +
-        '<tr>' +
-        ' <td class="displayItemImgCol">' +
-        '  <img class="displayItemImg"' +
-        '   src="' + game.displayPicture + '">' +
-        ' </td>' +
-        ' <td class="displayItemDescCol">' +
-        '  <p class="displayItemDescTitle">' + game.name +
-        '    <br>' +
-        '    <text class="displayItemDescText">' + game.description + '</text>' +
-        '  </p>' +
-        '  <p class="displayItemDescTitle">$' + game.price + '</p>' +
-        ' </td>' +
-        ' <td class="displayItemButtonCol">' +
-        '   <button class="displayItemButton" onclick="removeDislikedGame('+game.id+')">Remove From List</button>' +
-        '  <br>' +
-        '  <br>' +
-        '  <button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
-        '</td>' +
-        '</tr>' +
-        '</table>' +
-        '</div>' +
-        '<br>'
+    element.innerHTML = element.innerHTML + 
+        '<div class="displayItem">' +
+            '<table class="displayItemTable">' +
+                '<tr>' +
+                    '<td class="displayItemImgCol">' +
+                        '<img class="displayItemImg" src="' + game.displayPicture + '">' +
+                    '</td>' +
+                    '<td class="displayItemDescCol">' +
+                        '<p class="displayItemDescTitle">' + game.name +
+                            '<br>' +
+                            '<text class="displayItemDescText">' + game.description + '</text>' +
+                        '</p>' +
+                        '<p class="displayItemDescTitle">$' + game.price + '</p>' +
+                    '</td>' +
+                    '<td class="displayItemButtonCol">' +
+                        '<button class="displayItemButton" onclick="removeDislikedGame('+game.id+')">Remove From List</button>' +
+                        '<br>' +
+                        '<br>' +
+                        '<button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
+                    '</td>' +
+                '</tr>' +
+            '</table>' +
+        '</div>'
 }

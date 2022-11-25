@@ -110,6 +110,19 @@ function removeLikedGame(id){
     addLikedGamesToGameDiv();
 }
 
+function removeDislikedGame(id) {
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        var game = games[index];
+        if (game.id === id) {
+            game.disliked = false;
+        }
+    }
+
+    storeGames(games);
+    DisplayDislikedList();
+}
+
 function checkout(){
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {

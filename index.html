@@ -164,7 +164,7 @@
     <table class="gameAreaTable cartTitleTable">
       <tr>
         <td class="gameAreaTableCell cartTitleCell">
-          <div>Cart List (2 items)</div>
+          <div class="cartListText">Cart List (2 items)</div>
         </td>
         <td class="gameAreaTableCell cartTitleCell">
           <select id="cartSort" onchange="DisplayCartItems()">
@@ -179,7 +179,7 @@
 
     <div id="cartBody">
       <!--Here for the page format-->
-      <div class="cartItem">
+      <div class="cartItem cartLevel1">
         <!--Use this as template for single item-->
         <table class="cartTable">
           <tr>
@@ -198,22 +198,152 @@
             </td>
           </tr>
         </table>
+        <br>
         <!--End here-->
+
+        <!--These are for testing, delete these-->
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <table class="cartTable">
+          <tr>
+            <td class="cartImageCol">
+              <img class="cartImage" src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
+            </td>
+            <td class="cartPriceCol">
+              <p class="cartPriceText">FINAL FANTASY XIV Online</p>
+              <p class="cartPriceText">$24.99</p>
+            </td>
+            <td class="cartButtonsCol">
+              <button class="cartListButton">Remove from cart</button>
+              <br>
+              <br>
+              <button class="cartListButton">Add to Liked List</button>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <!--End of tests-->
       </div>
 
       <!--Order Summary-->
-      <div id="cartOderSummary" class="cartItem">
+      <div id="cartOderSummary" class="cartItem cartLevel0">
         <table class="orderTable">
           <tr>
-            <td colspan="2" class="gameAreaTableCell orderTableCell orderTitleCell">Order Summary</td>
+            <td colspan="2" class="orderTableCell orderTitleCell">Order Summary</td>
           </tr>
           <tr>
-            <td class="gameAreaTableCell orderTableCell">Price</td>
-            <td id="cartPriceBeforeTax" class="gameAreaTableCell orderTableCell">CA$ 115.89</td>
+            <td class="orderTableCell orderTableCategory">Price</td>
+            <td id="cartPriceBeforeTax" class="orderTableCell">CA$ 115.89</td>
           </tr>
           <tr>
-            <td class="gameAreaTableCell orderTableCell">Tax</td>
-            <td id="cartTax" class="gameAreaTableCell orderTableCell">CA$ 2.89</td>
+            <td class="orderTableCell orderTableCategory">Tax</td>
+            <td id="cartTax" class="orderTableCell">CA$ 2.89</td>
           </tr>
           <tr>
             <td colspan="2" class="gameAreaTableCell">
@@ -221,11 +351,11 @@
             </td>
           </tr>
           <tr>
-            <td class="gameAreaTableCell orderTableCell orderTotalCell">Total</td>
-            <td id="cartPriceAfterTax" class="gameAreaTableCell orderTableCell orderTotalCell">CA$ 118.78</td>
+            <td class="orderTableCell orderTableCategory orderTotalCell">Total</td>
+            <td id="cartPriceAfterTax" class="orderTableCell orderTotalCell">CA$ 118.78</td>
           </tr>
           <tr>
-            <td colspan="2" class="gameAreaTableCell orderTableCell orderTableButtonCell">
+            <td colspan="2" class="orderTableCell orderTableButtonCell">
               <button class="orderButton">CHECK OUT</button>
             </td>
           </tr>

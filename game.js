@@ -1,10 +1,14 @@
 function addGameToCart() {
     var gameId = document.getElementById('gameDetailsPage').data;
 
+    addToCart(gameId);
+}
+
+function addToCart(id){
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {
         const game = games[index];
-        if (game.id === gameId) {
+        if (game.id === id) {
             game.inCart = true;
         }
     }
@@ -90,6 +94,20 @@ function getGamesInCart() {
     }
 
     return gamesInCart;
+}
+
+function removeLikedGame(id){
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        var game = games[index];
+        if (game.id === id) {
+            game.liked = false;
+        }
+    }
+
+    storeGames(games);
+    DisplayLikedList();
+    addLikedGamesToGameDiv();
 }
 
 function checkout(){

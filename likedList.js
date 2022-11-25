@@ -42,10 +42,10 @@ function addGameLikedList(game, element) {
         '  <p class="displayItemDescTitle">$' + game.price + '</p>' +
         ' </td>' +
         ' <td class="displayItemButtonCol">' +
-        '   <button class="displayItemButton">Remove From List</button>' +
+        '   <button class="displayItemButton" onclick="removeLikedGame('+ game.id +')">Remove From List</button>' +
         '  <br>' +
         '  <br>' +
-        '  <button class="displayItemButton">Add to Cart</button>' +
+        '  <button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
         '</td>' +
         '</tr>' +
         '</table>' +

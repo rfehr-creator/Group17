@@ -457,10 +457,14 @@ select {
     background-color: #171717;
 }
 
-.pageTitleSortLable {
+.pageTitleSortLabel {
     color: white;
     float: right;
     user-select: none;
+}
+
+.pageTitleSortLabel:hover {
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .displayItem {
@@ -535,6 +539,7 @@ select {
 .displayItemButton:hover {
     background-color: #535353;
     transition: 0.5s ease;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .orderTable {

@@ -12,7 +12,7 @@ body {
     height: 1000px;
     margin: 0px;
     border-radius: 5px;
-    box-shadow: 0px 5px 0px 0px;
+    box-shadow: 0px 5px 0px 0px black;
 }
 
 #likedGamesTitle {
@@ -44,35 +44,17 @@ body {
     transition: 0.5s ease;
     backface-visibility: hidden;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 0px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .gameAreaTable {
     border: none;
     border-collapse: collapse;
-    box-shadow: 0px 0px 5px 0px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .gameAreaTableCell {
     border: none;
-}
-
-#gameAreaSort {
-    float: right;
-    position: relative;
-    color: white;
-    background-color: #282828;
-    border-radius: 5px;
-}
-
-#sortLabel {
-    color: white;
-    float: right;
-    position: relative;
-}
-
-#gameDetailsTitle {
-    border-bottom: 2px solid white;
 }
 
 .gameDetailsButton {
@@ -221,7 +203,7 @@ select {
 }
 
 #dislikeButton:hover {
-    color: yellow;
+    color: rgb(174, 89, 65);
 }
 
 table,
@@ -245,7 +227,7 @@ table {
     height: 30px;
     border-radius: 5px;
     z-index: 100;
-    box-shadow: 0px 0px 5px 0px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .backfowardDiv {
@@ -285,17 +267,30 @@ table {
     background-color: transparent;
     width: 25px;
     height: 25px;
+    opacity: 1;
+    transition: 0.5 ease;
+}
+
+#searchButtonImage:hover {
+    opacity: 0.5;
+    transition: 0.5 ease;
 }
 
 #searchBox {
     font-family: Arial, Helvetica, sans-serif;
-    background: #282828;
-    border: 2px solid #FFFFFF;
+    background: #171717;
+    border: 2px solid #151515;
     border-radius: 50px;
     height: inherit;
     width: 70%;
     justify-self: center;
     color: #FFFFFF;
+    transition: 0.5 ease;
+}
+
+#searchBox:hover {
+    background: #282828;
+    transition: 0.5 ease;
 }
 
 .searchDiv {
@@ -313,6 +308,13 @@ table {
     background-color: transparent;
     height: inherit;
     width: inherit;
+    opacity: 1;
+    transition: 0.5 ease;
+}
+
+.cartButton:hover {
+    opacity: 0.5;
+    transition: 0.5 ease;
 }
 
 .heart {
@@ -320,6 +322,16 @@ table {
     width: 28px;
     margin: 0px;
     float: right;
+}
+
+#trashButton {
+    opacity: 1;
+    transition: 0.5 ease;
+}
+
+#trashButton:hover {
+    opacity: 0.5;
+    transition: 0.5 ease;
 }
 
 .likedListImg {
@@ -440,7 +452,7 @@ input#search:focus {
     height: 50px;
     border: none;
     border-collapse: collapse;
-    box-shadow: 0px 0px 5px 0px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .pageTitleCell {
@@ -457,9 +469,20 @@ input#search:focus {
     float: right;
     position: relative;
     color: white;
-    background-color: #535353;
+    background-color: #282828;
     border-radius: 5px;
     outline: none;
+    border: none;
+    transition: 0.5 ease;
+}
+
+.pageTitleSort:hover {
+    background-color:#535353;
+    transition: 0.5 ease;
+}
+
+.homePageTitleSort {
+    background-color: #171717;
 }
 
 .pageTitleSortLable {
@@ -492,7 +515,7 @@ input#search:focus {
     object-fit: cover;
     object-position: 50% 50%;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 0px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .displayItemDescCol {
@@ -521,6 +544,7 @@ input#search:focus {
     transition: 0.5s ease;
     padding: 20px;
     width: 200px;
+    color: white;
 }
 
 .displayItemButton:hover {
@@ -545,6 +569,7 @@ input#search:focus {
     justify-content: center;
     align-items: center;
     transition: 0.5s ease;
+    color: white;
 }
 
 .orderButton:hover {

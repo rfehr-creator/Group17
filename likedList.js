@@ -1,63 +1,107 @@
 function DisplayLikedList(back) {
     document.getElementById('searchBox').value = "";
-    if(back == null || back == false) addHistory("likedListPage","");
+    if (back == null || back == false) addHistory("likedListPage", "");
     hideElements();
     document.getElementById('LikedListItems').style.display = "block";
 
-    var cartItems = getLikedGames();
+    var likedItems = getLikedGames();
 
 
-    if (cartItems.length > 0) {
-        sortResults(cartItems, "LikedSort");
+    if (likedItems.length > 0) {
+        sortResults(likedItems, "LikedSort");
     }
 
 
-    var container = document.getElementById('likedListItemsContainer')
+    if (likedItems.length == 1) {
+        document.getElementById('likedListTitleText').innerHTML = "Liked List (" + likedItems.length + " item)"
+    } else {
+        document.getElementById('likedListTitleText').innerHTML = "Liked List (" + likedItems.length + " items)"
+    }
+    var container = document.getElementById('likedlistItemContainer')
     container.innerHTML = "";
 
-    for (let index = 0; index < cartItems.length; index++) {
-        var game = cartItems[index];
-        addGameLikedList(game,container)
+    for (let index = 0; index < likedItems.length; index++) {
+        var game = likedItems[index];
+        addGameLikedList(game, container)
     }
 }
 
-function addGameLikedList(game,element){
-    element.innerHTML = element.innerHTML +""
+function addGameLikedList(game, element) {
+    element.innerHTML = element.innerHTML + '<div class="displayItem">' +
+        '<table class="displayItemTable">' +
+        '<tr>' +
+        ' <td class="displayItemImgCol">' +
+        '  <img class="displayItemImg"' +
+        '   src="' + game.displayPicture + '">' +
+        ' </td>' +
+        ' <td class="displayItemDescCol">' +
+        '  <p class="displayItemDescTitle">' + game.name +
+        '    <br>' +
+        '    <text class="displayItemDescText">' + game.description + '</text>' +
+        '  </p>' +
+        '  <p class="displayItemDescTitle">$' + game.price + '</p>' +
+        ' </td>' +
+        ' <td class="displayItemButtonCol">' +
+        '   <button class="displayItemButton">Remove From List</button>' +
+        '  <br>' +
+        '  <br>' +
+        '  <button class="displayItemButton">Add to Cart</button>' +
+        '</td>' +
+        '</tr>' +
+        '</table>' +
+        '</div>' +
+        '<br>'
 }
 
 function DisplayDislikedList(back) {
-    if(back == null || back == false) addHistory("dislikedListPage","");
+    if (back == null || back == false) addHistory("dislikedListPage", "");
     hideElements();
     document.getElementById('DislikedListItems').style.display = "block";
 
-    var cartItems = getDislikedGames();
-
-    // clear search results table
-    clearTable("DislikedResultTable");
-    var table = document.getElementById('DislikedResultTable');
-
-    // create header row
-    var headRow = table.insertRow(0);
-    headRow.insertCell(0).outerHTML = "<th>Name</th>";
-    headRow.insertCell(1).outerHTML = "<th>Description</th>";
-    headRow.insertCell(2).outerHTML = "<th>Price</th>";
+    var dislikedItems = getDislikedGames();
 
 
-    if (cartItems.length > 0) {
-        sortResults(cartItems, "DislikedSort");
+    if (dislikedItems.length > 0) {
+        sortResults(dislikedItems, "DislikedSort");
     }
 
-    for (let index = 0; index < cartItems.length; index++) {
-        var game = cartItems[index];
-
-        var row = table.insertRow(table.rows.length);
-
-        var cell1 = row.insertCell(0);
-        var cell2 = row.insertCell(1);
-        var cell3 = row.insertCell(2);
-
-        cell1.innerHTML = game.name;
-        cell2.innerHTML = game.description;
-        cell3.innerHTML = game.price;
+    if (dislikedItems.length == 1) {
+        document.getElementById('dislikedListTitleText').innerHTML = "Disliked List (" + dislikedItems.length + " item)"
+    } else {
+        document.getElementById('dislikedListTitleText').innerHTML = "Disliked List (" + dislikedItems.length + " items)"
     }
+    var container = document.getElementById('dislikedlistItemContainer')
+    container.innerHTML = "";
+
+    for (let index = 0; index < dislikedItems.length; index++) {
+        var game = dislikedItems[index];
+        addGameDislikedList(game, container)
+    }
+}
+
+function addGameDislikedList(game, element) {
+    element.innerHTML = element.innerHTML + '<div class="displayItem">' +
+        '<table class="displayItemTable">' +
+        '<tr>' +
+        ' <td class="displayItemImgCol">' +
+        '  <img class="displayItemImg"' +
+        '   src="' + game.displayPicture + '">' +
+        ' </td>' +
+        ' <td class="displayItemDescCol">' +
+        '  <p class="displayItemDescTitle">' + game.name +
+        '    <br>' +
+        '    <text class="displayItemDescText">' + game.description + '</text>' +
+        '  </p>' +
+        '  <p class="displayItemDescTitle">$' + game.price + '</p>' +
+        ' </td>' +
+        ' <td class="displayItemButtonCol">' +
+        '   <button class="displayItemButton">Remove From List</button>' +
+        '  <br>' +
+        '  <br>' +
+        '  <button class="displayItemButton">Add to Cart</button>' +
+        '</td>' +
+        '</tr>' +
+        '</table>' +
+        '</div>' +
+        '<br>'
 }

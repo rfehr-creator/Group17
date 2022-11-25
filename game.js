@@ -1,10 +1,14 @@
 function addGameToCart() {
     var gameId = document.getElementById('gameDetailsPage').data;
 
+    addGameToCart(gameId);
+}
+
+function addToCart(id){
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {
         const game = games[index];
-        if (game.id === gameId) {
+        if (game.id === id) {
             game.inCart = true;
         }
     }

@@ -235,14 +235,6 @@ table {
     width: 100%;
 }
 
-#searchSort {
-    margin: 5px;
-}
-
-#searchSortLabel {
-    color: white;
-}
-
 .topBar {
     position: sticky;
     top: 0;
@@ -507,9 +499,13 @@ input#search:focus {
     border: none;
 }
 
-.displayItemDescText {
+.displayItemDescTitle {
     padding: 20px;
     font-weight: bold;
+}
+
+.displayItemDescText{
+    font-weight: normal;
 }
 
 .displayItemButtonCol {

@@ -40,16 +40,28 @@ function DisplayCartItems(back) {
 }
 
 function addGame(game,element){
-    element.innerHTML = element.innerHTML + "<table class='displayItemTable'><tr><td class='displayItemImgCol'>"+
-    "<img class='displayItemImg' src='"+game.displayPicture+"'>"+
-      "</td>"+
-      "<td class='displayItemDescCol'>"+
-      "<p class='displayItemDescTitle'>"+game.name+"</p>"+
-      "<p class='displayItemDescText'>$"+game.price+"</p></td> "+
-      "<td class='displayItemButtonCol'>"+
-      "<button class='displayItemButton'>Remove from cart</button>"+
-      "<br><br>"+
-      "<button class='displayItemButton'>Add to Liked List</button>"+
-      "</td></tr></table><br>"
+    var price = "$" + game.price;
+    if (game.price <= 0) {
+        price = "Free";
+    }
+    element.innerHTML = element.innerHTML + 
+    "<table class='displayItemTable'>" +
+        "<tr>" +
+            "<td class='displayItemImgCol'>"+
+                "<img class='displayItemImg' src='"+game.displayPicture+"'>"+
+            "</td>"+
+            "<td class='displayItemDescCol'>"+
+                "<p class='displayItemDescTitle'>"+game.name+"</p>"+
+                "<p class='displayItemDescText'>"+price+"</p>"+
+            "</td>"+
+            "<td class='displayItemButtonCol'>"+
+                "<button class='displayItemButton'>Remove from cart</button>"+
+                "<br>"+
+                "<br>"+
+                "<button class='displayItemButton'>Add to Liked List</button>"+
+            "</td>"+
+        "</tr>"
+    "</table>"+
+    "<br>";
 }
 

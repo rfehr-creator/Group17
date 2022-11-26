@@ -316,6 +316,14 @@ function defaultGames() {
             "price": 49.99,
             "displayPicture": "https://picfiles.alphacoders.com/431/thumb-431006.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_32b377faf983064af7638e858e1bfa7c845c9e2f.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_c5c9e520c69d217da25769cd3c093c04458a83ac.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_45594186d0784865980a9c8b009675b5c5e8c0ac.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_b48cb21ccfb35c81307d2435ce3cbda7dc3a7c88.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_84bc9909c2dfc8ec0d4ff84fd072b35785332fdc.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_ceeb983fca848dc3ec1ce88efcbf85cce6f00489.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_59edc8f4cd2c13495538a3c96040cd133cab6555.600x338.jpg?t=1666108453",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1063730/ss_21a08b813ef3abdd3da501755807a404adff91e5.600x338.jpg?t=1666108453"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256911386/movie480_vp9.webm?t=1666108429" //trailer
@@ -332,7 +340,6 @@ function defaultGames() {
             "price": 24.99,
             "displayPicture": "https://img.finalfantasyxiv.com/lds/h/W/oD5KOpOh_r1uwlBpW6wrPUewHA.jpg",
             "pictures":[
-                
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_ca57d5322b116ffaab2de37958df59eba8c7807a.600x338.jpg?t=1646695302",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_f1bc7a959795c1fad6bfc602ccbd0e311075a454.600x338.jpg?t=1646695302",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_ddb71dc0c9a667de5c23e0b3823dad3590d5e9bb.600x338.jpg?t=1646695302",
@@ -398,6 +405,14 @@ function defaultGames() {
             "price": 59.99,
             "displayPicture": "https://picfiles.alphacoders.com/198/thumb-198638.jpg",
             "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817" //trailer
@@ -454,6 +469,14 @@ function defaultGames() {
             "price": 79.99,
             "displayPicture": "https://picfiles.alphacoders.com/532/thumb-532455.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_b529b0abc43f55fc23fe8058eddb6e37c9629a6a.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_8640d9db74f7cad714f6ecfb0e1aceaa3f887e58.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_9284d1c5b248726760233a933dbb83757d7d5d95.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_e5a94665dbfa5a30931cff2f45cdc0ebea9fcebb.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_e5a94665dbfa5a30931cff2f45cdc0ebea9fcebb.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_429db1d013a0366417d650d84f1eff02d1a18c2d.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_872822c5e50dc71f345416098d29fc3ae5cd26c1.600x338.jpg?t=1663663573",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/ss_ae4465fa8a44dd330dbeb7992ba196c2f32cabb1.600x338.jpg?t=1663663573"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256904407/movie480_vp9.webm?t=1662480414" //trailer
@@ -470,6 +493,14 @@ function defaultGames() {
             "price": 55.99,
             "displayPicture": "https://picfiles.alphacoders.com/198/thumb-198636.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_107600c1337accc09104f7a8aa7f275f23cad096.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_64eb760f9a2b67f6731a71cce3a8fb684b9af267.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_eda99e7f705a113d04ab2a7a36068f3e7b343d17.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_d5b80eb63c12a6484f26796f3e34410651bba068.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_b74d60ee215337d765e4d20c8ca6710ae2362cc2.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_dc55eeb409d6e187456a8e159018e8da098fa468.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_849ec8dcc6f8df1c0b2c509584c9fc9e51f88cfa.600x338.jpg?t=1668443314",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/ss_90a33d7764a2d23306091bfcb52265c3506b4fdb.600x338.jpg?t=1668443314"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256658589/movie480.webm?t=1528288687" //trailer
@@ -486,6 +517,14 @@ function defaultGames() {
             "price": 49.99,
             "displayPicture": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyu-NU_7SOIudxXIBJmnsdWyjNMAjmrbG3iWbWL3PMEeaNtz2K3xKXWanjvec5FTlqIIE&usqp=CAU",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_d92a558644ad60ae5814fc4d2bbaebc5abf62fa3.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_40faa5ba39563cb899f1ab2ddd2afbf8b451d52f.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_ed3246605518907954918eb06e90705249be77d6.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_4274653781c2c618f7749cdb569e2b9274fceba9.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_744702d2289cc49bebb1b2fba7dd758b5534e1c5.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_e4266a29ed7485522c85ff61b454f3765151a0db.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_8f6d9f87f50513ed756004cfa5b2b54cdeb1df18.600x338.jpg?t=1666949098",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/389730/ss_d92a558644ad60ae5814fc4d2bbaebc5abf62fa3.600x338.jpg?t=1666949098"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256864020/movie480_vp9.webm?t=1638994619" //trailer
@@ -502,6 +541,13 @@ function defaultGames() {
             "price": 79.99,
             "displayPicture": "https://image.api.playstation.com/gs2-sec/appkgo/prod/CUSA09903_00/3/i_c004d0521217a1aa254257619a664793ce401599949e2444459b84fdf9a89043/i/icon0.png",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_38779cc03d7e37c2082d1c0e630107cf2ba61332.600x338.jpg?t=1646956219",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_0a759f4027ad366646fac37399a04599e09c2040.600x338.jpg?t=1646956219",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_cbc118ee08695b438a37303fb0753df522687f6a.600x338.jpg?t=1646956219",                "",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_48d90ad60e5e2e46f8990896e622e40c1df1ad0d.1920x1080.jpg?t=1646956219",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_7beaa34d62c37585b90a58a62919428673efb7ef.1920x1080.jpg?t=1646956219",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_7afa4001cf72e793c38da6e3b5894d7e4169802a.1920x1080.jpg?t=1646956219",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_2d52a52a3b8707159d51674f2449c614b7a48dcf.1920x1080.jpg?t=1646956219"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256807455/movie480_vp9.webm?t=1604033038" //trailer
@@ -518,6 +564,14 @@ function defaultGames() {
             "price": 69.99,
             "displayPicture": "https://www.xtrafondos.com/en/descargar.php?id=3175&vertical=1",
             "pictures":[
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256813084/movie480_vp9.webm?t=1607567246" //trailer

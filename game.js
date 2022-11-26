@@ -278,7 +278,7 @@ function defaultGames() {
             "name": "Lost Ark",
             "description": "Embark on an odyssey for the Lost Ark in a vast, vibrant world: explore new lands, seek out lost treasures, and test yourself in thrilling action combat in this action-packed free-to-play RPG.",
             "price": 0.00,
-            "displayPicture": "https://wallpapercrafter.com/th800/381947-Video-Game-Lost-Ark-Phone-Wallpaper.jpg",
+            "displayPicture": "https://m.media-amazon.com/images/M/MV5BOTA3YjIxNjYtNzU1ZS00NmEzLTk4ZjItN2M4MGYwMDcwZDM4XkEyXkFqcGdeQXVyODczMTkwNzY@._V1_.jpg",
             "picutres":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256916251/movie480_vp9.webm?t=1668553272" // trailer
             ],

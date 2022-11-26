@@ -26,15 +26,17 @@ function onPageLoad() {
 function displayGameDetails(gameId, back) {
     if (back == null || back == false) addHistory("gameDetailsPage", gameId);
     hideElements();
+
+    // hide video
+    var video = document.getElementById('videoElement');
+    video.hidden = true;
+
+    // game details
     var game = getGame(gameId);
-
     document.getElementById('gameDetailsPage').style.display = "block";
-
-
     document.getElementById('gameDetailsPage').data = gameId;
     document.getElementById('gameDetailsTitle').innerHTML = game.name;
     document.getElementById('gameDetailsName').innerHTML = game.name;
-
     document.getElementById('gameDetailsPrice').innerHTML = "Price: " + game.price;
     document.getElementById('gameDetailsDescription').innerHTML = game.description;
 
@@ -50,21 +52,28 @@ function displayGameDetails(gameId, back) {
             '<button class="gameDetailsGalleryButton">' +
             '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
             '</button>'
+
+            
+        // show first image by default
+        if (i === 0) {
+            displayPic(par);
+        }
+
     }
 
-    // videos
-    var video = document.getElementById('videoElement');
-    video.innerHTML = "";
+    // // videos
+    // var video = document.getElementById('videoElement');
+    // video.innerHTML = "";
 
-    for (let i = 0; i < game.videos.length; i++) {
-        var vid = game.videos[i];
-        var par = 200 + i;
+    // for (let i = 0; i < game.videos.length; i++) {
+    //     var vid = game.videos[i];
+    //     var par = 200 + i;
 
-        galleryContainer.innerHTML = galleryContainer.innerHTML +
-            '<button class="gameDetailsGalleryButton">' +
-            '<img id="' + par + '" src="' + vid + '"class="gameDetailsGalleryImg" onclick="displayVid(' + par + ')">' +
-            '</button>'
-    }
+    //     galleryContainer.innerHTML = galleryContainer.innerHTML +
+    //         '<button class="gameDetailsGalleryButton">' +
+    //         '<img id="' + par + '" src="' + vid + '"class="gameDetailsGalleryImg" onclick="displayVid(' + par + ')">' +
+    //         '</button>'
+    // }
 
 
 
@@ -149,7 +158,7 @@ function backButtonClick() {
         case "gameDetailsPage":
             document.getElementById('searchBox').value = "";
             displayGameDetails(hist.id, true);
-            
+
             break;
 
         case "likedListPage":

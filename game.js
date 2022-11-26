@@ -200,10 +200,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_ca7376d838d5714f916936f0070824c27c4c5641.600x338.jpg?t=1646763462",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_31f499fa9bb7eb4b4cd5209988ff5f1d81756027.600x338.jpg?t=1646763462",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_01c9cbde469b82ab719fb30c491f5e1102894607.600x338.jpg?t=1646763462",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_61b6c855912c4542162252584b73dec0f9962f38.1920x1080.jpg?t=1646763462",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_fd59cd3b0af53cef7f9a726f3dbfc92625452f9e.1920x1080.jpg?t=1646763462",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_1e4a1d817d5b6b456bec8f71f5cb99e6a306e759.1920x1080.jpg?t=1646763462",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_3a84113daacead987f549fbc3bd95fa9e66a833b.1920x1080.jpg?t=1646763462"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256672764/movie480.webm?t=1476830888"
@@ -224,10 +224,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_1f1f380757cd18aecd83344329e8ed223b03a427.116x65.jpg?t=1668813907",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_e01ffb1c1ffa22e06ae99dc6fb71f56c91b5b0cc.600x338.jpg?t=1668813907",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_2d07e12de41060e3aa700b1a207e04ad92175aa4.600x338.jpg?t=1668813907",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_6fefacb27d22ce288b985055d7c3b79d39c3dc1e.1920x1080.jpg?t=1668813907",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_66b144b6406b43964c10dd474d2d4525ccf7b0a1.1920x1080.jpg?t=1668813907",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_3bc236957083b41c2820733cc41eb5f76063aa23.1920x1080.jpg?t=1668813907",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_2e25d5720f94648ec94dceb3f48a1dbf12d12c38.1920x1080.jpg?t=1668813907"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256913488/movie480_vp9.webm?t=1666987383", //trailer
@@ -248,10 +248,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.600x338.jpg?t=1668125812",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_3cef516c1a3c338f2554f3f11790aba3b7c0add7.600x338.jpg?t=1668125812",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_92c05c1cb1319beb15ed92c63b6b1d6f261d2f64.600x338.jpg?t=1668125812",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_34090867f1a02b6c17652ba9043e3f622ed985a9.1920x1080.jpg?t=1668125812",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_77215ea1b454c08a75351a74585a5b089142da3e.1920x1080.jpg?t=1668125812",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_110be563b66dde31b3b00dcf7d2f644c50374f07.1920x1080.jpg?t=1668125812",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_60b4f959497899515f46012df805b0006ef21af6.1920x1080.jpg?t=1668125812"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/81958/movie480.webm?t=1554409259" //trailer
@@ -272,10 +272,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_e825b087b95e51c3534383cfd75ad6e8038147c3.600x338.jpg?t=1669127647",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_b6cfe69db0aa6e4e7885efbe3acbe17ea2c24d0f.600x338.jpg?t=1669127647",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg?t=1669127647",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_1c2d0d1eefee54f0c67626c74eb21699bbb0ef52.1920x1080.jpg?t=1669127647",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_9dfb2cb3e93ab37ff47c7b2e011b1b9e42351107.1920x1080.jpg?t=1669127647",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_c88939db635d959b25eb1bcf9b4c4dcdec04b3fe.1920x1080.jpg?t=1669127647",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_326282c7485e8aff1ebf6750c82622afef098998.1920x1080.jpg?t=1669127647"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256684736/movie480_vp9.webm?t=1624520315" //trailer
@@ -296,10 +296,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_624638e46ed590d4bb1835558a5ab0981f7baadd.600x338.jpg?t=1657214217",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_6f1836277ffe8733503a9446d51b8c7eb3d20d5f.600x338.jpg?t=1657214217",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_f983c0c1cc566b8ca21a6c45e6f044b57aff0f0f.600x338.jpg?t=1657214217",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_bd8b719de92cfc9e65cd96d5da74426918964291.600x338.jpg?t=1657214217",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_f983c0c1cc566b8ca21a6c45e6f044b57aff0f0f.600x338.jpg?t=1657214217",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_bb22ac18c1db1a87d779db0c3fb480eb1ce79f0e.600x338.jpg?t=1657214217",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_bb22ac18c1db1a87d779db0c3fb480eb1ce79f0e.600x338.jpg?t=1657214217"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256871049/movie480_vp9.webm?t=1643331503" //trailer
@@ -320,10 +320,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_29b3b4f2a3994c889f6fc12e0781d9d4726ef33f.600x338.jpg?t=1666824129",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_ba2ea2eda245f89626277457ae2ab76ba997f46a.600x338.jpg?t=1666824129",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_2b06e1786598ab033411c27600de1868f023c663.600x338.jpg?t=1666824129",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_40c3f02a01ce435ea776b07fde7710c66532e6b6.1920x1080.jpg?t=1666824129",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_13912b20f591bfde622fc87174b3265a579bd9c9.1920x1080.jpg?t=1666824129",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_2b06e1786598ab033411c27600de1868f023c663.1920x1080.jpg?t=1666824129",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_1d9d6e638c8ad4b04fac0f49ca32947b31396f24.1920x1080.jpg?t=1666824129"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/5952/movie480.webm?t=1447353587" //trailer
@@ -393,10 +393,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_f367fad018a2cc92530e3b8fc7dc8541dd21b71e.600x338.jpg?t=1669235984",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_840ff7c3bd4209f2a35ba98fc19561089dce3f89.600x338.jpg?t=1669235984",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_93dcd15dc501062b3f6e2b1575d278133d457e59.600x338.jpg?t=1669235984",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_4e7802861ea7a1cb72e75a2003bf8769d47f6c4a.1920x1080.jpg?t=1669168252",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_0835a9016d0c453675994ec218a3dd70a73529ea.1920x1080.jpg?t=1669168252",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_b9c562ad66414ec37cf448f2f9d19d70009129ef.1920x1080.jpg?t=1669168252",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1599340/ss_ad65376ee41e614c8e28993168c294cb600e4777.1920x1080.jpg?t=1669168252"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256916251/movie480_vp9.webm?t=1668553272" // trailer
@@ -417,10 +417,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_f367fad018a2cc92530e3b8fc7dc8541dd21b71e.600x338.jpg?t=1669235984",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_840ff7c3bd4209f2a35ba98fc19561089dce3f89.600x338.jpg?t=1669235984",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_93dcd15dc501062b3f6e2b1575d278133d457e59.600x338.jpg?t=1669235984",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_428ca6c26d05fa1f4ad17c1d889510ffd3c4c60b.1920x1080.jpg?t=1669235984",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_8899e09c05645aa8730b57bc0412c07476312787.1920x1080.jpg?t=1669235984",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_33cce203fc6d3148ee705e3b73904d72dedd907e.1920x1080.jpg?t=1669235984",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_8cf91b7dd9ee5d110c72ddd3bde5aabe1a8faa56.1920x1080.jpg?t=1669235984"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256897088/movie480_vp9.webm?t=1658233223", //trailer
@@ -445,7 +445,7 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_0858b868ea51d53f73bd805ba7382f027dd33dca.1920x1080.jpg?t=1650554420",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_1351cb512d008f7e47fc50b74197f4f8eb6f3419.1920x1080.jpg?t=1650554420",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1593500/ss_8db3de5b5d611e50945268848de2889e1ed4ba84.1920x1080.jpg?t=1650554420"
-            
+    
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256864004/movie480_vp9.webm?t=1639001817" //trailer
@@ -466,10 +466,12 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_3e556415d1bda00d749b2166ced264bec76f06ee.600x338.jpg?t=1668042166",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_ae44317e3bd07b7690b4d62cc5d0d1df30367a91.600x338.jpg?t=1668042166",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_c372274833ae6e5437b952fa1979430546a43ad9.600x338.jpg?t=1668042166",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_e87a3e84890ab19f8995566e62762d5f8ed39315.600x338.jpg?t=1668042166",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_41e2e8f3b0ad631e929e0c2ec3d1f21de883e98c.600x338.jpg?t=1668042166",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_75f25974c20b8704fe5ee246f74896b550088d3e.600x338.jpg?t=1668042166",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_fb2957cce97f4633bc743b561f76865e6993c781.600x338.jpg?t=1668042166",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_8b58d96262fb0d62a482621b86c6ff85f4f57997.600x338.jpg?t=1668042166",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/ss_1011610a0e330c41a75ffd0b3a9a1bac3205c46a.600x338.jpg?t=1668042166"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256889452/movie480_vp9.webm?t=1654109247", //trailer
@@ -490,10 +492,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_d64b646612ab1402bdda8e400672aa0dbcb352ea.600x338.jpg?t=1650909796",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_921ccea650df936a0b14ebd5dd4ecc73c1d2a12d.600x338.jpg?t=1650909796",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_5d19c69d33abca6f6271d75f371d4241c0d6b2d1.600x338.jpg?t=1650909796",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_b6bb6f79278505b3f48567f08c21f7a0eb171c68.1920x1080.jpg?t=1650909796",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_8c7ecd394afb581b9b2137a3de04433f78fdf4ea.1920x1080.jpg?t=1650909796",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_50c3da9e29e9b0368889379cdd03a71aba8d614c.1920x1080.jpg?t=1650909796",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/489830/ss_2ca72f4ecc42a18dd4bf056c539a9794c2b2493d.1920x1080.jpg?t=1650909796"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256672927/movie480.webm?t=1476991615", //trailer
@@ -584,7 +586,7 @@ function defaultGames() {
             "pictures":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_38779cc03d7e37c2082d1c0e630107cf2ba61332.600x338.jpg?t=1646956219",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_0a759f4027ad366646fac37399a04599e09c2040.600x338.jpg?t=1646956219",
-                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_cbc118ee08695b438a37303fb0753df522687f6a.600x338.jpg?t=1646956219",                "",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_cbc118ee08695b438a37303fb0753df522687f6a.600x338.jpg?t=1646956219",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_48d90ad60e5e2e46f8990896e622e40c1df1ad0d.1920x1080.jpg?t=1646956219",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_7beaa34d62c37585b90a58a62919428673efb7ef.1920x1080.jpg?t=1646956219",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/544750/ss_7afa4001cf72e793c38da6e3b5894d7e4169802a.1920x1080.jpg?t=1646956219",
@@ -631,10 +633,9 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_0a541a8bf59e212870ea8d82260ac1b3ae2d0354.600x338.jpg?t=1669152840",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_e1d1bfebe225c85ea284ffecfe279c2695ddf3a5.600x338.jpg?t=1669152840",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_b06620c448c51d2bc5b71144a184da9ba37b703e.600x338.jpg?t=1669152840",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_ce00a212a29e9a6c1fc37b16dbd802b2844a901d.1920x1080.jpg?t=1669152840",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/230410/ss_29355e0546599c72002b34b42fe952329df61c2e.1920x1080.jpg?t=1669152840"
+                
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256904810/movie480_vp9.webm?t=1662572584", //trailer
@@ -655,10 +656,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_6c4a3cfb61f1a9677cf2ac549c2816a4e651f741.600x338.jpg?t=1669055236",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_b2bf12299c38214fe520af0f724a6349d17ed330.600x338.jpg?t=1669055236",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_36c63ebeb006b246cb740fdafeb41bb20e3b330d.600x338.jpg?t=1669055236",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_7ca34ff8ae81fb10ddc540187e2e21d1b8e1dfe9.1920x1080.jpg?t=1669055236",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_7f598198526afc260d939a98af4d76d95f5349e4.1920x1080.jpg?t=1669055236",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_cf53258cb8c4d283e52cf8dce3edf8656f83adc6.1920x1080.jpg?t=1669055236",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/289070/ss_f501156a69223131ee8b12452f3003698334e964.1920x1080.jpg?t=1669055236"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256672694/movie480.webm?t=1476736935", //trailer
@@ -679,10 +680,10 @@ function defaultGames() {
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_34a428cdd26113e8645b77331d9fc82fcc50a4a2.600x338.jpg?t=1668591196",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_66d58326ebea7154d7f3d89e02f13913452caef7.600x338.jpg?t=1668591196",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_d51d3ccb39019124c45bf851bbe6a76e2461fab3.600x338.jpg?t=1668591196",
-                "",
-                "",
-                "",
-                ""
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_5ba36377bbb88fdde6c9e9ccddb581d3a952ea6a.600x338.jpg?t=1668591196",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_d882a5136e99c31ac7192cd3648b0d547be53f0e.600x338.jpg?t=1668591196",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_9f7699218d7acc9e1dd0a081d3a2c5cae4ffba86.600x338.jpg?t=1668591196",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/435150/ss_f85eb1d28993d481dcde84118f5ac23c705a8774.600x338.jpg?t=1668591196"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256694830/movie480.webm?t=1561485484", //trailer

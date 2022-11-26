@@ -226,6 +226,11 @@ select {
     border: 0;
     float: left;
     opacity: 1;
+    transition: 0.5 ease;
+}
+
+.backButton:hover {
+    transition: 0.5 ease;
 }
 
 .backImage {
@@ -233,8 +238,6 @@ select {
     background-color: transparent;
     height: 100%;
 }
-
-
 
 #searchButton {
     background-color: transparent;
@@ -527,6 +530,7 @@ select {
     padding: 20px;
     font-weight: normal;
     color: white;
+    line-height: 1.5;
 }
 
 .displayItemButtonCol {

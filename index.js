@@ -27,6 +27,7 @@ function displayGameDetails(gameId, back) {
     if (back == null || back == false) addHistory("gameDetailsPage", gameId);
     hideElements();
     var game = getGame(gameId);
+
     document.getElementById('gameDetailsPage').style.display = "block";
 
 
@@ -34,15 +35,78 @@ function displayGameDetails(gameId, back) {
     document.getElementById('gameDetailsTitle').innerHTML = game.name;
     document.getElementById('gameDetailsName').innerHTML = game.name;
 
-    document.getElementById('gameDetailsPrice').innerHTML = "Price: "+ game.price;
+    document.getElementById('gameDetailsPrice').innerHTML = "Price: " + game.price;
     document.getElementById('gameDetailsDescription').innerHTML = game.description;
+
+    // pictures
+    var galleryContainer = document.getElementById('galleryContainer')
+    galleryContainer.innerHTML = "";
+
+    for (let i = 0; i < game.pictures.length; i++) {
+        var pic = game.pictures[i];
+        var par = 100 + i;
+
+        galleryContainer.innerHTML = galleryContainer.innerHTML +
+            '<button class="gameDetailsGalleryButton">' +
+            '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
+            '</button>'
+    }
+
+    // videos
+    var video = document.getElementById('videoElement');
+    var source = document.getElementById('videoSourceElement');
+    video.removeChild(source);
+
+    for (let i = 0; i < game.videos.length; i++) {
+        var vid = game.videos[i];
+        var par = 200 + i;
+
+        galleryContainer.innerHTML = galleryContainer.innerHTML +
+            '<button class="gameDetailsGalleryButton">' +
+            '<img id="' + par + '" src="' + vid + '"class="gameDetailsGalleryImg" onclick="displayVid(' + par + ')">' +
+            '</button>'
+    }
+
+
+
+    //tags
     var tagContainer = document.getElementById('tagContainer');
+    tagContainer.innerHTML = "";
 
     game.tags.forEach(tag => {
-        tagContainer.innerHTML = tagContainer.innerHTML+ '<text class="gameDetailsTagText">'+tag+'</text>'
+        tagContainer.innerHTML = tagContainer.innerHTML + '<text class="gameDetailsTagText">' + tag + '</text>'
     });
 
     updateHeartGameDetails(gameId);
+}
+
+function displayPic(id) {
+    var image = document.getElementById('gameDetailsMainImage');
+    image.hidden = false;
+    image.src = document.getElementById(id).src;
+
+    // hide video
+    var video = document.getElementById('videoElement');
+    video.pause();
+    video.innerHTML = "";
+    video.hidden = true;
+}
+
+function displayVid(id) {
+    alert("vid")
+    var video = document.getElementById('videoElement');
+    video.hidden = false;
+    video.innerHTML = "";
+    video.innerHTML = '<source id="videoSourceElement" type="video/mp4" src="' +
+        document.getElementById(id).src + '">';
+
+    // var source = document.getElementById('videoSourceElement');
+    // source.src = "";
+    // source.src = document.getElementById(id).src;
+
+    // hide image
+    var image = document.getElementById('gameDetailsMainImage');
+    image.hidden = true;
 }
 
 function clickedRandomGame() {
@@ -77,7 +141,7 @@ function backButtonClick() {
             document.getElementById('searchBox').value = hist.id;
             searchGames(true);
             break;
-        
+
         case "home":
             document.getElementById('searchBox').value = "";
             home(true);
@@ -86,6 +150,7 @@ function backButtonClick() {
         case "gameDetailsPage":
             document.getElementById('searchBox').value = "";
             displayGameDetails(hist.id, true);
+            
             break;
 
         case "likedListPage":
@@ -115,7 +180,7 @@ function addHistory(page, id) {
         history = [{ "page": page, "id": id }];
     } else if (history[history.length - 1].page !== page) {
         history.push({ "page": page, "id": id })
-    } else if(history[history.length - 1].id !== id){
+    } else if (history[history.length - 1].id !== id) {
         history.push({ "page": page, "id": id })
     }
 

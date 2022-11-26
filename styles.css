@@ -38,7 +38,7 @@ body {
     margin: 0px 5px 5px 0px;
     width: 200px;
     height: 270px;
-    object-fit: fill;
+    object-fit: cover;
     object-position: 50% 50%;
     display: block;
     opacity: 1;

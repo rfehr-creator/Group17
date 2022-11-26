@@ -44,6 +44,10 @@ function searchGames(back) {
 }
 
 function addSearchResultGame(game, element) {
+    var price = "$"+game.price;
+    if (game.price <= 0) {
+        price = "Free";
+    }
     element.innerHTML = element.innerHTML +
         '  <div class="displayItem">' +
         '  <table class="displayItemTable">' +
@@ -57,7 +61,7 @@ function addSearchResultGame(game, element) {
         '          <br>' +
         '          <text class="displayItemDescText">' + game.description + '</text>' +
         '        </p>' +
-        '        <p class="displayItemDescTitle">$' + game.price + '</p>' +
+        '        <p class="displayItemDescTitle">' + price + '</p>' +
         '      </td>' +
         '    </tr>' +
         '  </table>' +

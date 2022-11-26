@@ -197,7 +197,9 @@ function defaultGames() {
             "price": 59.99,
             "displayPicture": "https://www.xtrafondos.com/wallpapers/vertical/call-of-duty-black-ops-iii-1452.jpg",
             "pictures":[
-                
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_ca7376d838d5714f916936f0070824c27c4c5641.600x338.jpg?t=1646763462",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_31f499fa9bb7eb4b4cd5209988ff5f1d81756027.600x338.jpg?t=1646763462",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/311210/ss_01c9cbde469b82ab719fb30c491f5e1102894607.600x338.jpg?t=1646763462"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256672764/movie480.webm?t=1476830888"
@@ -214,14 +216,18 @@ function defaultGames() {
             "price": 69.99,
             "displayPicture": "https://4kwallpapers.com/images/wallpapers/call-of-duty-modern-warfare-2-2022-games-call-of-duty-1440x2560-8580.jpg",
             "pictures":[
-
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_b7d2f0b086a9d7d27fbab073e6fabd304ba5a908.600x338.jpg?t=1668813907",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_1f1f380757cd18aecd83344329e8ed223b03a427.116x65.jpg?t=1668813907",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_e01ffb1c1ffa22e06ae99dc6fb71f56c91b5b0cc.600x338.jpg?t=1668813907",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1938090/ss_2d07e12de41060e3aa700b1a207e04ad92175aa4.600x338.jpg?t=1668813907"
             ],
             "videos":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/256913488/movie480_vp9.webm?t=1666987383", //trailer
             ],
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["FPS", "Action", "Shooter", "Multiplayer", "Military"],
+            "tags": ["FPS", "Action", "Shooter", "Multiplayer"],
         },
         {
             "id": 3,
@@ -230,6 +236,10 @@ function defaultGames() {
             "price": 0.00,
             "displayPicture": "https://valvearchive.com/archive/Counter-Strike/Counter-Strike%20Global%20Offensive/Art/csgo_keyart_alt.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_118cb022b9a43f70d2e5a2df7427f29088b6b191.600x338.jpg?t=1668125812",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_d196d945c6170e9cadaf67a6dea675bd5fa7a046.600x338.jpg?t=1668125812",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_3cef516c1a3c338f2554f3f11790aba3b7c0add7.600x338.jpg?t=1668125812",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/730/ss_92c05c1cb1319beb15ed92c63b6b1d6f261d2f64.600x338.jpg?t=1668125812"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/81958/movie480.webm?t=1554409259" //trailer
@@ -246,6 +256,10 @@ function defaultGames() {
             "price": 50.49,
             "displayPicture": "https://i.pinimg.com/736x/5d/42/06/5d420640b1e232674efbb4fcadc5374a.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_2a8518810024a5fbf9c714e697a43a1201b5d53e.600x338.jpg?t=1669127647",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_e825b087b95e51c3534383cfd75ad6e8038147c3.600x338.jpg?t=1669127647",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_b6cfe69db0aa6e4e7885efbe3acbe17ea2c24d0f.600x338.jpg?t=1669127647",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/252490/ss_0e646f1a70e5cb8eed00efef8adb9579d40d5b2e.600x338.jpg?t=1669127647"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256684736/movie480_vp9.webm?t=1624520315" //trailer
@@ -269,7 +283,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["RPG", "Action", "Looter Shooter", "FPS", "Multiplayer"],
+            "tags": ["RPG", "Action", "Shooter", "FPS", "Multiplayer"],
         },
         {
             "id": 6,
@@ -369,7 +383,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Action", "Singleplayer", "Adventure", "Story Rich", "3D"],
+            "tags": ["Action", "Singleplayer", "Adventure", "Story Rich"],
         },
         {
             "id": 12,
@@ -389,7 +403,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Souls-like", "Dark Fantasy", "RPG", "Difficult", "Action"],
+            "tags": ["Fantasy", "RPG", "Action RPG", "Action"],
         },
         {
             "id": 13,
@@ -425,7 +439,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Cyberpunk", "Open World", "RPG", "Nudity", "Sci-fi"],
+            "tags": ["Open World", "RPG", "Singleplayer", "Sci-fi"],
         },
         {
             "id": 15,
@@ -441,7 +455,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Open World", "RPG", "Story Rich", "Atmospheric"],
+            "tags": ["Open World", "RPG", "Story Rich", "Fantasy"],
         },
         {
             "id": 16,
@@ -473,7 +487,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Fighting", "Action", "Character Customization", "Arcade"],
+            "tags": ["Fighting", "Action", "Character Customization", "Mulitplayer"],
         },
         {
             "id": 18,
@@ -489,8 +503,8 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Fighting", "Gore", "Violent", "Multiplayer", "Blood"],
-        }, //NEW 23-11
+            "tags": ["Fighting", "Multiplayer", "Action", "Competitive"],
+        },
         {
             "id": 19,
             "name": "Warframe",
@@ -509,7 +523,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Free To Play", "Action RPG", "Looter Shooter", "RPG"],
+            "tags": ["Free To Play", "Action RPG", "Shooter", "RPG"],
         },
         {
             "id": 20,
@@ -529,7 +543,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Strategy", "Turn-Based Strategy", "Historical", "4X"],
+            "tags": ["Strategy", "Turn-Based Strategy", "Singleplayer", "Multiplayer"],
         },
         {
             "id": 21,
@@ -568,7 +582,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Strategy", "Turn-Based", "Turn-Based Strategy", "Sci-fi"],
+            "tags": ["Strategy", "Turn-Based Strategy", "Sci-fi", "Character Customization"],
         },
         {
             "id": 23,
@@ -608,7 +622,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Horror", "Survival Horror", "Multiplayer", "Online Co-op", "Survival"],
+            "tags": ["Horror", "Survival", "Multiplayer", "Online Co-op"],
         },
         {
             "id": 25,
@@ -628,7 +642,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Open World Survival Craft", "Survival", "Open World", "Horror", "Crafting"],
+            "tags": ["Survival", "Open World", "Horror", "Crafting"],
         },
         {
             "id": 26,
@@ -648,7 +662,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Horror", "Online Co-op", "Multiplayer", "Co-op", "VR"],
+            "tags": ["Horror", "Online Co-op", "Multiplayer", "Co-op"],
         },
         {
             "id": 27,
@@ -688,7 +702,7 @@ function defaultGames() {
             "liked": false,
             "disliked": false,
             "inCart": false,
-            "tags": ["Immersive Sim", "Sports", "Simulation", "Basketball"],
+            "tags": ["Immersive Sim", "Sports", "Co-op", "Basketball"],
         },
         {
             "id": 29,

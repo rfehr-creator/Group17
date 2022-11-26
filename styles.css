@@ -563,11 +563,10 @@ select {
     float: right;
     width: 250px;
     border-spacing: 0;
-    border: 2px solid #282828;
     border-radius: 5px;
     color: white;
     box-shadow: 0px 0px 5px 0px black;
-    background: #171717;
+    background: #282828;
 }
 
 .orderButton {
@@ -625,8 +624,8 @@ select {
     width: 90%;
     text-align: center;
     border: none;
-    background-color: #282828;
-    height: 2px;
+    background-color: #535353;
+    height: 1px;
 }
 
 .cartLevel0 {
@@ -637,8 +636,16 @@ select {
     z-index: 0;
 }
 
+.gameDetailsAreaPadding {
+    padding: 20px;
+    min-width: 680px;
+}
+
 .gameDetailsArea {
     padding: 20px;
+    background-color:#282828;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .gameDetailsVideo {

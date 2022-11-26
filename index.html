@@ -145,7 +145,7 @@
 
     <!--This is for a single item-->
     <div id="likedlistItemContainer">
-     
+
     </div>
   </div>
 
@@ -244,6 +244,7 @@
     </table>
     <!--Game details area-->
     <div id="gameDetailsGrid">
+      <div class="gameDetailsAreaPadding">
       <!--Pictures, details, tags, etc-->
       <div class="gameDetailsArea cartLevel1">
         <!--Main picture-->
@@ -306,7 +307,7 @@
               src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
               class="gameDetailsGalleryImg"></button>
         </div>
-        
+
         <br>
         <!--Description-->
         <div id="gameDetailsDescription" class="gameDetailsText">
@@ -315,12 +316,13 @@
         <br>
 
         <!--Tags-->
-        <div  class="gameDetailsTags">
+        <div class="gameDetailsTags">
           <!--Put tags into this-->
           <p id="tagContainer" class="gameDetailsTagsArea">
           </p>
         </div>
       </div>
+    </div>
 
       <!--Game details buy options-->
       <div id="gameDetailsCartDiv" class="cartLevel0">
@@ -352,17 +354,17 @@
           <tr>
             <!--Add to cart button-->
             <td class="orderTableCell gameDetailsBuyCell">
-              <button id="gameDetailsAddCartButton" class="displayItemButton"
-                onclick="addGameToCart()">Add to Cart</button>
+              <button id="gameDetailsAddCartButton" class="displayItemButton" onclick="addGameToCart()">Add to
+                Cart</button>
             </td>
           </tr>
           <tr>
             <!--Like button-->
             <td class="orderTableCell">
-                <button id="likeButton" class="likeDislikeButton" onclick="addGameToLikedList()">
-                  <div class="heart">
-                    <svg viewbox="0 0 220 220">
-                      <path id="heartPathGameDetails" d="M30 100
+              <button id="likeButton" class="likeDislikeButton" onclick="addGameToLikedList()">
+                <div class="heart">
+                  <svg viewbox="0 0 220 220">
+                    <path id="heartPathGameDetails" d="M30 100
                                               L110 175
                                               L190 100
                                               Q220 70 200 30
@@ -371,9 +373,9 @@
                                               Q100 10 60 10
                                               Q30 10 20 30
                                               Q0 70 30 100Z" />
-                    </svg>
-                  </div>
-                </button>
+                  </svg>
+                </div>
+              </button>
             </td>
           </tr>
         </table>

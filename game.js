@@ -222,7 +222,7 @@ function defaultGames() {
             "name": "Borderlands 3",
             "description": "The original shooter-looter returns, packing bazillions of guns and a mayhem-fueled adventure! Blast through new worlds and enemies as one of four new Vault Hunters.",
             "price": 79.99,
-            "displayPicture": "http://m.gettywallpapers.com/wp-content/uploads/2020/07/Borderlands-3-Background-phone.jpg",
+            "displayPicture": "https://external-preview.redd.it/YAPF3mFktcVd9moP1vLuW9CSKRkbsMIk367ANq7R_d4.jpg?auto=webp&s=7aa87eb7a9f6ff8fe329cfc936da963791e43512",
             "picutres":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256871049/movie480_vp9.webm?t=1643331503" //trailer
             ],

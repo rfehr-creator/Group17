@@ -48,7 +48,13 @@ function sortResults(games, element) {
         });
     } else {
         games.sort(function (a, b) {
-            return a.name - b.name;
+            if(a.name.toLowerCase() < b.name.toLowerCase()){
+                return -1;
+            }
+            if(a.name.toLowerCase() > b.name.toLowerCase()){
+                return 1;
+            }
+            return 0;
         });
     }
     return games;

@@ -54,8 +54,7 @@ function displayGameDetails(gameId, back) {
 
     // videos
     var video = document.getElementById('videoElement');
-    var source = document.getElementById('videoSourceElement');
-    video.removeChild(source);
+    video.innerHTML = "";
 
     for (let i = 0; i < game.videos.length; i++) {
         var vid = game.videos[i];

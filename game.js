@@ -20,14 +20,19 @@ function addToCart(id){
 function addGameToLikedList() {
     var gameId = document.getElementById('gameDetailsPage').data;
 
+    addToLikedlist(gameId);
+}
+
+function addToLikedlist(id){
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {
         const game = games[index];
-        if (game.id === gameId) {
+        if (game.id === id) {
             game.liked = true;
         }
     }
     storeGames(games);
+    updateHeart();
 }
 
 function updateCartBadge() {
@@ -108,6 +113,7 @@ function removeLikedGame(id){
     storeGames(games);
     DisplayLikedList();
     addLikedGamesToGameDiv();
+    updateHeart();
 }
 
 function removeDislikedGame(id) {
@@ -136,6 +142,20 @@ function checkout(){
     updateCartBadge();
     alert("Checkout was successful")
     home(); // to refresh empty cart
+}
+
+function removeFromCart(id){
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        var game = games[index];
+        if (game.id == id) {
+            game.inCart = false;
+        }
+    }
+
+    storeGames(games);
+    updateCartBadge();
+    DisplayCartItems();
 }
 
 // loads games stored in local storage, local storage is used to keep track of modified games

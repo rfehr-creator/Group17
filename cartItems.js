@@ -56,10 +56,10 @@ function addGame(game,element){
                 "<p class='displayItemDescTitle displayItemDescPrice'>"+price+"</p>"+
             "</td>"+
             "<td class='displayItemButtonCol'>"+
-                "<button class='displayItemButton'>Remove from cart</button>"+
+                "<button class='displayItemButton' onclick='removeFromCart("+game.id+")'>Remove from cart</button>"+
                 "<br>"+
                 "<br>"+
-                "<button class='displayItemButton'>Add to Liked List</button>"+
+                "<button class='displayItemButton' onclick='addToLikedlist("+game.id+")'>Add to Liked List</button>"+
             "</td>"+
         "</tr>"
     "</table>"+

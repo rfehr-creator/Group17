@@ -39,12 +39,12 @@ function clickedRandomGame() {
     displayGameDetails(id.id);
 }
 
-function clearTable(name) {
-    var table = document.getElementById(name);
-    while (table.rows.length > 0) {
-        table.deleteRow(0);
-    }
-}
+// function clearTable(name) {
+//     var table = document.getElementById(name);
+//     while (table.rows.length > 0) {
+//         table.deleteRow(0);
+//     }
+// }
 
 // hide all elements divs on main page
 function hideElements() {

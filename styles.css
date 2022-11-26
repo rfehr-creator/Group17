@@ -225,6 +225,7 @@ select {
     height: 30px;
     border: 0;
     float: left;
+    opacity: 1;
 }
 
 .backImage {
@@ -232,6 +233,8 @@ select {
     background-color: transparent;
     height: 100%;
 }
+
+
 
 #searchButton {
     background-color: transparent;

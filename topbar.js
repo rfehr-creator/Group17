@@ -13,15 +13,13 @@ function home() {
 // update back button
 function updateBackButton(){
     var len = getHistory().length;
-    var backButton = document.getElementsByClassName("backImage");
-    for (let i = 0; i < backButton.length; i++) {
-        if(len <= 1){
-            backButton[i].style.opacity = 0.4;
-        }
-        else{
-            backButton[i].style.opacity = 1;
-            //backButton.classList.add('hover');
-        }
+
+    var backButton = document.getElementById("backButton");
+    if(len <= 1){
+        backButton.style = "opacity: 0.4";
+    }
+    else{
+        backButton.style = "opacity: 1";
     }
 }
 

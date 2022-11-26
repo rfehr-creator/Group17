@@ -17,6 +17,26 @@ function onPageLoad() {
             searchGames();
         }
     });
+
+    // back button hover
+    var backButtonHover = document.getElementById("backButton");
+    backButtonHover.addEventListener("mouseover", function (event) {
+        backButtonHover.style = "opacity: .4";
+    });
+
+    backButtonHover.addEventListener("mouseleave", function (event) {
+        
+        var len = getHistory().length;
+
+        var backButton = document.getElementById("backButton");
+        if (len <= 1) {
+            backButton.style = "opacity: 0.4";
+        }
+        else {
+            backButton.style = "opacity: 1";
+        }
+    });
+
     updateBackButton()
     localStorage.setItem('history', null);
     addHistory("home", "");
@@ -53,7 +73,7 @@ function displayGameDetails(gameId, back) {
             '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
             '</button>'
 
-            
+
         // show first image by default
         if (i === 0) {
             displayPic(par);

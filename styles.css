@@ -14,7 +14,7 @@ body {
     margin: 0px;
     border-radius: 5px;
     box-shadow: 0px 5px 0px 0px black;
-    
+
 }
 
 #likedGamesTitle {
@@ -342,8 +342,14 @@ select {
     transition: 0.5s ease;
 }
 
-#heartPathGameDetails:hover{
+#heartPathGameDetails {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+#heartPathGameDetails:hover {
     opacity: 0.6;
+    transition: 0.5s ease;
 }
 
 .cartButtonDiv {
@@ -365,7 +371,7 @@ select {
     top: 6px;
     font-size: 12px;
     font-weight: bolder;
-    color:black;
+    color: black;
 }
 
 #heartButton {

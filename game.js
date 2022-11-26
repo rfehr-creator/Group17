@@ -332,6 +332,16 @@ function defaultGames() {
             "price": 24.99,
             "displayPicture": "https://img.finalfantasyxiv.com/lds/h/W/oD5KOpOh_r1uwlBpW6wrPUewHA.jpg",
             "pictures":[
+                
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_ca57d5322b116ffaab2de37958df59eba8c7807a.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_f1bc7a959795c1fad6bfc602ccbd0e311075a454.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_ddb71dc0c9a667de5c23e0b3823dad3590d5e9bb.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_912ffecab72b0ec4132e100582a6592e559ac3aa.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_d37db153382217ad479679691899588e8d173937.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_b13bbf3e5c841c759483c63604b0359080700dbd.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_ed8445bec9d85b79079f7ec46be38adc4068e3c5.600x338.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_e4686dc9cbe1b0d9d4d96bc029c766b195325209.116x65.jpg?t=1646695302",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/39210/ss_634fd54775211fc96a911857f4baac7109985b5b.600x338.jpg?t=1646695302"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/2029865/movie480.webm?t=1447359267" //trailer

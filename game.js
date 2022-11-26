@@ -30,7 +30,7 @@ function updateHeartGameDetails(id){
     if(game.liked){
         heartDetails.style = "fill: red;";
     } else{
-        heartDetails.style = "fill: #171717; stroke: red; stroke-width: 15px";
+        heartDetails.style = "fill: #282828; stroke: red; stroke-width: 15px";
     }
 }
 

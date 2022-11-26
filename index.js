@@ -35,7 +35,12 @@ function displayGameDetails(gameId, back) {
     document.getElementById('gameDetailsName').innerHTML = game.name;
 
     document.getElementById('gameDetailsPrice').innerHTML = "Price: "+ game.price;
-    document.getElementById('gameDetailsDescription').innerHTML = "Price: "+ game.description;
+    document.getElementById('gameDetailsDescription').innerHTML = game.description;
+    var tagContainer = document.getElementById('tagContainer');
+
+    game.tags.forEach(tag => {
+        tagContainer.innerHTML = tagContainer.innerHTML+ '<text class="gameDetailsTagText">'+tag+'</text>'
+    });
 
     updateHeartGameDetails(gameId);
 }

@@ -37,8 +37,8 @@ body {
 .gameImage {
     margin: 0px 5px 5px 0px;
     width: 200px;
-    height: 250px;
-    object-fit: cover;
+    height: 270px;
+    object-fit: fill;
     object-position: 50% 50%;
     display: block;
     opacity: 1;

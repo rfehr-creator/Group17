@@ -66,7 +66,7 @@ body {
 
 #gameDetailsGrid {
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: auto 260px;
 }
 
 .gameDetailsheart {
@@ -431,7 +431,7 @@ select {
 
 #cartBody {
     display: grid;
-    grid-template-columns: 70% auto;
+    grid-template-columns: auto 260px;
 }
 
 .pageTitleTable {
@@ -491,6 +491,7 @@ select {
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px black;
     width: 100%;
+    min-width: 680px;
 }
 
 .displayItemImgCol {
@@ -561,7 +562,7 @@ select {
 
 .orderTable {
     float: right;
-    width: 250px;
+    width: 240px;
     border-spacing: 0;
     border-radius: 5px;
     color: white;
@@ -572,7 +573,7 @@ select {
 .orderButton {
     background: #3275D9;
     border: none;
-    width: 90%;
+    width: 200px;
     height: 50px;
     border-radius: 5px;
     justify-content: center;

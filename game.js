@@ -25,13 +25,12 @@ function addGameToLikedList() {
 }
 
 function updateHeartGameDetails(id){
-    alert("Update game details heart")
     var heartDetails = document.getElementById('heartPathGameDetails');
     var game = getGame(id);
     if(game.liked){
-        heartDetails.style.fill = "red";
+        heartDetails.style = "fill: red;";
     } else{
-        heartDetails.style.stroke = "red";
+        heartDetails.style = "fill: #171717; stroke: red; stroke-width: 15px";
     }
 }
 

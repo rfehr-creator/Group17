@@ -38,7 +38,6 @@ function displayGameDetails(gameId, back) {
     document.getElementById('gameDetailsDescription').innerHTML = "Price: "+ game.description;
 
     updateHeartGameDetails(gameId);
-    alert("hi")
 }
 
 function clickedRandomGame() {

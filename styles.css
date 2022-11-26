@@ -335,6 +335,10 @@ select {
     transition: 0.5s ease;
 }
 
+#heartPathGameDetails:hover{
+    opacity: 0.6;
+}
+
 .cartButtonDiv {
     height: inherit;
 }

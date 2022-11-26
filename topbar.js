@@ -6,6 +6,8 @@ function home() {
 
     // Show main table when details page is closed
     document.getElementById('mainDisplayTable').style.visibility = "visible";
+    displayRandomGame();
+    addLikedGamesToGameDiv();
 }
 
 // update back button

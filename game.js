@@ -276,6 +276,10 @@ function defaultGames() {
             "price": 79.99,
             "displayPicture": "https://external-preview.redd.it/YAPF3mFktcVd9moP1vLuW9CSKRkbsMIk367ANq7R_d4.jpg?auto=webp&s=7aa87eb7a9f6ff8fe329cfc936da963791e43512",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_9868ee40f39749a4c8222502cf86525ee32c1bef.600x338.jpg?t=1657214217",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_624638e46ed590d4bb1835558a5ab0981f7baadd.600x338.jpg?t=1657214217",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_6f1836277ffe8733503a9446d51b8c7eb3d20d5f.600x338.jpg?t=1657214217",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/397540/ss_f983c0c1cc566b8ca21a6c45e6f044b57aff0f0f.600x338.jpg?t=1657214217"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256871049/movie480_vp9.webm?t=1643331503" //trailer
@@ -292,6 +296,10 @@ function defaultGames() {
             "price": 12.99,
             "displayPicture": "https://picfiles.alphacoders.com/174/thumb-17456.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_2eae29fbdfe8e5e8999b96d8bb28c5db70507968.600x338.jpg?t=1666824129",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_29b3b4f2a3994c889f6fc12e0781d9d4726ef33f.600x338.jpg?t=1666824129",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_ba2ea2eda245f89626277457ae2ab76ba997f46a.600x338.jpg?t=1666824129",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/550/ss_2b06e1786598ab033411c27600de1868f023c663.600x338.jpg?t=1666824129"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/5952/movie480.webm?t=1447353587" //trailer
@@ -340,6 +348,10 @@ function defaultGames() {
             "price": 0.00,
             "displayPicture": "https://m.media-amazon.com/images/M/MV5BOTA3YjIxNjYtNzU1ZS00NmEzLTk4ZjItN2M4MGYwMDcwZDM4XkEyXkFqcGdeQXVyODczMTkwNzY@._V1_.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_ecb8cb71b127f9f6eea9bcdadddabd5b6d8f734f.600x338.jpg?t=1669235984",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_f367fad018a2cc92530e3b8fc7dc8541dd21b71e.600x338.jpg?t=1669235984",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_840ff7c3bd4209f2a35ba98fc19561089dce3f89.600x338.jpg?t=1669235984",
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/582660/ss_93dcd15dc501062b3f6e2b1575d278133d457e59.600x338.jpg?t=1669235984"
             ],
             "videos":[
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/256916251/movie480_vp9.webm?t=1668553272" // trailer

@@ -28,10 +28,17 @@ function displayGameDetails(gameId, back) {
     hideElements();
     var game = getGame(gameId);
     document.getElementById('gameDetailsPage').style.display = "block";
+
+
     document.getElementById('gameDetailsPage').data = gameId;
     document.getElementById('gameDetailsTitle').innerHTML = game.name;
-    document.getElementById('gameDetailsTitle2').innerHTML = game.name;
-    document.getElementById('gameDetailsMainImage').src = game.displayPicture;
+    document.getElementById('gameDetailsName').innerHTML = game.name;
+
+    document.getElementById('gameDetailsPrice').innerHTML = "Price: "+ game.price;
+    document.getElementById('gameDetailsDescription').innerHTML = "Price: "+ game.description;
+
+    updateHeartGameDetails(gameId);
+    alert("hi")
 }
 
 function clickedRandomGame() {
@@ -39,12 +46,6 @@ function clickedRandomGame() {
     displayGameDetails(id.id);
 }
 
-// function clearTable(name) {
-//     var table = document.getElementById(name);
-//     while (table.rows.length > 0) {
-//         table.deleteRow(0);
-//     }
-// }
 
 // hide all elements divs on main page
 function hideElements() {

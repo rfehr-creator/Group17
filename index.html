@@ -120,31 +120,8 @@
     </table>
 
     <div id="SearchResultContainerItems">
-      <!--This is for a single item-->
-      <div class="displayItem">
-        <table class="displayItemTable">
-          <tr>
-            <td class="displayItemImgCol">
-              <img class="displayItemImg"
-                src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
-            </td>
-            <td class="displayItemDescCol">
-              <p class="displayItemDescTitle">FINAL FANTASY XIV Online
-                <br>
-                <text class="displayItemDescText">Description</text>
-              </p>
-              <p class="displayItemDescTitle">$24.99</p>
-            </td>
-          </tr>
-        </table>
-      </div>
-      <br>
-      <!--End of single item-->
+
     </div>
-    <table id="searchResultTable" class="searchResults">
-      <tbody id="tableBody">
-      </tbody>
-    </table>
   </div>
 
   <!-- liked list results -->
@@ -168,31 +145,7 @@
 
     <!--This is for a single item-->
     <div id="likedlistItemContainer">
-      <!-- <div class="displayItem">
-      <table class="displayItemTable">
-        <tr>
-          <td class="displayItemImgCol">
-            <img class="displayItemImg"
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/39210/header.jpg?t=1646695302">
-          </td>
-          <td class="displayItemDescCol">
-            <p class="displayItemDescTitle">FINAL FANTASY XIV Online
-              <br>
-              <text class="displayItemDescText">Description</text>
-            </p>
-            <p class="displayItemDescTitle">$24.99</p>
-          </td>
-          <td class="displayItemButtonCol">
-            <button class="displayItemButton">Remove From List</button>
-            <br>
-            <br>
-            <button class="displayItemButton">Add to Cart</button>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <br> -->
-      <!--End of single item-->
+     
     </div>
   </div>
 
@@ -356,7 +309,7 @@
         
         <br>
         <!--Description-->
-        <div class="gameDetailsText">
+        <div id="gameDetailsDescription" class="gameDetailsText">
           Description of game
         </div>
         <br>
@@ -386,13 +339,13 @@
         <table class="orderTable">
           <tr>
             <!--Game name-->
-            <td class="orderTableCell orderTitleCell">
+            <td id="gameDetailsName" class="orderTableCell orderTitleCell">
               Name Here
             </td>
           </tr>
           <tr>
             <!--Game price-->
-            <td class="orderTableCell orderTableCategory">
+            <td id="gameDetailsPrice" class="orderTableCell orderTableCategory">
               Price:
             </td>
           </tr>
@@ -418,9 +371,23 @@
           <tr>
             <!--Like button-->
             <td class="orderTableCell">
-              <button id="gameDetailsLikedButton" onclick="addGameToLikedList()">
-                <img class="gameDetailsHeart" src="https://cdn-icons-png.flaticon.com/128/833/833472.png">
-              </button>
+                <button id="likeButton" class="likeDislikeButton" onclick="addGameToLikedList()">
+                  <div class="heart">
+                    <svg viewbox="0 0 220 220">
+                      <path id="heartPath" d="M30 100
+                                              L110 175
+                                              L190 100
+                                              Q220 70 200 30
+                                              Q190 10 160 10
+                                              Q120 10 110 50
+                                              Q100 10 60 10
+                                              Q30 10 20 30
+                                              Q0 70 30 100Z" />
+                    </svg>
+                  </div>
+                </button>
+                <!-- <img class="gameDetailsHeart" src="https://cdn-icons-png.flaticon.com/128/833/833472.png"> -->
+             
             </td>
           </tr>
         </table>

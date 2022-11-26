@@ -21,6 +21,18 @@ function addGameToLikedList() {
     var gameId = document.getElementById('gameDetailsPage').data;
 
     addToLikedlist(gameId);
+    updateHeartGameDetails(gameId);
+}
+
+function updateHeartGameDetails(id){
+    alert("Update game details heart")
+    var heartDetails = document.getElementById('heartPathGameDetails');
+    var game = getGame(id);
+    if(game.liked){
+        heartDetails.style.fill = "red";
+    } else{
+        heartDetails.style.stroke = "red";
+    }
 }
 
 function addToLikedlist(id){

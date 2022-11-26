@@ -542,6 +542,11 @@ select {
     box-shadow: 0px 0px 5px 0px black;
 }
 
+.displayItemButton:active {
+    box-shadow: inset 0px 0px 5px 0px black;
+    transition: 0.5s ease;
+}
+
 .orderTable {
     float: right;
     width: 250px;
@@ -568,6 +573,11 @@ select {
 
 .orderButton:hover {
     background: #6796de;
+    transition: 0.5s ease;
+}
+
+.orderButton:active {
+    box-shadow: inset 0px 0px 5px 0px black;
     transition: 0.5s ease;
 }
 

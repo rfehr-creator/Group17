@@ -326,13 +326,17 @@ function addSearchResultGame(game, element) {
         '  <table class="displayItemTable">' +
         '    <tr>' +
         '      <td class="displayItemImgCol">' +
-        '        <img class="displayItemImg" onclick="displayGameDetails('+game.id+')"' +
-        '          src="' + game.displayPicture + '">' +
+                '<div class="displayItemImgContainer">'+
+                '<img class="displayItemImg" src="' + game.displayPicture + '"' + 'onclick="displayGameDetails(' + game.id + ')">' +
+                    '<div class="gameDetailsMiddle">'+
+                        '<div class="gameDetailsText" onclick="displayGameDetails(' + game.id + ')">Click for details</div>' +
+                    '</div>'+
+                '</div>'+
         '      </td>' +
         '      <td class="displayItemDescCol">' +
         '        <p class="displayItemDescTitle">' + game.name +
         '          <br><br>' +
-        tags +
+                    tags +
         '          <text class="displayItemDescText">' + game.description + '</text>' +
         '        </p>' +
         '        <p class="displayItemDescTitle">' + price + '</p>' +

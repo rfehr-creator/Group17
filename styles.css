@@ -551,7 +551,8 @@ select {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-line-clamp: 5;
+    /* number of lines to show */
     -webkit-box-orient: vertical;
 }
 
@@ -666,7 +667,7 @@ select {
 
 .gameDetailsArea {
     padding: 20px;
-    background-color:#282828;
+    background-color: #282828;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px black;
 }

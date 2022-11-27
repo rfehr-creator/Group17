@@ -833,7 +833,8 @@ select {
     opacity: 1;
     background: none;
     transition: 0.5s ease;
-    margin-right: 5px;
+    margin-right: 13px;
+    margin-left: -6px;
 }
 
 .gameDetailsGalleryButton:hover {

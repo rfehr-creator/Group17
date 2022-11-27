@@ -168,6 +168,40 @@ select {
     opacity: 1;
 }
 
+.gameDetailsTopRight {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 19px;
+    right: -3px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    user-select: none;
+}
+
+.gameDetailsUnlike {
+    padding-top: 4px;
+    padding-bottom: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: block;
+    color: white;
+    font-size: 20px;
+    opacity: 1;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.gameDetailsUnlike:hover {
+    color: red;
+    transition: 0.5s ease;
+}
+
+.likedGameContainer:hover .gameDetailsTopRight {
+    opacity: 1;
+}
+
 .likeDislikeDiv {
     display: flex;
     flex-wrap: nowrap;

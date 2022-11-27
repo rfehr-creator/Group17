@@ -40,6 +40,9 @@ function addLikedGamesToGameDiv() {
                     "<div class='gameDetailsMiddle'>" + 
                         "<div class='gameDetailsText' onclick='displayGameDetails(" + games[i].id + ")'>Click for details</div>" +
                     "</div>" +
+                    "<div class='gameDetailsTopRight'>" + 
+                        "<div class='gameDetailsUnlike' onclick='removeLikedGame(" + games[i].id + ")'>X</div>" +
+                    "</div>" +
                 "</div>" +
                 "<text class='likedGamesText'>" + dollar + "</text><br>" +
             "</div>";

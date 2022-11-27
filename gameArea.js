@@ -26,7 +26,7 @@ function addLikedGamesToGameDiv() {
 
 
     for (var i = 0; i < games.length; i++) {
-        var dollar = "$";
+        var dollar = "";
         // Check if game is free
         if (games[i].price === 0.00) {
             // Remove $ from price

@@ -258,8 +258,6 @@ select {
 
 #searchBox {
     font-family: Arial, Helvetica, sans-serif;
-    background: #171717;
-
     text-indent: 20px;
     border: 2px solid #151515;
     border-radius: 50px;
@@ -268,12 +266,12 @@ select {
     justify-self: center;
     color: #FFFFFF;
     transition: 0.5s ease;
-
-    background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2149075397/settings_images/vh7bSaeTHSZdobCOA3hW_18.png');
+    text-indent: 35px;
+    background-color: rgb(23, 23, 23);
+    background-image: linear-gradient(rgba(23, 23, 23, 0.5),rgba(23, 23, 23, 0.5)) , url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/themes/2149075397/settings_images/vh7bSaeTHSZdobCOA3hW_18.png');
     background-position: 5px;
     background-size: contain;
     background-repeat: no-repeat;
-    text-indent: 35px;
 }
 
 #searchBox:hover {

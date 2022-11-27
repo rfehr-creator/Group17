@@ -60,5 +60,45 @@ function displayRandomGame() {
         var gamePicture = document.getElementById('gamePicture');
         gamePicture.src = "";
     }
+}
 
+// add game rating
+function addGameRating(game, isLiked){
+    var addRating = 0;
+    if(isLiked){
+        addRating = 1;
+    } else{
+        addRating = -1;
+    }
+    
+    
+    var ratings = loadRatings();
+    for (let i = 0; i < game.tags.length; i++) {
+        const tag = game.tags[i];
+        var found = false;
+
+        for (let j = 0; j < ratings.length; j++) {
+            const rating = ratings[j];
+            
+            if(tag.equals(rating.tag)){
+                rating.rating = rating.rating + addRating;
+                found = true;
+            }
+        }
+
+        if(found === false){
+            ratings.push({"tag": tag, "rating": addRating})
+        }
+    }
+
+    storeRatings(ratings);
+}
+
+// load and store game ratings
+function storeRatings(data) {
+    localStorage.setItem('ratings', JSON.stringify(data));
+}
+
+function loadRatings() {
+    return JSON.parse(localStorage.getItem('ratings'));
 }

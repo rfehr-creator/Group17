@@ -95,6 +95,11 @@ function DisplayDislikedList(back) {
         var game = dislikedItems[index];
         addGameDislikedList(game, container)
     }
+
+    // if disliked Items are zero
+    if(dislikedItems.length == 0){
+        container.innerHTML = "<div class='emptyList'>No disliked games to display.</div>"
+    }
 }
 
 function addGameDislikedList(game, element) {

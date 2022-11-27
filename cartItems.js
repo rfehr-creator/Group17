@@ -31,6 +31,11 @@ function DisplayCartItems(back) {
         price += game.price;
     }
 
+    // if there are no cart items
+    if(cartItems.length == 0){
+        container.innerHTML = "<div class='emptyList'>Cart is empty.</div>"
+    }
+
     tax = price * .13;
     total = tax + price;
 

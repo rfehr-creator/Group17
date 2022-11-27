@@ -4,6 +4,13 @@ function addGameToCart() {
     addToCart(gameId);
 }
 
+function buyGameNow() {
+    var gameId = document.getElementById('gameDetailsPage').data;
+
+    addToCart(gameId);
+    DisplayCartItems();
+}
+
 function addToCart(id){
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {

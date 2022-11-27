@@ -91,7 +91,10 @@ function displayRandomGame() {
     else {
         var gamePicture = document.getElementById('gamePicture');
         gamePicture.style = "opacity: 0";
-
+        
+        var details = document.getElementById('gameDetailsMiddleDiv');
+        details.style = "opacity: 0";
+        
         var text = document.getElementById('noMoreGamesDiv');
         text.style = "opacity: 1";
         text.alt = "No more games."

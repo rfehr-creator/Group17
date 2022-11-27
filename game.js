@@ -167,14 +167,7 @@ function storeGames(data) {
     localStorage.setItem('games', JSON.stringify(data));
 }
 
-// store the random game currently displayed
-function storeRandomGame(data) {
-    localStorage.setItem('randomGame', JSON.stringify(data));
-}
 
-function loadRandomGame() {
-    return JSON.parse(localStorage.getItem('randomGame'));
-}
 
 // default game list with default values when website is loaded
 function defaultGames() {

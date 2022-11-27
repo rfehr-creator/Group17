@@ -43,6 +43,18 @@ function DislikedRandomGame() {
     displayRandomGame();
 }
 
+// return random games that are not disliked or liked
+function getRandomGame() {
+    const nonLikedGames = [];
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        if (games[index].liked === false && games[index].disliked === false) {
+            nonLikedGames.push(games[index]);
+        }
+    }
+
+    return nonLikedGames;
+}
 // display random game in center
 function displayRandomGame() {
     var games = getRandomGame();

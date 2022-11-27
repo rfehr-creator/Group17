@@ -662,6 +662,21 @@ select {
     padding-left: 20px;
 }
 
+#cartPriceBeforeTax {
+    padding-right: 20px;
+    text-align: right;
+}
+
+#cartTax {
+    padding-right: 20px;
+    text-align: right;
+}
+
+#cartPriceAfterTax {
+    padding-right: 20px;
+    text-align: right;
+}
+
 .orderTotalCell {
     font-weight: bold;
 }

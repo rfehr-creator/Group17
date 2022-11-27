@@ -171,7 +171,7 @@ select {
 
 .emptyList{
     display: block;
-    color: white;
+    color: #535353;
     text-align: center;
     margin-top: 10px;
 }

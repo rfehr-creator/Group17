@@ -610,6 +610,7 @@ select {
 
 .displayItemDescCol {
     border: none;
+    min-width: 600px;
 }
 
 .displayItemDescTitle {

@@ -5,7 +5,7 @@ function LikedRandomGame() {
 
     // add rating for currently liked game 
     addGameRating(randGame, true);
-    
+
     // mark random game as liked
     for (let index = 0; index < games.length; index++) {
         const element = games[index];
@@ -73,22 +73,28 @@ function getNonlikedNondislikedGames() {
 
 // display random game in center
 function displayRandomGame() {
+    // hide no games message
+    var text = document.getElementById('noMoreGamesDiv');
+    text.style = "opacity: 0";
+
+
     var games = getNonlikedNondislikedGames();
     if (games.length > 0) {
         var gamePicture = document.getElementById('gamePicture');
-        // var rand = Math.floor(Math.random() * games.length);
-        // gamePicture.src = games[rand].displayPicture;
-        // storeRandomGame(games[rand]);
         var recommended = getMostRecommendedGame();
         gamePicture.src = recommended.displayPicture;
-        
+
         // store current random game for later access
         storeRandomGame(recommended);
+
     }
     else {
-        storeRandomGame("");
         var gamePicture = document.getElementById('gamePicture');
-        gamePicture.src = "";
+        gamePicture.style = "opacity: 0";
+
+        var text = document.getElementById('noMoreGamesDiv');
+        text.style = "opacity: 1";
+        text.alt = "No more games."
     }
 }
 
@@ -97,19 +103,25 @@ function getMostRecommendedGame() {
     // get available games to choose from
     var availableGames = getNonlikedNondislikedGames();
 
-    for (let i = 0; i < availableGames.length; i++) {
-        const game = availableGames[i];
-        var rating = getGameRating(game);
-        game["rating"] = rating;
+    if (availableGames.length > 0) {
+
+        for (let i = 0; i < availableGames.length; i++) {
+            const game = availableGames[i];
+            var rating = getGameRating(game);
+            game["rating"] = rating;
+        }
+
+        // sort games by rating in descending order
+        availableGames.sort(function (a, b) {
+            return b.rating - a.rating;
+        });
+
+        // pick top game, since it has highest rating
+        return availableGames[0];
     }
+    alert(availableGames)
+    return 0;
 
-    // sort games by rating in descending order
-    availableGames.sort(function (a, b) {
-        return b.rating - a.rating;
-    });
-
-    // pick top game, since it has highest rating
-    return availableGames[0];
 }
 
 function getGameRating(game) {
@@ -148,13 +160,13 @@ function addGameRating(game, isLiked) {
     } else {
         addRating = -1;
     }
-    
+
     var ratings = loadRatings();
-    
+
     for (let i = 0; i < game.tags.length; i++) {
         const tag = game.tags[i];
         var found = false;
-        
+
         if (ratings != null && ratings.length > 0) {
             // iterate over the rating list
             for (let j = 0; found == false && j < ratings.length; j++) {
@@ -179,7 +191,7 @@ function addGameRating(game, isLiked) {
         }
     }
     storeRatings(ratings);
-    
+
 }
 
 // load and store game ratings

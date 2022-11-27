@@ -99,6 +99,12 @@ function displayGameDetails(gameId, back) {
             '</button>';
     }
 
+    // Adds scrolling via scrollwheel
+    document.getElementById('galleryContainer').addEventListener('mousewheel', function(e) {
+        this.scrollLeft -= (e.wheelDelta);
+        e.preventDefault();
+    }, false);
+
     //tags
     var tagContainer = document.getElementById('tagContainer');
     tagContainer.innerHTML = "";

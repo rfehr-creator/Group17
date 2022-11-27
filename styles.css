@@ -853,7 +853,7 @@ select {
 }
 
 .gameDetailsText {
-    color: #067A7A;
+    color: white;
     font-size: 20px;
     z-index: 2;
 }

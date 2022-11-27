@@ -169,6 +169,18 @@ select {
     opacity: 1;
 }
 
+#discoveryPageButton{
+    background-color: #171717;
+    height: 100%;
+    color: white;
+    border: 0px;
+    border-radius: 10%;
+}
+
+#discoveryPageButton:hover{
+    opacity: .4;
+}
+
 .gameDetailsTopRight {
     transition: .5s ease;
     opacity: 0;

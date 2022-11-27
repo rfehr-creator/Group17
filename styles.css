@@ -340,7 +340,7 @@ select {
 #searchBox {
     font-family: Arial, Helvetica, sans-serif;
     text-indent: 20px;
-    border: 2px solid #151515;
+    border: 1px solid #151515;
     border-radius: 50px;
     height: inherit;
     width: 70%;
@@ -365,7 +365,7 @@ select {
 #searchBox:focus {
     transition: 0.5s ease;
     outline: #535353;
-    border: 2px solid #535353;
+    border: 1px solid #535353;
 }
 
 .searchDiv {
@@ -835,7 +835,8 @@ select {
     opacity: 1;
     background: none;
     transition: 0.5s ease;
-    margin-right: 5px;
+    margin-right: 13px;
+    margin-left: -6px;
 }
 
 .gameDetailsGalleryButton:hover {

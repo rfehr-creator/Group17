@@ -20,6 +20,8 @@ function addLikedGamesToGameDiv() {
 
     if (games.length > 0) {
         document.getElementById('gameDivHint').innerHTML = "";
+    } else{
+        document.getElementById('gameDivHint').innerHTML = "Like a game to begin";
     }
 
 

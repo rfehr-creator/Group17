@@ -261,10 +261,20 @@ select {
     color: red;
     font-size: 25px;
     font-weight: normal;
+    transition: 0.5s ease;
 }
 
 #dislikeButton:hover {
     color: #535353;
+    transition: 0.5s ease;
+}
+
+.dislikeButtonDetails {
+    background: none;
+    border: none;
+    margin-top: -2px;
+    margin-right: 50px;
+    float: right;
 }
 
 .topBar {
@@ -450,6 +460,7 @@ select {
 .heartGameDetails {
     height: 28px;
     width: 28px;
+    margin-left: 30px;
 }
 
 #heartPathGameDetails {

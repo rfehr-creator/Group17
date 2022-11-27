@@ -31,7 +31,25 @@ function addGameToLikedList() {
     updateHeartGameDetails(gameId);
 }
 
+function addGameToDislikedList() {
+    var gameId = document.getElementById('gameDetailsPage').data;
 
+    addToDislikedlist(gameId);
+    updateHeartGameDetails(gameId);
+}
+
+function addToDislikedlist(id){
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        const game = games[index];
+        if (game.id === id) {
+            game.liked = false;
+            game.disliked = true;
+        }
+    }
+    storeGames(games);
+    updateHeart();
+}
 
 function addToLikedlist(id){
     var games = loadGames();

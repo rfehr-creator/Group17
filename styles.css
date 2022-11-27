@@ -35,6 +35,12 @@ body {
     justify-content: center;
 }
 
+#gameDivHint {
+    color: #535353;
+    padding-top: 100px;
+    user-select: none;
+}
+
 .gameImage {
     margin: 0px 5px 5px 0px;
     width: 200px;

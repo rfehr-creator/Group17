@@ -18,6 +18,10 @@ function addLikedGamesToGameDiv() {
         });
     }
 
+    if (games.length > 0) {
+        document.getElementById('gameDivHint').innerHTML = "";
+    }
+
 
     for (var i = 0; i < games.length; i++) {
         var dollar = "$";

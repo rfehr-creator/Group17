@@ -17,9 +17,10 @@
       <input id="searchBox" type="search" placeholder="Type here to search games"></textarea>
     </div>
     <div class="cartButtonDiv">
-      <span id="cartBadge" class="badge" onclick="DisplayCartItems()">0</span>
       <button id="cartButton" class="cartButton" onclick="DisplayCartItems()"><img id="cartImage"
-          src="https://www.pngkey.com/png/full/231-2317581_cart-icon-png-gray.png"></button>
+          src="https://www.pngkey.com/png/full/231-2317581_cart-icon-png-gray.png">
+        <span id="cartBadge" class="badge" onclick="DisplayCartItems()">0</span>
+      </button>
       <button onclick="DisplayLikedList()" class="cartButton"><img id="likedListImg" class="cartButton"
           src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"></button>
     </div>
@@ -130,7 +131,7 @@
     <table class="pageTitleTable">
       <tr>
         <td class="pageTitleCell">
-          <div id="likedListTitleText" class="pageTitleText">Liked List (3 items)</div>
+          <div id="likedListTitleText" class="pageTitleText">Liked List</div>
         </td>
         <td class="pageTitleCell">
           <select id="LikedSort" class="pageTitleSort" onchange="DisplayLikedList()">
@@ -155,7 +156,7 @@
     <table class="pageTitleTable">
       <tr>
         <td class="pageTitleCell">
-          <div id="dislikedListTitleText" class="pageTitleText">Liked List (3 items)</div>
+          <div id="dislikedListTitleText" class="pageTitleText">Disiked List</div>
         </td>
         <td class="pageTitleCell">
           <select id="DislikedSort" class="pageTitleSort" onchange="DisplayDislikedList()">
@@ -207,11 +208,11 @@
           </tr>
           <tr>
             <td class="orderTableCell orderTableCategory">Price</td>
-            <td id="cartPriceBeforeTax" class="orderTableCell">CA$ 115.89</td>
+            <td id="cartPriceBeforeTax" class="orderTableCell"></td>
           </tr>
           <tr>
             <td class="orderTableCell orderTableCategory">Tax</td>
-            <td id="cartTax" class="orderTableCell">CA$ 2.89</td>
+            <td id="cartTax" class="orderTableCell"></td>
           </tr>
           <tr>
             <td colspan="2" class="gameAreaTableCell">
@@ -220,7 +221,7 @@
           </tr>
           <tr>
             <td class="orderTableCell orderTableCategory orderTotalCell">Total</td>
-            <td id="cartPriceAfterTax" class="orderTableCell orderTotalCell">CA$ 118.78</td>
+            <td id="cartPriceAfterTax" class="orderTableCell orderTotalCell"></td>
           </tr>
           <tr>
             <td colspan="2" class="orderTableCell orderTableButtonCell">
@@ -245,84 +246,41 @@
     <!--Game details area-->
     <div id="gameDetailsGrid">
       <div class="gameDetailsAreaPadding">
-      <!--Pictures, details, tags, etc-->
-      <div class="gameDetailsArea cartLevel1">
-        <!--Main picture-->
-        <div id="gameDetailsImagesDiv">
-          <!--These need to be switched based on img vs video being displayed-->
-          <img id="gameDetailsMainImage">
+        <!--Pictures, details, tags, etc-->
+        <div class="gameDetailsArea cartLevel1">
+          <!--Main picture-->
+          <div id="gameDetailsImagesDiv">
+            <!--These need to be switched based on img vs video being displayed-->
+            <img id="gameDetailsMainImage">
 
-          <!--Example of a video-->
-          <video id="videoElement" width="640" height="360" controls class="gameDetailsVideo">
-            <!--This part is probably what will be changed-->
-            <!-- <source id="videoSourceElement"
+            <!--Example of a video-->
+            <video id="videoElement" width="640" height="360" controls class="gameDetailsVideo">
+              <!--This part is probably what will be changed-->
+              <!-- <source id="videoSourceElement"
               type="video/mp4"> -->
-          </video>
-        </div>
+            </video>
+          </div>
 
-        <!--Gallery-->
-        <div id="galleryContainer" class="gameDetailsGallery">
-          <!--Video/image buttons here-->
-          <!--Note need more images/videos-->
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-          <button class="gameDetailsGalleryButton"><img
-              src="https://cdn.cloudflare.steamstatic.com/steam/apps/311210/header.jpg?t=1646763462"
-              class="gameDetailsGalleryImg"></button>
-        </div>
+          <!--Gallery-->
+          <div id="galleryContainer" class="gameDetailsGallery">
+            <!--Video/image buttons here-->
+          </div>
 
-        <br>
-        <!--Description-->
-        <div id="gameDetailsDescription" class="gameDetailsText">
-          Description of game
-        </div>
-        <br>
+          <br>
+          <!--Description-->
+          <div id="gameDetailsDescription" class="gameDetailsText">
 
-        <!--Tags-->
-        <div class="gameDetailsTags">
-          <!--Put tags into this-->
-          <p id="tagContainer" class="gameDetailsTagsArea">
-          </p>
+          </div>
+          <br>
+
+          <!--Tags-->
+          <div class="gameDetailsTags">
+            <!--Put tags into this-->
+            <p id="tagContainer" class="gameDetailsTagsArea">
+            </p>
+          </div>
         </div>
       </div>
-    </div>
 
       <!--Game details buy options-->
       <div id="gameDetailsCartDiv" class="cartLevel0">
@@ -330,13 +288,11 @@
           <tr>
             <!--Game name-->
             <td id="gameDetailsName" class="orderTableCell orderTitleCell">
-              Name Here
             </td>
           </tr>
           <tr>
             <!--Game price-->
             <td id="gameDetailsPrice" class="orderTableCell orderTableCategory">
-              Price:
             </td>
           </tr>
           <tr>

@@ -91,7 +91,9 @@ function displayRandomGame() {
     else {
         var gamePicture = document.getElementById('gamePicture');
         gamePicture.style = "opacity: 0";
-        
+
+        var imageContainer = document.getElementById('imageContainer');
+        imageContainer.onclick = "";
         var details = document.getElementById('gameDetailsMiddleDiv');
         details.style = "opacity: 0";
         

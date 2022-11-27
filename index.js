@@ -133,7 +133,7 @@ function displayVid(id) {
     video.hidden = false;
     video.innerHTML = "";
     video.innerHTML = '<source id="videoSourceElement" type="video/mp4" src="' +
-        document.getElementById(id).src + '">';
+        document.getElementById(id).src + '#t=0">';
 
     // var source = document.getElementById('videoSourceElement');
     // source.src = "";

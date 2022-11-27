@@ -122,7 +122,7 @@ function displayGameDetails(gameId, back) {
     tagContainer.innerHTML = "";
 
     game.tags.forEach(tag => {
-        tagContainer.innerHTML = tagContainer.innerHTML + '<text class="gameDetailsTagText">' + tag + '</text>'
+        tagContainer.innerHTML = tagContainer.innerHTML + '<text class="gameDetailsTagText" onclick="searchGameTag(\'' + tag + '\')">' + tag + '</text>'
     });
 
     updateHeartGameDetails(gameId);

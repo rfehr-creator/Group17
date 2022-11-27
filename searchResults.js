@@ -43,6 +43,44 @@ function searchGames(back) {
     }
 }
 
+function searchGameTag(keyword, back) {
+    if (keyword != null && keyword != "") {
+        if (back == null || back == false) addHistory("searchPage", keyword);
+        hideElements();
+        document.getElementById('searchResults').style.display = "block";
+
+        var games = loadGames();
+        var searchResults = [];
+        
+        for (let index = 0; index < games.length; index++) {
+            var game = games[index];
+
+            // add game if tags match
+            for (let tagIndex = 0; tagIndex < game.tags.length; tagIndex++) {
+                const tag = game.tags[tagIndex];
+
+                if (tag.toLowerCase().includes(keyword.toLowerCase())) {
+                    searchResults.push(game);
+                }
+            }
+        }
+        
+        if (searchResults.length > 0) {
+            searchResults = sortResults(searchResults, "searchSort");
+        }
+
+        var container = document.getElementById('SearchResultContainerItems')
+        container.innerHTML = "";
+
+        // add search results to table
+        for (let index = 0; index < searchResults.length; index++) {
+            const game = searchResults[index];
+
+            addSearchResultGame(game, container);
+        }
+    }
+}
+
 function addSearchResultGame(game, element) {
     var price = "$"+game.price;
     if (game.price <= 0) {

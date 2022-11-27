@@ -211,6 +211,12 @@ select {
     box-shadow: 0px 0px 5px 0px black;
 }
 
+.heartTopBar {
+    margin-top: 2px;
+    height: 28px;
+    width: 28px;
+}
+
 .backfowardDiv {
     background-color: transparent;
     display: inline;
@@ -383,7 +389,7 @@ select {
 #cartImage {
     width: 30px;
     height: 30px;
-    margin: 0px;
+    margin-top: -1px;
     float: right;
     background-color: transparent;
     opacity: 0.5;
@@ -393,7 +399,7 @@ select {
     position: relative;
     float: right;
     left: 21px;
-    top: 6px;
+    top: 5px;
     font-size: 12px;
     font-weight: bolder;
     color: black;

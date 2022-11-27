@@ -47,7 +47,17 @@ function addToLikedlist(id){
 }
 
 function updateCartBadge() {
-    document.getElementById('cartBadge').innerHTML = getGamesInCart().length;
+    var cartItemsNum = getGamesInCart().length;
+    document.getElementById('cartBadge').innerHTML = cartItemsNum;
+
+    var cartIcon = document.getElementById("cartImage");
+    cartIcon.style = "opacity: 0.8";
+
+    if (cartItemsNum > 0) {
+        cartIcon.style = "opacity: 0.8";
+    } else {
+        cartIcon.style = "opacity: 0.5";
+    }
 }
 
 // return all liked games only

@@ -101,6 +101,12 @@ function addSearchResultGame(game, element) {
         '        </p>' +
         '        <p class="displayItemDescTitle">' + price + '</p>' +
         '      </td>' +
+        '      <td class="displayItemButtonCol">' +
+        '       <button class="displayItemButton" onclick="addToLikedlist('+ game.id +')">Add to Liked</button>' +
+        '       <br>' +
+        '       <br>' +
+        '       <button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
+        '      </td>' +
         '    </tr>' +
         '  </table>' +
         '</div>'

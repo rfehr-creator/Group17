@@ -79,7 +79,7 @@ function displayGameDetails(gameId, back) {
         galleryContainer.innerHTML = galleryContainer.innerHTML +
             '<button class="gameDetailsGalleryButton">' +
                 '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">'+
-                    '<source id="' + par + '" src="' + vid + '#t=5" class="class="gameDetailsGalleryImg" type="video/mp4">' +
+                    '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
                 '</video>'+
             '</button>';
 
@@ -132,9 +132,11 @@ function displayVid(id) {
     var video = document.getElementById('videoElement');
     video.hidden = false;
     video.innerHTML = "";
+    var videolink = document.getElementById(id).src.substring(0, document.getElementById(id).src.length - 5) + "#t=0.1";
+
     video.innerHTML = 
         '<video id="videoPlayer" width="640" height="360" preload="metadata" controls class="gameDetailsVideo">'+
-            '<source id="videoSourceElement" type="video/mp4" src="' + document.getElementById(id).src + '#t=5">'+
+            '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">'+
         '</video>';
 
     // hide image

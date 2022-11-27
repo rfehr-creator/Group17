@@ -14,7 +14,6 @@ body {
     margin: 0px;
     border-radius: 5px;
     box-shadow: 0px 5px 0px 0px black;
-
 }
 
 #likedGamesTitle {
@@ -173,7 +172,8 @@ select {
     display: block;
     color: #535353;
     text-align: center;
-    margin-top: 10px;
+    padding-top: 100px;
+    user-select: none;
 }
 
 #discoveryPageButton{

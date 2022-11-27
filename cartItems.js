@@ -43,6 +43,8 @@ function addGame(game,element){
     var price = game.price;
     if (game.price <= 0) {
         price = "Free";
+    } else {
+        price = "$" + price;
     }
     element.innerHTML = element.innerHTML +
     "<div class='cartTableSpacing'>"+

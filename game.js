@@ -859,6 +859,7 @@ function defaultGames() {
             "price": 79.99,
             "displayPicture": "https://wallpaperaccess.com/full/6070333.jpg",
             "pictures":[
+                "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/header.jpg?t=1668017884",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/ss_cf56e25a0290556ba83229eb0ab370d10be0407c.600x338.jpg?t=1668017884",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/ss_00f0090174380eeaf8753bd3d1028b6772c3aebf.600x338.jpg?t=1668017884",
                 "https://cdn.cloudflare.steamstatic.com/steam/apps/1551360/ss_b65236b365315ebb6da6114ce42cd74b59cab3c8.600x338.jpg?t=1668017884",

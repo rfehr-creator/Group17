@@ -94,6 +94,7 @@ function displayRandomGame() {
 
         var imageContainer = document.getElementById('imageContainer');
         imageContainer.onclick = "";
+        
         var details = document.getElementById('gameDetailsMiddleDiv');
         details.style = "opacity: 0";
         

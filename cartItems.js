@@ -51,10 +51,13 @@ function addGame(game,element){
             "<td class='displayItemImgCol'>"+
                 "<img class='displayItemImg' src='"+game.displayPicture+"'>"+
             "</td>"+
-            "<td class='displayItemDescCol'>"+
-                "<p class='displayItemDescTitle'>"+game.name+"</p>"+
-                "<p class='displayItemDescTitle displayItemDescPrice'>"+price+"</p>"+
-            "</td>"+
+            "<td class='displayItemDescCol'>" +
+                "<p class='displayItemDescTitle'>" + game.name +
+                    "<br>" +
+                    "<text class='displayItemDescText'>" + game.description + "</text>" +
+                "</p>" +
+                "<p class='displayItemDescTitle'>" + price + "</p>" +
+            "</td>" +
             "<td class='displayItemButtonCol'>"+
                 "<button class='displayItemButton' onclick='removeFromCart("+game.id+")'>Remove from cart</button>"+
                 "<br>"+

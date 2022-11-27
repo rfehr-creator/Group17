@@ -1,0 +1,1 @@
+Double Click the index.html file and the program should run just fine.

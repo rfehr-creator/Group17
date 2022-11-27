@@ -36,7 +36,12 @@ function addGameLikedList(game, element) {
             '<table class="displayItemTable">' +
                 '<tr>' +
                     '<td class="displayItemImgCol">' +
-                    '<img class="displayItemImg" src="' + game.displayPicture + '">' +
+                        '<div class="displayItemImgContainer">'+
+                        '<img class="displayItemImg" src="' + game.displayPicture + '"' + 'onclick="displayGameDetails(' + game.id + ')">' +
+                            '<div class="gameDetailsMiddle">'+
+                                '<div class="gameDetailsText" onclick="displayGameDetails(' + game.id + ')">Click for details</div>' +
+                            '</div>'+
+                        '</div>'+
                     '</td>' +
                     '<td class="displayItemDescCol">' +
                         '<p class="displayItemDescTitle">' + game.name +
@@ -92,7 +97,12 @@ function addGameDislikedList(game, element) {
             '<table class="displayItemTable">' +
                 '<tr>' +
                     '<td class="displayItemImgCol">' +
-                        '<img class="displayItemImg" src="' + game.displayPicture + '">' +
+                        '<div class="displayItemImgContainer">'+
+                        '<img class="displayItemImg" src="' + game.displayPicture + '"' + 'onclick="displayGameDetails(' + game.id + ')">' +
+                            '<div class="gameDetailsMiddle">'+
+                                '<div class="gameDetailsText" onclick="displayGameDetails(' + game.id + ')">Click for details</div>' +
+                            '</div>'+
+                        '</div>'+
                     '</td>' +
                     '<td class="displayItemDescCol">' +
                         '<p class="displayItemDescTitle">' + game.name +

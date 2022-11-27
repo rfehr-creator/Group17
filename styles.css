@@ -136,6 +136,7 @@ select {
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
+    user-select: none;
 }
 
 .imageContainer:hover .gamePicture {
@@ -528,6 +529,18 @@ select {
     border: none;
 }
 
+.displayItemImgContainer {
+    position: relative;
+}
+
+.displayItemImgContainer:hover .displayItemImg {
+    opacity: 0.3;
+}
+
+.displayItemImgContainer:hover .gameDetailsMiddle {
+    opacity: 1;
+}
+
 .displayItemImg {
     width: 200px;
     height: 250px;
@@ -535,6 +548,9 @@ select {
     object-position: 50% 50%;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px black;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .displayItemDescCol {
@@ -725,6 +741,7 @@ select {
 .gameDetailsText {
     color: white;
     font-size: 20px;
+    user-select: none;
 }
 
 .gameDetailsTags {

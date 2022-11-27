@@ -4,6 +4,8 @@ function searchGames(back) {
         if (back == null || back == false) addHistory("searchPage", keyword);
         hideElements();
         document.getElementById('searchResults').style.display = "block";
+        var title = document.getElementById('searchResultsTitle');
+        title.innerHTML = "Search Results for " + "'"+ keyword +"'"
 
         var games = loadGames();
         var searchResults = [];

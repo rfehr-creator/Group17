@@ -7,8 +7,8 @@ function addGameToCart() {
 function buyGameNow() {
     var gameId = document.getElementById('gameDetailsPage').data;
 
-    addToCart(gameId);
-    DisplayCartItems();
+    alert("Purchase completed successfully! \nThank you for your purchase!")
+    home();
 }
 
 function addToCart(id){

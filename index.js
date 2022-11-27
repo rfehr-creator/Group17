@@ -7,7 +7,7 @@ function onPageLoad() {
     storeGames(data);
     addLikedGamesToGameDiv();
     updateHeart();
-    
+
     // add event listener for search box
     var search = document.getElementById("searchBox");
     search.addEventListener("keypress", function (event) {
@@ -16,15 +16,15 @@ function onPageLoad() {
             searchGames();
         }
     });
-    
+
     // back button hover
     var backButtonHover = document.getElementById("backButton");
     backButtonHover.addEventListener("mouseover", function (event) {
         backButtonHover.style = "opacity: .4";
     });
-    
+
     backButtonHover.addEventListener("mouseleave", function (event) {
-        
+
         var len = getHistory().length;
 
         var backButton = document.getElementById("backButton");
@@ -35,11 +35,11 @@ function onPageLoad() {
             backButton.style = "opacity: 1";
         }
     });
-    
+
     updateBackButton()
     localStorage.setItem('history', null);
     addHistory("home", "");
-    
+
     localStorage.setItem('ratings', null);
     displayRandomGame();
 }
@@ -69,7 +69,7 @@ function displayGameDetails(gameId, back) {
     document.getElementById('gameDetailsPage').data = gameId;
     document.getElementById('gameDetailsTitle').innerHTML = game.name;
     document.getElementById('gameDetailsName').innerHTML = game.name;
-    var price = "$"+game.price;
+    var price = "$" + game.price;
     if (game.price <= 0) {
         price = "Free";
     }
@@ -90,9 +90,9 @@ function displayGameDetails(gameId, back) {
         // Gets a thumbnail at 1 second into the video
         galleryContainer.innerHTML = galleryContainer.innerHTML +
             '<button class="gameDetailsGalleryButton">' +
-                '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">'+
-                    '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
-                '</video>'+
+            '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">' +
+            '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
+            '</video>' +
             '</button>';
 
         if (i === 0) {
@@ -107,12 +107,12 @@ function displayGameDetails(gameId, back) {
 
         galleryContainer.innerHTML = galleryContainer.innerHTML +
             '<button class="gameDetailsGalleryButton">' +
-                '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
+            '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
             '</button>';
     }
 
     // Adds scrolling via scrollwheel
-    document.getElementById('galleryContainer').addEventListener('mousewheel', function(e) {
+    document.getElementById('galleryContainer').addEventListener('mousewheel', function (e) {
         this.scrollLeft -= (e.wheelDelta);
         e.preventDefault();
     }, false);
@@ -146,9 +146,9 @@ function displayVid(id) {
     video.innerHTML = "";
     var videolink = document.getElementById(id).src.substring(0, document.getElementById(id).src.length - 5) + "#t=0.1";
 
-    video.innerHTML = 
-        '<video id="videoPlayer" width="640" height="360" preload="metadata" controls class="gameDetailsVideo">'+
-            '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">'+
+    video.innerHTML =
+        '<video id="videoPlayer" width="640" height="360" preload="metadata" controls class="gameDetailsVideo">' +
+        '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">' +
         '</video>';
 
     // hide image
@@ -161,12 +161,12 @@ function clickedRandomGame() {
     displayGameDetails(id.id);
 }
 
-function updateHeartGameDetails(id){
+function updateHeartGameDetails(id) {
     var heartDetails = document.getElementById('heartPathGameDetails');
     var game = getGame(id);
-    if(game.liked){
+    if (game.liked) {
         heartDetails.style = "fill: red;";
-    } else{
+    } else {
         heartDetails.style = "fill: #282828; stroke: red; stroke-width: 15px";
     }
 }
@@ -185,7 +185,7 @@ function hideElements() {
 function backButtonClick() {
     // Stop video on details page
     var videoPlayer = document.getElementById('videoPlayer');
-    if(typeof(videoPlayer) != 'undefined' && videoPlayer != null){
+    if (typeof (videoPlayer) != 'undefined' && videoPlayer != null) {
         videoPlayer.pause();
         videoPlayer.innerHTML = "";
         videoPlayer.hidden = true;
@@ -269,7 +269,7 @@ function searchGames(back) {
         hideElements();
         document.getElementById('searchResults').style.display = "block";
         var title = document.getElementById('searchResultsTitle');
-        title.innerHTML = "Search Results for " + "'"+ keyword +"'"
+        title.innerHTML = "Search Results for " + "'" + keyword + "'"
 
         var games = loadGames();
         var searchResults = [];
@@ -280,8 +280,6 @@ function searchGames(back) {
             if (game.name.toLowerCase().includes(keyword) || game.description.toLowerCase().includes(keyword) || game.price == keyword) {
                 searchResults.push(game);
             } else {
-
-
                 // add game if tags match
                 for (let tagIndex = 0; tagIndex < game.tags.length; tagIndex++) {
                     const tag = game.tags[tagIndex];
@@ -310,45 +308,12 @@ function searchGames(back) {
 }
 
 function searchGameTag(keyword, back) {
-    if (keyword != null && keyword != "") {
-        if (back == null || back == false) addHistory("searchPage", keyword);
-        hideElements();
-        document.getElementById('searchResults').style.display = "block";
-
-        var games = loadGames();
-        var searchResults = [];
-        
-        for (let index = 0; index < games.length; index++) {
-            var game = games[index];
-
-            // add game if tags match
-            for (let tagIndex = 0; tagIndex < game.tags.length; tagIndex++) {
-                const tag = game.tags[tagIndex];
-
-                if (tag.toLowerCase().includes(keyword.toLowerCase())) {
-                    searchResults.push(game);
-                }
-            }
-        }
-        
-        if (searchResults.length > 0) {
-            searchResults = sortResults(searchResults, "searchSort");
-        }
-
-        var container = document.getElementById('SearchResultContainerItems')
-        container.innerHTML = "";
-
-        // add search results to table
-        for (let index = 0; index < searchResults.length; index++) {
-            const game = searchResults[index];
-
-            addSearchResultGame(game, container);
-        }
-    }
+    document.getElementById('searchBox').value = keyword;
+    searchGames();
 }
 
 function addSearchResultGame(game, element) {
-    var price = "$"+game.price;
+    var price = "$" + game.price;
     if (game.price <= 0) {
         price = "Free";
     }
@@ -361,22 +326,22 @@ function addSearchResultGame(game, element) {
         '  <table class="displayItemTable">' +
         '    <tr>' +
         '      <td class="displayItemImgCol">' +
-        '        <img class="displayItemImg"' +
+        '        <img class="displayItemImg" onclick="displayGameDetails('+game.id+')"' +
         '          src="' + game.displayPicture + '">' +
         '      </td>' +
         '      <td class="displayItemDescCol">' +
         '        <p class="displayItemDescTitle">' + game.name +
         '          <br><br>' +
-                    tags +
+        tags +
         '          <text class="displayItemDescText">' + game.description + '</text>' +
         '        </p>' +
         '        <p class="displayItemDescTitle">' + price + '</p>' +
         '      </td>' +
         '      <td class="displayItemButtonCol">' +
-        '       <button class="displayItemButton" onclick="addToLikedlist('+ game.id +')">Add to Liked</button>' +
+        '       <button class="displayItemButton" onclick="addToLikedlist(' + game.id + ')">Add to Liked</button>' +
         '       <br>' +
         '       <br>' +
-        '       <button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
+        '       <button class="displayItemButton" onclick="addToCart(' + game.id + ')">Add to Cart</button>' +
         '      </td>' +
         '    </tr>' +
         '  </table>' +
@@ -396,22 +361,25 @@ function home() {
     updateBackButton();
 }
 
-function discoveryButton(){
+function discoveryButton() {
     home();
     localStorage.setItem('history', null);
     addHistory("home", "");
     updateBackButton();
+
+    // clear search box text
+    document.getElementById('searchBox').value = "";
 }
 
 // update back button
-function updateBackButton(){
+function updateBackButton() {
     var len = getHistory().length;
 
     var backButton = document.getElementById("backButton");
-    if(len <= 1){
+    if (len <= 1) {
         backButton.style = "opacity: 0.4";
     }
-    else{
+    else {
         backButton.style = "opacity: 1";
     }
 }
@@ -443,10 +411,10 @@ function sortResults(games, element) {
         });
     } else {
         games.sort(function (a, b) {
-            if(a.name.toLowerCase() < b.name.toLowerCase()){
+            if (a.name.toLowerCase() < b.name.toLowerCase()) {
                 return -1;
             }
-            if(a.name.toLowerCase() > b.name.toLowerCase()){
+            if (a.name.toLowerCase() > b.name.toLowerCase()) {
                 return 1;
             }
             return 0;

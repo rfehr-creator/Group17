@@ -762,7 +762,6 @@ select {
 .gameDetailsText {
     color: white;
     font-size: 20px;
-    user-select: none;
 }
 
 .gameDetailsTags {

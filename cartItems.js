@@ -64,7 +64,7 @@ function addGame(game,element){
                 "<button class='displayItemButton' onclick='removeFromCart("+game.id+")'>Remove from Cart</button>"+
                 "<br>"+
                 "<br>"+
-                "<button class='displayItemButton' onclick='addToLikedlist("+game.id+")'>Add to Liked List</button>"+
+                "<button class='displayItemButton' onclick='addToLikedlist("+game.id+")'>Add to Liked</button>"+
             "</td>"+
         "</tr>"
     "</table>"+

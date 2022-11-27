@@ -184,9 +184,9 @@ function updateHeartGameDetails(id) {
     var heartDetails = document.getElementById('heartPathGameDetails');
     var game = getGame(id);
     if (game.liked) {
-        heartDetails.style = "fill: red;";
+        heartDetails.style = "fill: green;";
     } else {
-        heartDetails.style = "fill: #282828; stroke: red; stroke-width: 15px";
+        heartDetails.style = "fill: transparent; stroke: green; stroke-width: 15px";
     }
 }
 
@@ -424,12 +424,10 @@ function updateBackButton() {
 function updateHeart() {
     var heartImg = document.getElementById('heartPathTopbar');
     if (getLikedGames().length > 0) {
-        // heartImg.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png";
-        heartImg.style = "fill: red;";
+        heartImg.style = "fill: green;";
     }
     else {
-        // heartImg.src = "https://img.icons8.com/neon/512/experimental-hearts-neon.png";
-        heartImg.style = "fill: #282828; stroke: red; stroke-width: 15px";
+        heartImg.style = "fill: transparent; stroke: green; stroke-width: 15px";
     }
 }
 

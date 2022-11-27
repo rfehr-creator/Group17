@@ -128,7 +128,14 @@ select {
     backface-visibility: hidden;
     box-shadow: 0px 0px 5px 0px black;
 }
-
+.noMoreGamesMiddle{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    text-align: center;
+    user-select: none;
+}
 .gameDetailsMiddle {
     transition: .5s ease;
     opacity: 0;
@@ -438,13 +445,13 @@ select {
 
 #heartPath {
     fill: transparent;
-    stroke: red;
+    stroke: green;
     stroke-width: 15px;
     transition: 0.5s ease;
 }
 
 #heartPath:hover {
-    fill: red;
+    fill: green;
     transition: 0.5s ease;
 }
 

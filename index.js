@@ -201,14 +201,17 @@ function hideElements() {
     document.getElementById('DislikedListItems').style.display = "none";
 }
 
+function stopVideo(){
+// Stop video on details page
+var videoPlayer = document.getElementById('videoPlayer');
+if (typeof (videoPlayer) != 'undefined' && videoPlayer != null) {
+    videoPlayer.pause();
+    videoPlayer.innerHTML = "";
+    videoPlayer.hidden = true;
+}
+}
 function backButtonClick() {
-    // Stop video on details page
-    var videoPlayer = document.getElementById('videoPlayer');
-    if (typeof (videoPlayer) != 'undefined' && videoPlayer != null) {
-        videoPlayer.pause();
-        videoPlayer.innerHTML = "";
-        videoPlayer.hidden = true;
-    }
+    stopVideo();
 
     var history = getHistory();
     if (history.length > 1) {
@@ -398,6 +401,7 @@ function updateTrashCan(){
 }
 
 function discoveryButton() {
+    stopVideo()
     home();
     localStorage.setItem('history', null);
     addHistory("home", "");

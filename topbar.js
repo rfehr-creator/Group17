@@ -25,12 +25,14 @@ function updateBackButton(){
 
 // display liked games in gameDiv
 function updateHeart() {
-    var heartImg = document.getElementById('likedListImg');
+    var heartImg = document.getElementById('heartPathTopbar');
     if (getLikedGames().length > 0) {
-        heartImg.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png";
+        // heartImg.src = "https://cdn-icons-png.flaticon.com/128/833/833472.png";
+        heartImg.style = "fill: red;";
     }
     else {
-        heartImg.src = "https://img.icons8.com/neon/512/experimental-hearts-neon.png";
+        // heartImg.src = "https://img.icons8.com/neon/512/experimental-hearts-neon.png";
+        heartImg.style = "fill: #282828; stroke: red; stroke-width: 15px";
     }
 }
 

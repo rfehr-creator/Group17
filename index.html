@@ -21,8 +21,23 @@
           src="https://www.pngkey.com/png/full/231-2317581_cart-icon-png-gray.png">
         <span id="cartBadge" class="badge" onclick="DisplayCartItems()">0</span>
       </button>
-      <button onclick="DisplayLikedList()" class="cartButton"><img id="likedListImg" class="cartButton"
-          src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"></button>
+      <button onclick="DisplayLikedList()" class="cartButton">
+        <div class="heartGameDetails">
+          <svg viewbox="0 0 220 220">
+            <path id="heartPathTopbar" d="M30 100
+                                      L110 175
+                                      L190 100
+                                      Q220 70 200 30
+                                      Q190 10 160 10
+                                      Q120 10 110 50
+                                      Q100 10 60 10
+                                      Q30 10 20 30
+                                      Q0 70 30 100Z" />
+          </svg>
+        </div>
+        <!-- <img id="likedListImg" class="cartButton"
+          src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"> -->
+        </button>
     </div>
   </div>
 </head>

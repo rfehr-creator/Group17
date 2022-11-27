@@ -24,15 +24,7 @@ function addGameToLikedList() {
     updateHeartGameDetails(gameId);
 }
 
-function updateHeartGameDetails(id){
-    var heartDetails = document.getElementById('heartPathGameDetails');
-    var game = getGame(id);
-    if(game.liked){
-        heartDetails.style = "fill: red;";
-    } else{
-        heartDetails.style = "fill: #282828; stroke: red; stroke-width: 15px";
-    }
-}
+
 
 function addToLikedlist(id){
     var games = loadGames();

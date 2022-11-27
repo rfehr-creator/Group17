@@ -151,6 +151,15 @@ function clickedRandomGame() {
     displayGameDetails(id.id);
 }
 
+function updateHeartGameDetails(id){
+    var heartDetails = document.getElementById('heartPathGameDetails');
+    var game = getGame(id);
+    if(game.liked){
+        heartDetails.style = "fill: red;";
+    } else{
+        heartDetails.style = "fill: #282828; stroke: red; stroke-width: 15px";
+    }
+}
 
 // hide all elements divs on main page
 function hideElements() {

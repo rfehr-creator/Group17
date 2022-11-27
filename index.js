@@ -57,7 +57,11 @@ function displayGameDetails(gameId, back) {
     document.getElementById('gameDetailsPage').data = gameId;
     document.getElementById('gameDetailsTitle').innerHTML = game.name;
     document.getElementById('gameDetailsName').innerHTML = game.name;
-    document.getElementById('gameDetailsPrice').innerHTML = "Price: " + game.price;
+    var price = "$"+game.price;
+    if (game.price <= 0) {
+        price = "Free";
+    }
+    document.getElementById('gameDetailsPrice').innerHTML = "Price: " + price;
     document.getElementById('gameDetailsDescription').innerHTML = game.description;
 
     // pictures

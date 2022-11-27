@@ -32,6 +32,7 @@ function addToLikedlist(id){
         const game = games[index];
         if (game.id === id) {
             game.liked = true;
+            game.disliked = false;
         }
     }
     storeGames(games);

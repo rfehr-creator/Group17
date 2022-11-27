@@ -425,7 +425,7 @@ select {
 }
 
 #heartPath {
-    fill: #171717;
+    fill: transparent;
     stroke: red;
     stroke-width: 15px;
     transition: 0.5s ease;

@@ -37,6 +37,7 @@ function DislikedRandomGame() {
         const element = games[index];
         if (element.id === randGame.id) {
             element.disliked = true;
+            element.liked = false;
         }
     }
 

@@ -46,6 +46,10 @@ function addGame(game,element){
     } else {
         price = "$" + price;
     }
+    var tags = "";
+    game.tags.forEach(tag => {
+        tags = tags + '<text class="gameDetailsTagText" onclick="searchGameTag(\'' + tag + '\')">' + tag + '</text>'
+    });
     element.innerHTML = element.innerHTML +
     "<div class='cartTableSpacing'>"+
     "<table class='displayItemTable'>" +
@@ -55,7 +59,8 @@ function addGame(game,element){
             "</td>"+
             "<td class='displayItemDescCol'>" +
                 "<p class='displayItemDescTitle'>" + game.name +
-                    "<br>" +
+                    "<br><br>" +
+                    tags +
                     "<text class='displayItemDescText'>" + game.description + "</text>" +
                 "</p>" +
                 "<p class='displayItemDescTitle'>" + price + "</p>" +

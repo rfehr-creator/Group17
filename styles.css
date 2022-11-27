@@ -309,6 +309,10 @@ select {
     justify-content: center;
 }
 
+#searchResults {
+    padding-bottom: 20px;
+}
+
 .cartButton {
     float: right;
     margin-left: 5px;
@@ -345,6 +349,14 @@ select {
 .likedListImg {
     height: inherit;
     width: inherit;
+}
+
+#LikedListItems {
+    padding-bottom: 20px;
+}
+
+#DislikedListItems {
+    padding-bottom: 20px;
 }
 
 #heartPath {

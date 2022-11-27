@@ -65,6 +65,5 @@ function addSearchResultGame(game, element) {
         '      </td>' +
         '    </tr>' +
         '  </table>' +
-        '</div>' +
-        '<br>'
+        '</div>'
 }

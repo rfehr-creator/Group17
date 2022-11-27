@@ -1,6 +1,7 @@
 // initial page load
 function onPageLoad() {
     hideElements();
+    updateTrashCan();
     document.getElementById('mainDisplayTable').style.display = "table";
     document.getElementById('gameArea').style.display = "block";
     var data = defaultGames();
@@ -363,6 +364,19 @@ function home() {
     displayRandomGame();
     addLikedGamesToGameDiv();
     updateBackButton();
+
+    updateTrashCan();
+}
+
+function updateTrashCan(){
+    const trash = document.getElementById("trashButton");
+    const disliked = getDislikedGames();
+    if(disliked.length == 0){
+        trash.style = "opacity: 0.4;";
+    } else{
+        trash.style = "opacity: 1;";
+    }
+
 }
 
 function discoveryButton() {

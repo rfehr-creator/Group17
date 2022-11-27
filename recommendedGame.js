@@ -48,6 +48,7 @@ function DislikedRandomGame() {
 
     // show new random game
     displayRandomGame();
+    updateTrashCan();
 }
 // store the random game currently displayed
 function storeRandomGame(data) {

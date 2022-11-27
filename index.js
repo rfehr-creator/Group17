@@ -64,26 +64,8 @@ function displayGameDetails(gameId, back) {
     document.getElementById('gameDetailsPrice').innerHTML = "Price: " + price;
     document.getElementById('gameDetailsDescription').innerHTML = game.description;
 
-    // pictures
     var galleryContainer = document.getElementById('galleryContainer')
     galleryContainer.innerHTML = "";
-
-    for (let i = 0; i < game.pictures.length; i++) {
-        var pic = game.pictures[i];
-        var par = 100 + i;
-
-        galleryContainer.innerHTML = galleryContainer.innerHTML +
-            '<button class="gameDetailsGalleryButton">' +
-            '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
-            '</button>'
-
-
-        // show first image by default
-        if (i === 0) {
-            displayPic(par);
-        }
-
-    }
 
     // videos
     var video = document.getElementById('videoElement');
@@ -95,15 +77,33 @@ function displayGameDetails(gameId, back) {
 
         // Gets a thumbnail at 1 second into the video
         galleryContainer.innerHTML = galleryContainer.innerHTML +
-            '<button class="gameDetailsGalleryButton" onclick="displayVid(' + par + ')">' +
-                '<video preload="metadata" class="gameDetailsVideoPreview">'+
-                    '<source id="' + par + '" src="' + vid + '#t=1" class="class="gameDetailsGalleryImg" type="video/mp4">' +
+            '<button class="gameDetailsGalleryButton">' +
+                '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">'+
+                    '<source id="' + par + '" src="' + vid + '#t=5" class="class="gameDetailsGalleryImg" type="video/mp4">' +
                 '</video>'+
-                //'<img id="' + par + '" src="' + vid + '"class="gameDetailsGalleryImg" onclick="displayVid(' + par + ')">' +
-            '</button>'
+            '</button>';
+
+        if (i === 0) {
+            displayVid(par);
+        }
     }
 
+    // pictures
+    for (let i = 0; i < game.pictures.length; i++) {
+        var pic = game.pictures[i];
+        var par = 100 + i;
 
+        galleryContainer.innerHTML = galleryContainer.innerHTML +
+            '<button class="gameDetailsGalleryButton">' +
+                '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
+            '</button>';
+
+
+        // show first image by default
+        /*if (i === 0) {
+            displayPic(par);
+        }*/
+    }
 
     //tags
     var tagContainer = document.getElementById('tagContainer');
@@ -122,7 +122,7 @@ function displayPic(id) {
     image.src = document.getElementById(id).src;
 
     // hide video
-    var video = document.getElementById('videoElement');
+    var video = document.getElementById('videoPlayer');
     video.pause();
     video.innerHTML = "";
     video.hidden = true;
@@ -132,12 +132,10 @@ function displayVid(id) {
     var video = document.getElementById('videoElement');
     video.hidden = false;
     video.innerHTML = "";
-    video.innerHTML = '<source id="videoSourceElement" type="video/mp4" src="' +
-        document.getElementById(id).src + '#t=0">';
-
-    // var source = document.getElementById('videoSourceElement');
-    // source.src = "";
-    // source.src = document.getElementById(id).src;
+    video.innerHTML = 
+        '<video id="videoPlayer" width="640" height="360" preload="metadata" controls class="gameDetailsVideo">'+
+            '<source id="videoSourceElement" type="video/mp4" src="' + document.getElementById(id).src + '#t=5">'+
+        '</video>';
 
     // hide image
     var image = document.getElementById('gameDetailsMainImage');
@@ -162,6 +160,13 @@ function hideElements() {
 }
 
 function backButtonClick() {
+    // Stop video on details page
+    var videoPlayer = document.getElementById('videoPlayer');
+    if(typeof(videoPlayer) != 'undefined' && videoPlayer != null){
+        videoPlayer.pause();
+        videoPlayer.innerHTML = "";
+        videoPlayer.hidden = true;
+    }
 
     var history = getHistory();
     if (history.length > 1) {

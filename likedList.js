@@ -51,7 +51,7 @@ function addGameLikedList(game, element) {
                         '<p class="displayItemDescTitle">' + price + '</p>' +
                     '</td>' +
                     '<td class="displayItemButtonCol">' +
-                        '<button class="displayItemButton" onclick="removeLikedGame('+ game.id +')">Remove From List</button>' +
+                        '<button class="displayItemButton" onclick="removeLikedGame('+ game.id +')">Remove from List</button>' +
                         '<br>' +
                         '<br>' +
                         '<button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +
@@ -112,7 +112,7 @@ function addGameDislikedList(game, element) {
                         '<p class="displayItemDescTitle">' + price + '</p>' +
                     '</td>' +
                     '<td class="displayItemButtonCol">' +
-                        '<button class="displayItemButton" onclick="removeDislikedGame('+game.id+')">Remove From List</button>' +
+                        '<button class="displayItemButton" onclick="removeDislikedGame('+game.id+')">Remove from List</button>' +
                         '<br>' +
                         '<br>' +
                         '<button class="displayItemButton" onclick="addToCart('+game.id+')">Add to Cart</button>' +

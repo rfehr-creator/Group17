@@ -20,6 +20,11 @@ function DisplayLikedList(back) {
     var container = document.getElementById('likedlistItemContainer')
     container.innerHTML = "";
 
+    // if liked Items are zero
+    if(likedItems.length == 0){
+        container.innerHTML = "<div class='emptyList'>No liked games to display.</div>"
+    }
+
     for (let index = 0; index < likedItems.length; index++) {
         var game = likedItems[index];
         addGameLikedList(game, container)

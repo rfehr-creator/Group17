@@ -169,6 +169,13 @@ select {
     opacity: 1;
 }
 
+.emptyList{
+    display: block;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
 #discoveryPageButton{
     background-color: #171717;
     height: 100%;

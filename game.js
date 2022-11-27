@@ -108,6 +108,20 @@ function removeLikedGame(id){
     updateHeart();
 }
 
+function removeLikedGameFromHome(id){
+    var games = loadGames();
+    for (let index = 0; index < games.length; index++) {
+        var game = games[index];
+        if (game.id === id) {
+            game.liked = false;
+        }
+    }
+
+    storeGames(games);
+    addLikedGamesToGameDiv();
+    updateHeart();
+}
+
 function removeDislikedGame(id) {
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {

@@ -36,12 +36,12 @@ function addLikedGamesToGameDiv() {
         div.innerHTML = div.innerHTML +
             "<div id='" + games[i].id + "'>" + 
                 "<div class='likedGameContainer'>" +
-                    "<img class='gameImage' src='" + games[i].displayPicture + "'" + "onclick='displayGameDetails(" + games[i].id + ")'>" +
+                    "<img class='gameImage' src='" + games[i].displayPicture + "'" + "onclick='likedGameClick(event, " + games[i].id + ", false)'>" +
                     "<div class='gameDetailsMiddle'>" + 
-                        "<div class='gameDetailsText' onclick='displayGameDetails(" + games[i].id + ")'>Click for details</div>" +
+                        "<div class='gameDetailsText' onclick='likedGameClick(event, " + games[i].id + ", false)'>Click for details</div>" +
                     "</div>" +
                     "<div class='gameDetailsTopRight'>" + 
-                        "<div class='gameDetailsUnlike' onclick='removeLikedGame(" + games[i].id + ")'>X</div>" +
+                        "<div class='gameDetailsUnlike' onclick='likedGameClick(event, " + games[i].id + ", true)'>X</div>" +
                     "</div>" +
                 "</div>" +
                 "<text class='likedGamesText'>" + dollar + "</text><br>" +

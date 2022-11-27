@@ -44,6 +44,16 @@ function onPageLoad() {
     displayRandomGame();
 }
 
+function likedGameClick(event, gameId, clickedX) {
+    event.cancelBubble = true;
+    event.stopPropagation();
+    if (clickedX == true) {
+        removeLikedGameFromHome(gameId);
+    } else {
+        displayGameDetails(gameId);
+    }
+}
+
 // game details page
 function displayGameDetails(gameId, back) {
     if (back == null || back == false) addHistory("gameDetailsPage", gameId);

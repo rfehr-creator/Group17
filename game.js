@@ -182,7 +182,10 @@ function checkout(){
     
     storeGames(games);
     updateCartBadge();
-    alert("Checkout was successful")
+    if(getGamesInCart().length > 0){
+        alert("Checkout was successful")   
+    }
+    
     home(); // to refresh empty cart
 }
 

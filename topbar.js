@@ -8,6 +8,14 @@ function home() {
     document.getElementById('mainDisplayTable').style.visibility = "visible";
     displayRandomGame();
     addLikedGamesToGameDiv();
+    updateBackButton();
+}
+
+function discoveryButton(){
+    home();
+    localStorage.setItem('history', null);
+    addHistory("home", "");
+    updateBackButton();
 }
 
 // update back button

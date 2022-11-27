@@ -31,6 +31,10 @@ function addGameLikedList(game, element) {
     if (game.price <= 0) {
         price = "Free";
     }
+    var tags = "";
+    game.tags.forEach(tag => {
+        tags = tags + '<text class="gameDetailsTagText" onclick="searchGameTag(\'' + tag + '\')">' + tag + '</text>'
+    });
     element.innerHTML = element.innerHTML +
         '<div class="displayItem">' +
             '<table class="displayItemTable">' +
@@ -45,7 +49,8 @@ function addGameLikedList(game, element) {
                     '</td>' +
                     '<td class="displayItemDescCol">' +
                         '<p class="displayItemDescTitle">' + game.name +
-                            '<br>' +
+                            '<br><br>' +
+                            tags +
                             '<text class="displayItemDescText">' + game.description + '</text>' +
                         '</p>' +
                         '<p class="displayItemDescTitle">' + price + '</p>' +
@@ -92,6 +97,10 @@ function addGameDislikedList(game, element) {
     if (game.price <= 0) {
         price = "Free";
     }
+    var tags = "";
+    game.tags.forEach(tag => {
+        tags = tags + '<text class="gameDetailsTagText" onclick="searchGameTag(\'' + tag + '\')">' + tag + '</text>'
+    });
     element.innerHTML = element.innerHTML + 
         '<div class="displayItem">' +
             '<table class="displayItemTable">' +
@@ -106,7 +115,8 @@ function addGameDislikedList(game, element) {
                     '</td>' +
                     '<td class="displayItemDescCol">' +
                         '<p class="displayItemDescTitle">' + game.name +
-                            '<br>' +
+                            '<br><br>' +
+                            tags +
                             '<text class="displayItemDescText">' + game.description + '</text>' +
                         '</p>' +
                         '<p class="displayItemDescTitle">' + price + '</p>' +

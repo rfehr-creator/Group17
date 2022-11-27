@@ -37,6 +37,24 @@ function onPageLoad() {
         }
     });
 
+    // hover for trash can
+    var trashButton = document.getElementById("trashButton");
+    trashButton.addEventListener("mouseover", function (event) {
+        trashButton.style = "opacity: .4";
+    });
+
+    trashButton.addEventListener("mouseleave", function (event) {
+
+        var len = getDislikedGames().length;
+
+        if (len < 1) {
+            trashButton.style = "opacity: 0.4";
+        }
+        else {
+            trashButton.style = "opacity: 1";
+        }
+    });
+
     updateBackButton()
     localStorage.setItem('history', null);
     addHistory("home", "");

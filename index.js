@@ -85,19 +85,23 @@ function displayGameDetails(gameId, back) {
 
     }
 
-    // // videos
-    // var video = document.getElementById('videoElement');
-    // video.innerHTML = "";
+    // videos
+    var video = document.getElementById('videoElement');
+    video.innerHTML = "";
 
-    // for (let i = 0; i < game.videos.length; i++) {
-    //     var vid = game.videos[i];
-    //     var par = 200 + i;
+    for (let i = 0; i < game.videos.length; i++) {
+        var vid = game.videos[i];
+        var par = 200 + i;
 
-    //     galleryContainer.innerHTML = galleryContainer.innerHTML +
-    //         '<button class="gameDetailsGalleryButton">' +
-    //         '<img id="' + par + '" src="' + vid + '"class="gameDetailsGalleryImg" onclick="displayVid(' + par + ')">' +
-    //         '</button>'
-    // }
+        // Gets a thumbnail at 1 second into the video
+        galleryContainer.innerHTML = galleryContainer.innerHTML +
+            '<button class="gameDetailsGalleryButton" onclick="displayVid(' + par + ')">' +
+                '<video preload="metadata" class="gameDetailsVideoPreview">'+
+                    '<source id="' + par + '" src="' + vid + '#t=1" class="class="gameDetailsGalleryImg" type="video/mp4">' +
+                '</video>'+
+                //'<img id="' + par + '" src="' + vid + '"class="gameDetailsGalleryImg" onclick="displayVid(' + par + ')">' +
+            '</button>'
+    }
 
 
 
@@ -125,7 +129,6 @@ function displayPic(id) {
 }
 
 function displayVid(id) {
-    alert("vid")
     var video = document.getElementById('videoElement');
     video.hidden = false;
     video.innerHTML = "";

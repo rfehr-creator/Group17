@@ -5,10 +5,9 @@ function onPageLoad() {
     document.getElementById('gameArea').style.display = "block";
     var data = defaultGames();
     storeGames(data);
-    displayRandomGame();
     addLikedGamesToGameDiv();
     updateHeart();
-
+    
     // add event listener for search box
     var search = document.getElementById("searchBox");
     search.addEventListener("keypress", function (event) {
@@ -17,13 +16,13 @@ function onPageLoad() {
             searchGames();
         }
     });
-
+    
     // back button hover
     var backButtonHover = document.getElementById("backButton");
     backButtonHover.addEventListener("mouseover", function (event) {
         backButtonHover.style = "opacity: .4";
     });
-
+    
     backButtonHover.addEventListener("mouseleave", function (event) {
         
         var len = getHistory().length;
@@ -36,10 +35,13 @@ function onPageLoad() {
             backButton.style = "opacity: 1";
         }
     });
-
+    
     updateBackButton()
     localStorage.setItem('history', null);
     addHistory("home", "");
+    
+    localStorage.setItem('ratings', null);
+    displayRandomGame();
 }
 
 // game details page

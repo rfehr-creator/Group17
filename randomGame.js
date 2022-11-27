@@ -5,7 +5,7 @@ function LikedRandomGame() {
 
     // add rating for currently liked game 
     addGameRating(randGame, true);
-    alert("past add game rating")
+    
     // mark random game as liked
     for (let index = 0; index < games.length; index++) {
         const element = games[index];
@@ -76,11 +76,12 @@ function displayRandomGame() {
         var gamePicture = document.getElementById('gamePicture');
         // var rand = Math.floor(Math.random() * games.length);
         // gamePicture.src = games[rand].displayPicture;
+        // storeRandomGame(games[rand]);
         var recommended = getMostRecommendedGame();
         gamePicture.src = recommended.displayPicture;
-
+        
         // store current random game for later access
-        storeRandomGame(games[rand]);
+        storeRandomGame(recommended);
     }
     else {
         storeRandomGame("");
@@ -122,6 +123,8 @@ function getGameRating(game) {
 
             for (let i = 0; i < game.tags.length; i++) {
                 const tag = game.tags[i];
+
+                // iterate over tags
                 for (let j = 0; j < ratings.length; j++) {
                     const rating = ratings[j];
                     if (rating.tag === tag) {
@@ -143,15 +146,14 @@ function addGameRating(game, isLiked) {
     } else {
         addRating = -1;
     }
-
-
+    
     var ratings = loadRatings();
-
+    
     for (let i = 0; i < game.tags.length; i++) {
         const tag = game.tags[i];
         var found = false;
+        
         if (ratings != null && ratings.length > 0) {
-
             // iterate over the rating list
             for (let j = 0; found == false && j < ratings.length; j++) {
                 const rating = ratings[j];
@@ -165,7 +167,6 @@ function addGameRating(game, isLiked) {
 
             // if tag is not found in rating list, add new tag with rating
             if (found == false) {
-                alert("tag not found: " + tag)
                 ratings.push({ "tag": tag, "rating": addRating })
             }
 
@@ -176,9 +177,7 @@ function addGameRating(game, isLiked) {
         }
     }
     storeRatings(ratings);
-    ratings.forEach(rating => {
-        alert(rating.tag + " : " + rating.rating)
-    });
+    
 }
 
 // load and store game ratings

@@ -33,7 +33,7 @@ function DisplayCartItems(back) {
 
     // if there are no cart items
     if(cartItems.length == 0){
-        container.innerHTML = "<div class='emptyList'>Cart is empty.</div>"
+        container.innerHTML = "<div class='emptyList'>Cart is empty</div>"
     }
 
     tax = price * .13;

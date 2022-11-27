@@ -22,7 +22,7 @@ function DisplayLikedList(back) {
 
     // if liked Items are zero
     if(likedItems.length == 0){
-        container.innerHTML = "<div class='emptyList'>No liked games to display.</div>"
+        container.innerHTML = "<div class='emptyList'>No liked games to display</div>"
     }
 
     for (let index = 0; index < likedItems.length; index++) {
@@ -98,7 +98,7 @@ function DisplayDislikedList(back) {
 
     // if disliked Items are zero
     if(dislikedItems.length == 0){
-        container.innerHTML = "<div class='emptyList'>No disliked games to display.</div>"
+        container.innerHTML = "<div class='emptyList'>No disliked games to display</div>"
     }
 }
 

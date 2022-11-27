@@ -109,9 +109,9 @@ function displayGameDetails(gameId, back) {
         // Gets a thumbnail at 1 second into the video
         galleryContainer.innerHTML = galleryContainer.innerHTML +
             '<button class="gameDetailsGalleryButton">' +
-                '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">' +
-                    '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
-                '</video>' +
+            '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">' +
+            '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
+            '</video>' +
             '</button>';
 
         if (i === 0) {
@@ -167,7 +167,7 @@ function displayVid(id) {
 
     video.innerHTML =
         '<video id="videoPlayer" width="640" height="360" preload="metadata" controls class="gameDetailsVideo">' +
-            '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">' +
+        '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">' +
         '</video>';
 
     // hide image
@@ -201,15 +201,16 @@ function hideElements() {
     document.getElementById('DislikedListItems').style.display = "none";
 }
 
-function stopVideo(){
-// Stop video on details page
-var videoPlayer = document.getElementById('videoPlayer');
-if (typeof (videoPlayer) != 'undefined' && videoPlayer != null) {
-    videoPlayer.pause();
-    videoPlayer.innerHTML = "";
-    videoPlayer.hidden = true;
+function stopVideo() {
+    // Stop video on details page
+    var videoPlayer = document.getElementById('videoPlayer');
+    if (typeof (videoPlayer) != 'undefined' && videoPlayer != null) {
+        videoPlayer.pause();
+        videoPlayer.innerHTML = "";
+        videoPlayer.hidden = true;
+    }
 }
-}
+
 function backButtonClick() {
     stopVideo();
 
@@ -348,17 +349,17 @@ function addSearchResultGame(game, element) {
         '  <table class="displayItemTable">' +
         '    <tr>' +
         '      <td class="displayItemImgCol">' +
-                '<div class="displayItemImgContainer">'+
-                '<img class="displayItemImg" src="' + game.displayPicture + '"' + 'onclick="displayGameDetails(' + game.id + ')">' +
-                    '<div class="gameDetailsMiddle">'+
-                        '<div class="gameDetailsText" onclick="displayGameDetails(' + game.id + ')">Click for details</div>' +
-                    '</div>'+
-                '</div>'+
+        '<div class="displayItemImgContainer">' +
+        '<img class="displayItemImg" src="' + game.displayPicture + '"' + 'onclick="displayGameDetails(' + game.id + ')">' +
+        '<div class="gameDetailsMiddle">' +
+        '<div class="gameDetailsText" onclick="displayGameDetails(' + game.id + ')">Click for details</div>' +
+        '</div>' +
+        '</div>' +
         '      </td>' +
         '      <td class="displayItemDescCol">' +
         '        <p class="displayItemDescTitle">' + game.name +
         '          <br><br>' +
-                    tags +
+        tags +
         '          <text class="displayItemDescText">' + game.description + '</text>' +
         '        </p>' +
         '        <p class="displayItemDescTitle">' + price + '</p>' +
@@ -389,12 +390,12 @@ function home() {
     updateTrashCan();
 }
 
-function updateTrashCan(){
+function updateTrashCan() {
     const trash = document.getElementById("trashButton");
     const disliked = getDislikedGames();
-    if(disliked.length == 0){
+    if (disliked.length == 0) {
         trash.style = "opacity: 0.4;";
-    } else{
+    } else {
         trash.style = "opacity: 1;";
     }
 

@@ -90,9 +90,9 @@ function displayGameDetails(gameId, back) {
         // Gets a thumbnail at 1 second into the video
         galleryContainer.innerHTML = galleryContainer.innerHTML +
             '<button class="gameDetailsGalleryButton">' +
-            '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">' +
-            '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
-            '</video>' +
+                '<video preload="metadata" class="gameDetailsVideoPreview" onclick="displayVid(' + par + ')">' +
+                    '<source id="' + par + '" src="' + vid + '#t=10" class="class="gameDetailsGalleryImg" type="video/mp4">' +
+                '</video>' +
             '</button>';
 
         if (i === 0) {
@@ -148,7 +148,7 @@ function displayVid(id) {
 
     video.innerHTML =
         '<video id="videoPlayer" width="640" height="360" preload="metadata" controls class="gameDetailsVideo">' +
-        '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">' +
+            '<source id="videoSourceElement" type="video/mp4" src="' + videolink + '">' +
         '</video>';
 
     // hide image

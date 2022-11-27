@@ -2,6 +2,7 @@ html,
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #171717;
+    /* background-color: linear-gradient(to bottom,#171717,0%,#c92e2e,100%); */
     margin: 0;
     padding: 0;
 }
@@ -26,7 +27,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    
 }
 
 #gameDivWrapper {
@@ -94,6 +95,7 @@ body {
 }
 
 #htmlDoc {
+    /* background-image: linear-gradient(#171717,#0f1811); */
     background-color: #171717;
     padding: 0px;
 }

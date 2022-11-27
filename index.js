@@ -97,12 +97,6 @@ function displayGameDetails(gameId, back) {
             '<button class="gameDetailsGalleryButton">' +
                 '<img id="' + par + '" src="' + pic + '"class="gameDetailsGalleryImg" onclick="displayPic(' + par + ')">' +
             '</button>';
-
-
-        // show first image by default
-        /*if (i === 0) {
-            displayPic(par);
-        }*/
     }
 
     //tags

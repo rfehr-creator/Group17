@@ -71,12 +71,9 @@ function getNonlikedNondislikedGames() {
     return nonLikedGames;
 }
 
-// display random game in center
+// display recommended game in center
 function displayRandomGame() {
-    // hide no games message
-    var text = document.getElementById('noMoreGamesDiv');
-    text.style = "opacity: 0";
-
+    hideRecommendedPicture(false);
 
     var games = getNonlikedNondislikedGames();
     if (games.length > 0) {
@@ -89,18 +86,44 @@ function displayRandomGame() {
 
     }
     else {
+        hideRecommendedPicture(true);
+    }
+}
+
+function hideRecommendedPicture(hide) {
+    if (hide) {
+        // hide game picture
         var gamePicture = document.getElementById('gamePicture');
         gamePicture.style = "opacity: 0";
 
+        // make sure onclick doesn't work
         var imageContainer = document.getElementById('imageContainer');
         imageContainer.onclick = "";
-        
-        var details = document.getElementById('gameDetailsMiddleDiv');
-        details.style = "opacity: 0";
-        
+
+        // hide games details middle div
+        // var details = document.getElementById('gameDetailsMiddleDiv');
+        // details.style = "opacity: 0";
+
+        // show no more games div
         var text = document.getElementById('noMoreGamesDiv');
         text.style = "opacity: 1";
         text.alt = "No more games."
+    } else {
+        // hide no more games div message
+        var text = document.getElementById('noMoreGamesDiv');
+        text.style = "opacity: 0";
+
+        // show games details middle div
+        // var details = document.getElementById('gameDetailsMiddleDiv');
+        // details.style = "opacity: 0";
+
+        // show game picture
+        var gamePicture = document.getElementById('gamePicture');
+        gamePicture.style = "opacity: 1";
+
+        // make sure onclick works
+        var imageContainer = document.getElementById('imageContainer');
+        imageContainer.setAttribute('onclick','clickedRandomGame()');
     }
 }
 

@@ -68,6 +68,7 @@ function likedGameClick(event, gameId, clickedX) {
     event.stopPropagation();
     if (clickedX == true) {
         removeLikedGameFromHome(gameId);
+        displayRandomGame();
     } else {
         displayGameDetails(gameId);
     }

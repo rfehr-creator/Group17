@@ -172,6 +172,11 @@ function removeDislikedGame(id) {
 }
 
 function checkout(){
+    
+    if(getGamesInCart().length > 0){
+        alert("Checkout was successful")   
+    }
+
     var games = loadGames();
     for (let index = 0; index < games.length; index++) {
         var game = games[index];
@@ -182,9 +187,8 @@ function checkout(){
     
     storeGames(games);
     updateCartBadge();
-    if(getGamesInCart().length > 0){
-        alert("Checkout was successful")   
-    }
+
+    
     
     home(); // to refresh empty cart
 }

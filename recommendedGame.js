@@ -100,10 +100,6 @@ function hideRecommendedPicture(hide) {
         var imageContainer = document.getElementById('imageContainer');
         imageContainer.onclick = "";
 
-        // hide games details middle div
-        // var details = document.getElementById('gameDetailsMiddleDiv');
-        // details.style = "opacity: 0";
-
         // show no more games div
         var text = document.getElementById('noMoreGamesDiv');
         text.style = "opacity: 1";
@@ -112,10 +108,6 @@ function hideRecommendedPicture(hide) {
         // hide no more games div message
         var text = document.getElementById('noMoreGamesDiv');
         text.style = "opacity: 0";
-
-        // show games details middle div
-        // var details = document.getElementById('gameDetailsMiddleDiv');
-        // details.style = "opacity: 0";
 
         // show game picture
         var gamePicture = document.getElementById('gamePicture');

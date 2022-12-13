@@ -55,6 +55,16 @@ function onPageLoad() {
         }
     });
 
+    // add hover for recommended game
+    var recommendedImage = document.getElementById("gamePicture");
+    recommendedImage.addEventListener("mouseover", function (event) {
+        recommendedImage.style = "opacity: .3";
+    });
+
+    recommendedImage.addEventListener("mouseleave", function (event) {
+        recommendedImage.style = "opacity: 1";
+    });
+
     updateBackButton()
     localStorage.setItem('history', null);
     addHistory("home", "");

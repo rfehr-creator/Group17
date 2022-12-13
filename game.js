@@ -107,7 +107,7 @@ function getGame(gameId) {
 function getDislikedGames() {
     const dislikedGames = [];
     var games = loadGames();
-    for (let index = 0; index < games.length; index++) {
+    for (let index = 0; games != null && index < games.length; index++) {
         if (games[index].disliked === true) {
             dislikedGames.push(games[index]);
         }

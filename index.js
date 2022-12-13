@@ -415,8 +415,11 @@ function discoveryButton() {
 
 // update back button
 function updateBackButton() {
-    var len = getHistory().length;
-
+    var list = getHistory();
+    var len = 0;
+    if(list != null){
+        len = list.length;
+    }
     var backButton = document.getElementById("backButton");
     if (len <= 1) {
         backButton.style = "opacity: 0.4";
